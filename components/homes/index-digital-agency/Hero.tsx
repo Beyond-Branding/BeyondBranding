@@ -271,13 +271,13 @@ export default function Hero() {
             <div className="mxd-hero-02__intro">
               <CommonHero3DIntroText>
                 <h1 className="medium permanent">
-                  Where Strategy Meets Creativity.
+                  Branding That Goes Beyond.
                 </h1>
               </CommonHero3DIntroText>
             </div>
             <div className="mxd-hero-02__outro">
               <CommonHero3DOutroText>
-                <p>Ready to Take Your Brand Beyond?</p>
+                <p>Ready To Change How People See You?</p>
               </CommonHero3DOutroText>
             </div>
           </CommonHero3DImages>
