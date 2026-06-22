@@ -26,7 +26,7 @@ export default function ServicesList() {
                           className="reveal-type"
                           animation="revealType"
                         >
-                          Everything Your Brand Needs To Grow
+                          Creative Services Built Around Your Brand
                         </CommonAnimatedText>
                       </div>
                     </div>
@@ -78,7 +78,7 @@ export default function ServicesList() {
                       <div className="col-12 col-xl-5 mxd-grid-padding">
                         <div className="mxd-services-list__descr">
                           <p className="t-medium">
-                            We create distinctive brand identities that reflect your vision, values, and personality. From logo design to complete brand systems, we help businesses build a strong and memorable presence.
+                            A complete visual identity that gives your brand a clear look, voice, and personality. From logos to brand systems, every detail is built to feel memorable and consistent.
                           </p>
                         </div>
                       </div>
@@ -108,7 +108,7 @@ export default function ServicesList() {
                       <div className="col-12 col-xl-5 mxd-grid-padding">
                         <div className="mxd-services-list__descr">
                           <p className="t-medium">
-                            We design visually compelling creatives that capture attention and communicate your message effectively. Our designs are crafted to strengthen brand recognition across digital and print platforms.
+                            Social media creatives, digital designs, and brand visuals that communicate clearly and catch attention without feeling overdone.
                           </p>
                         </div>
                       </div>
@@ -138,7 +138,7 @@ export default function ServicesList() {
                       <div className="col-12 col-xl-5 mxd-grid-padding">
                         <div className="mxd-services-list__descr">
                           <p className="t-medium">
-                            We develop packaging solutions that combine aesthetics, functionality, and brand storytelling. Every design is created to enhance shelf appeal and leave a lasting impression on customers.
+                            Packaging that makes your product look better, feel premium, and stand out on shelves, online, and in customers’ hands.
                           </p>
                         </div>
                       </div>
@@ -168,7 +168,7 @@ export default function ServicesList() {
                       <div className="col-12 col-xl-5 mxd-grid-padding">
                         <div className="mxd-services-list__descr">
                           <p className="t-medium">
-                            We build modern, responsive websites that deliver seamless user experiences across all devices. Our websites are designed to engage visitors, strengthen credibility, and drive business growth.
+                            Modern, responsive websites designed to look clean, load smoothly, and help visitors understand your business faster.
                           </p>
                         </div>
                       </div>
@@ -198,7 +198,7 @@ export default function ServicesList() {
                       <div className="col-12 col-xl-5 mxd-grid-padding">
                         <div className="mxd-services-list__descr">
                           <p className="t-medium">
-                            We create and manage strategic social media campaigns that increase visibility and audience engagement. Through consistent content and targeted marketing, we help brands build meaningful online communities.
+                            Consistent and strategy-led social media content that helps your brand connect, engage, and grow online. From content planning to creatives, captions, reels, and platform management, every detail is created with purpose.
                           </p>
                         </div>
                       </div>
@@ -227,7 +227,7 @@ export default function ServicesList() {
                       <div className="col-12 col-xl-5 mxd-grid-padding">
                         <div className="mxd-services-list__descr">
                           <p className="t-medium">
-                            We optimize your digital presence to improve search engine rankings and attract qualified traffic. Our content strategies focus on delivering valuable information that drives engagement and conversions.
+                            Search-friendly content and digital strategies that improve visibility, bring the right audience, and support long-term growth.
                           </p>
                         </div>
                       </div>
@@ -256,7 +256,7 @@ export default function ServicesList() {
                       <div className="col-12 col-xl-5 mxd-grid-padding">
                         <div className="mxd-services-list__descr">
                           <p className="t-medium">
-                            We produce high-quality videos that tell your story, showcase your brand, and connect with your audience. From concept development to final editing, we create content that leaves an impact.
+                            Reels, brand videos, product stories, and campaign edits created to hold attention and communicate your message with impact.
                           </p>
                         </div>
                       </div>
@@ -285,7 +285,7 @@ export default function ServicesList() {
                       <div className="col-12 col-xl-5 mxd-grid-padding">
                         <div className="mxd-services-list__descr">
                           <p className="t-medium">
-                            We capture professional visuals that highlight your products, services, and brand identity. Our photography and videography services are designed to create authentic and engaging brand experiences.
+                            Professional visuals that capture your products, services, spaces, and brand personality in a polished and authentic way.
                           </p>
                         </div>
                       </div>
@@ -314,7 +314,7 @@ export default function ServicesList() {
                       <div className="col-12 col-xl-5 mxd-grid-padding">
                         <div className="mxd-services-list__descr">
                           <p className="t-medium">
-                            We design intuitive digital experiences that balance functionality with aesthetics. Our user-centered approach ensures every interaction is seamless, engaging, and aligned with business goals.
+                            Simple, smooth, and user-friendly digital experiences that make websites, apps, and platforms easier to explore.
                           </p>
                         </div>
                       </div>
@@ -343,7 +343,7 @@ export default function ServicesList() {
                       <div className="col-12 col-xl-5 mxd-grid-padding">
                         <div className="mxd-services-list__descr">
                           <p className="t-medium">
-                            We create professional marketing materials that strengthen brand communication across offline channels. From brochures and business cards to promotional assets, every piece is designed with purpose and consistency.
+                            Brochures, business cards, catalogues, flyers, and offline brand materials designed to keep your communication sharp and consistent.
                           </p>
                         </div>
                       </div>
@@ -372,7 +372,7 @@ export default function ServicesList() {
                       <div className="col-12 col-xl-5 mxd-grid-padding">
                         <div className="mxd-services-list__descr">
                           <p className="t-medium">
-                            We develop data-driven marketing strategies tailored to your business objectives and target audience. Our consulting services help brands make informed decisions, improve performance, and achieve sustainable growth.
+                            Clear marketing direction based on your goals, audience, and brand needs — helping every campaign move with purpose.
                           </p>
                         </div>
                       </div>

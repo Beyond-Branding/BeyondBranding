@@ -27,9 +27,9 @@ export default function AboutProcess() {
                             className="manifest manifest-m manifest-accent mxd-split-lines active-cursor-permanent"
                             animation="splitLines"
                           >
-                            We help brands build meaningful connections through strategy, creativity, technology, and marketing.
+                            A creative studio built for brands that need more than just good-looking content.
                             <span>
-                              From brand identity and digital experiences to content, campaigns, and storytelling, we create work that inspires, engages, and drives growth.
+                              From social media and packaging to websites and digital design, every detail is created to help your business look clearer, feel more professional, and connect better with the right audience.
                             </span>
                           </CommonAnimatedText>
                         </Link>
@@ -61,7 +61,7 @@ export default function AboutProcess() {
                     </div>
                     <div className="mxd-process-points__descr">
                       <p className="t-medium t-accent">
-                        Before we open a single file, we get obsessed with your business. Who you’re for, what you stand for, and why anyone should care. This is where the real work begins.
+                        A clear plan before the creative begins. Understanding your business, audience, goals, and direction to create content and designs that actually make sense.
                       </p>
                     </div>
                     <div className="mxd-process-points__time">
@@ -89,7 +89,7 @@ export default function AboutProcess() {
                     </div>
                     <div className="mxd-process-points__descr">
                       <p className="t-medium t-accent">
-                        This is where your brand gets a face and a feeling. Logo, colours, typography, visual language. Everything built to be consistent, recognisable, and unmistakably yours.
+                        Visuals that make your brand look sharp.Social media creatives, packaging, brand assets, and campaign designs created with a clean and consistent visual direction.
                       </p>
                     </div>
                     <div className="mxd-process-points__time">
@@ -117,7 +117,7 @@ export default function AboutProcess() {
                     </div>
                     <div className="mxd-process-points__descr">
                       <p className="t-medium t-accent">
-                        We put your brand where it needs to be on screens, in hands, across every touchpoint. Website, social, print, packaging. Built to actually be used.
+                        Your brand, built for every screen.Websites, content, and digital assets designed to make your business easier to understand, explore, and remember.
                       </p>
                     </div>
                     <div className="mxd-process-points__time">
