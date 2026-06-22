@@ -62,7 +62,7 @@ export default function CTA() {
                           className="mxd-split-lines permanent"
                           animation="splitLines"
                         >
-                          Let's turn your vision into impact.
+                          Let’s turn your vision into impact.
                         </CommonAnimatedText>
                       </Link>
                     </div>

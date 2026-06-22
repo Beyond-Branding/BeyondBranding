@@ -60,3 +60,708 @@
     padding-top: 11rem;
   }
 }
+
+/* ------------------------------------------------*/
+/* Project Expandable Gallery Styles Start */
+/* ------------------------------------------------*/
+.mxd-expandable-section-fullwidth {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--base);
+}
+
+.mxd-portfolio-expandable-full {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.mxd-portfolio-expandable-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+  .mxd-portfolio-expandable-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.mxd-portfolio-grid-item {
+  position: relative;
+  cursor: none; /* Hide default mouse cursor! */
+  overflow: hidden;
+  width: 100%;
+  display: block;
+}
+
+/* Card */
+.mxd-expandable-card-bleed {
+  position: relative;
+  width: 100%;
+  height: 105vh; /* Increased from 95vh for more height */
+  overflow: hidden;
+  background-color: var(--base-bright);
+}
+
+@media only screen and (max-width: 991px) {
+  .mxd-expandable-card-bleed {
+    height: 80vh;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .mxd-expandable-card-bleed {
+    height: 70vh;
+  }
+}
+
+.mxd-expandable-card-bleed__media {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.mxd-expandable-card-bleed__img,
+.mxd-expandable-card-bleed__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mxd-expandable-card-bleed__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 100%);
+  pointer-events: none;
+  transition: background 0.4s ease;
+}
+
+.mxd-portfolio-grid-item:hover .mxd-expandable-card-bleed__img,
+.mxd-portfolio-grid-item:hover .mxd-expandable-card-bleed__video {
+  transform: scale(1.05);
+}
+
+.mxd-portfolio-grid-item:hover .mxd-expandable-card-bleed__overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0) 100%);
+}
+
+.mxd-expandable-card-bleed__info {
+  position: absolute;
+  left: 2.5vw; /* Moved closer to the left edge */
+  bottom: 3.5vw;
+  z-index: 10;
+  text-align: left;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .mxd-expandable-card-bleed__info {
+    left: 20px;
+    bottom: 20px;
+  }
+}
+
+.mxd-expandable-card-bleed__title {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 5.2rem; /* Large high-end serif font size matching Colgate */
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--t-bright);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  -webkit-transition: color var(--_animspeed-medium) ease;
+  -moz-transition: color var(--_animspeed-medium) ease;
+  transition: color var(--_animspeed-medium) ease;
+}
+
+@media only screen and (max-width: 991px) {
+  .mxd-expandable-card-bleed__title {
+    font-size: 3.8rem;
+    gap: 12px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .mxd-expandable-card-bleed__title {
+    font-size: 2.8rem;
+    gap: 8px;
+  }
+}
+
+.mxd-expandable-card-bleed__plus {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 300;
+  font-size: 0.9em;
+  opacity: 0.85;
+}
+
+.mxd-expandable-card-bleed__category {
+  font-family: var(--_font-default);
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+/* Cursor Follow Badge */
+.mxd-expand-cursor-badge {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.mxd-expand-cursor-badge span {
+  font-family: var(--_font-default);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+}
+
+/* Fullscreen Page-Like Drawer */
+.mxd-fullscreen-drawer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0b0b0b;
+  z-index: 999999;
+  overflow: hidden; /* Prevent background scroll, keep modal in 1 page */
+  display: block;
+}
+
+/* Corner close zones */
+.mxd-fullscreen-corner-close-zone {
+  position: fixed;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  z-index: 10000000;
+  cursor: none; /* Hide default cursor so our custom Close badge works */
+}
+
+.mxd-fullscreen-corner-close-zone.top-right {
+  right: 0;
+}
+
+.mxd-fullscreen-corner-close-zone.top-left {
+  left: 0;
+}
+
+/* Custom Close Follow-Cursor Badge */
+.mxd-close-cursor-badge {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #0b0b0b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.mxd-close-cursor-badge span {
+  font-family: var(--_font-default);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Top bar text fallback close button */
+.mxd-fullscreen-drawer-top-bar {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  z-index: 9999999;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .mxd-fullscreen-drawer-top-bar {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+.mxd-fullscreen-drawer-close-text-only {
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0;
+  pointer-events: auto; /* Ensure button can be clicked! */
+}
+
+.mxd-fullscreen-drawer-close-text-only .close-text {
+  font-family: var(--_font-accent);
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.mxd-fullscreen-drawer-close-text-only .close-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.mxd-fullscreen-drawer-close-text-only .close-svg {
+  width: 18px;
+  height: 18px;
+  stroke: #ffffff;
+}
+
+
+
+.mxd-expandable-card-bleed__info {
+  position: absolute;
+  left: 2.5vw; /* Aligned closer to the left edge */
+  bottom: 3vw;
+  z-index: 10;
+  text-align: left;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .mxd-expandable-card-bleed__info {
+    left: 4vw;
+    bottom: 4vw;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .mxd-expandable-card-bleed__info {
+    left: 24px;
+    bottom: 24px;
+  }
+}
+
+.mxd-expandable-card-bleed__title {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 6rem; /* Increased size to match Colgate example */
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--t-bright);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  -webkit-transition: color var(--_animspeed-medium) ease;
+  -moz-transition: color var(--_animspeed-medium) ease;
+  transition: color var(--_animspeed-medium) ease;
+}
+
+@media only screen and (max-width: 991px) {
+  .mxd-expandable-card-bleed__title {
+    font-size: 4rem;
+    gap: 12px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .mxd-expandable-card-bleed__title {
+    font-size: 3rem;
+    gap: 8px;
+  }
+}
+
+.mxd-expandable-card-bleed__plus {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 300;
+  font-size: 0.9em;
+  opacity: 0.85;
+}
+
+.mxd-expandable-card-bleed__category {
+  font-family: var(--_font-default);
+  font-size: 1.8rem; /* Increased size */
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+@media only screen and (max-width: 991px) {
+  .mxd-expandable-card-bleed__category {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .mxd-expandable-card-bleed__category {
+    font-size: 1.4rem;
+  }
+}
+
+/* Cursor Follow Badge */
+.mxd-expand-cursor-badge {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.mxd-expand-cursor-badge span {
+  font-family: var(--_font-default);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+}
+
+/* Fullscreen Page-Like Drawer */
+.mxd-fullscreen-drawer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0b0b0b;
+  z-index: 999999;
+  overflow: hidden; /* Prevent background scroll, keep modal in 1 page */
+  display: block;
+}
+
+/* Corner close zones */
+.mxd-fullscreen-corner-close-zone {
+  position: fixed;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  z-index: 10000000;
+  cursor: none; /* Hide default cursor so our custom Close badge works */
+}
+
+.mxd-fullscreen-corner-close-zone.top-right {
+  right: 0;
+}
+
+.mxd-fullscreen-corner-close-zone.top-left {
+  left: 0;
+}
+
+/* Custom Close Follow-Cursor Badge */
+.mxd-close-cursor-badge {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #0b0b0b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.mxd-close-cursor-badge span {
+  font-family: var(--_font-default);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Top bar text fallback close button */
+.mxd-fullscreen-drawer-top-bar {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  z-index: 9999999;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .mxd-fullscreen-drawer-top-bar {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+.mxd-fullscreen-drawer-close-text-only {
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0;
+  pointer-events: auto; /* Ensure button can be clicked! */
+}
+
+.mxd-fullscreen-drawer-close-text-only .close-text {
+  font-family: var(--_font-accent);
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.mxd-fullscreen-drawer-close-text-only .close-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.mxd-fullscreen-drawer-close-text-only .close-svg {
+  width: 18px;
+  height: 18px;
+  stroke: #ffffff;
+}
+
+.mxd-fullscreen-drawer-content {
+  padding: 100px 0 0 0;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 767px) {
+  .mxd-fullscreen-drawer-content {
+    padding: 80px 0 0 0;
+  }
+}
+
+/* Fixed Height Grid Wrapper to fit all in one page height */
+.mxd-fullscreen-gallery-grid-wrapper {
+  flex: 1;
+  width: 100%;
+  padding: 0 4vw;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Flex Grid Gallery Layout */
+.mxd-fullscreen-gallery-grid {
+  display: flex;
+  gap: 12px;
+  height: 65vh; /* Fits on one single page height */
+  width: 100%;
+}
+
+.mxd-fullscreen-gallery-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .mxd-fullscreen-gallery-column:nth-child(1) .mxd-fullscreen-gallery-item,
+  .mxd-fullscreen-gallery-column:nth-child(3) .mxd-fullscreen-gallery-item,
+  .mxd-fullscreen-gallery-column:nth-child(4) .mxd-fullscreen-gallery-item {
+    flex: 1 1 0% !important; /* Force equal height sharing in columns 1, 3, and 4 */
+  }
+}
+
+.mxd-fullscreen-gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #121212;
+}
+
+.mxd-fullscreen-gallery-image,
+.mxd-fullscreen-gallery-video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mxd-fullscreen-gallery-item:hover .mxd-fullscreen-gallery-image,
+.mxd-fullscreen-gallery-item:hover .mxd-fullscreen-gallery-video {
+  transform: scale(1.02);
+}
+
+/* Fullscreen Drawer Meta Block */
+.mxd-fullscreen-drawer-meta {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-top: auto;
+  padding: 24px 4vw 32px 4vw;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  box-sizing: border-box;
+  background-color: #0b0b0b;
+}
+
+.mxd-meta-left {
+  flex: 0 0 35%;
+}
+
+.mxd-meta-title {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 4rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.mxd-meta-category {
+  font-family: var(--_font-accent);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.mxd-meta-right {
+  flex: 0 0 55%;
+  max-height: 120px; /* Ensure description has max-height and scrolls */
+  overflow-y: auto;
+  padding-right: 15px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.05);
+}
+
+.mxd-meta-right::-webkit-scrollbar {
+  width: 4px;
+}
+
+.mxd-meta-right::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.mxd-meta-right::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+}
+
+.mxd-meta-description {
+  font-family: var(--_font-default);
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+@media only screen and (max-width: 1199px) {
+  .mxd-fullscreen-gallery-grid {
+    height: 68vh;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .mxd-fullscreen-drawer-meta {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 20px 24px 20px;
+  }
+  .mxd-meta-left,
+  .mxd-meta-right {
+    flex: 1 1 100%;
+  }
+  .mxd-meta-right {
+    max-height: 120px;
+  }
+  .mxd-meta-title {
+    font-size: 3rem;
+  }
+  .mxd-meta-description {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .mxd-fullscreen-gallery-grid-wrapper {
+    overflow-y: auto;
+    padding: 0 20px;
+  }
+  .mxd-fullscreen-gallery-grid {
+    height: auto;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .mxd-fullscreen-gallery-column {
+    height: auto;
+    gap: 12px;
+  }
+  .mxd-fullscreen-gallery-item {
+    flex: none !important;
+    height: 250px;
+  }
+}
+
+/* Touch device & small screen responsive resets */
+@media (hover: none), (pointer: coarse), only screen and (max-width: 1024px) {
+  .mxd-expand-cursor-badge,
+  .mxd-close-cursor-badge {
+    display: none !important;
+  }
+
+  .mxd-portfolio-grid-item {
+    cursor: pointer !important;
+  }
+
+  .mxd-fullscreen-drawer-overlay,
+  .mxd-fullscreen-corner-close-zone {
+    cursor: default !important;
+  }
+}
+/* ------------------------------------------------*/
+/* Project Expandable Gallery Styles End */
+/* ------------------------------------------------*/
