@@ -44,19 +44,12 @@ export default function Header1({ initialTheme }: Header1Props) {
       >
         <CommonLoadFade index={0}>
           <div className="mxd-header__logo loading-fade">
-            <Link className="mxd-logo" href={`/`}>
-              <Image
-  src="/BBlogo.png"
-  alt="Beyond Branding"
-  width={42}
-  height={42}
-  className="mxd-logo__image"
-/>
+            
               <div className="mxd-logo__text">
                 <TextScramble className="mxd-scramble">Beyond</TextScramble>
-                <TextScramble className="mxd-scramble">Branding</TextScramble>
+                <TextScramble className="mxd-scramble">Brandingg</TextScramble>
               </div>
-            </Link>
+            
           </div>
         </CommonLoadFade>
         <CommonLoadFade index={1}>

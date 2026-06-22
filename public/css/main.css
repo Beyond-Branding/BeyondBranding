@@ -5182,7 +5182,8 @@ form textarea:required:valid {
 .mxd-header-permanent .mxd-logo__text,
 .mxd-header-permanent .mxd-header__link,
 .mxd-header-permanent .mxd-color-switcher {
-  color: var(--nl-white);
+  /* Keep header logo and navigation text white on permanent headers (override theme changes) */
+  color: var(--nl-white) !important;
 }
 
 .mxd-header__logo {

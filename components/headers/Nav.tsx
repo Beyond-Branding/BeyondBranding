@@ -79,7 +79,7 @@ export default function Nav({
               <div className="menu-logo__text">
                 <span ref={headerSlots[0]}>Beyond</span>
                 <span ref={headerSlots[1]}>Branding</span>
-                <span ref={headerSlots[2]}>Studio</span>
+                
               </div>
             </Link>
           </div>
@@ -155,13 +155,13 @@ export default function Nav({
                         <a
                           ref={contactSlots[1]}
                           className="tag tag-m"
-                          href="tel:+91 9876543210"
+                          href="tel:+91 8369835146"
                         >
                           <TextScramble
                             ref={contactRevealSlots[1]}
                             className="mxd-scramble"
                           >
-                            +91 9876543210
+                            +91 8369835146
                           </TextScramble>
                         </a>
                       </li>
@@ -221,55 +221,7 @@ export default function Nav({
                       </li>
                     </ul>
                   </div>
-                  <div className="menu-contact__item">
-                    <ul className="menu-contact__list">
-                      <li>
-                        <a
-                          ref={contactSlots[5]}
-                          className="tag tag-m"
-                          href="https://dribbble.com/"
-                          target="_blank"
-                        >
-                          <TextScramble
-                            ref={contactRevealSlots[5]}
-                            className="mxd-scramble"
-                          >
-                            Dribbble
-                          </TextScramble>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          ref={contactSlots[6]}
-                          className="tag tag-m"
-                          href="https://www.behance.net/"
-                          target="_blank"
-                        >
-                          <TextScramble
-                            ref={contactRevealSlots[6]}
-                            className="mxd-scramble"
-                          >
-                            Behance
-                          </TextScramble>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          ref={contactSlots[7]}
-                          className="tag tag-m"
-                          href="https://github.com/"
-                          target="_blank"
-                        >
-                          <TextScramble
-                            ref={contactRevealSlots[7]}
-                            className="mxd-scramble"
-                          >
-                            Github
-                          </TextScramble>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                  
                 </div>
               </div>
               {/* data bottom line */}
@@ -277,10 +229,10 @@ export default function Nav({
               <div className="mxd-menu__data">
                 <div className="menu-data__left">
                   <p ref={footerSlots[0]} className="menu-data__text">
-                    hello@azurio.com
+                    beyondbranding.co.in
                   </p>
                   <p ref={footerSlots[1]} className="menu-data__text">
-                    +1 212-708-9400
+                    +91 8369835146
                   </p>
                 </div>
                 <div className="menu-data__right">
@@ -288,8 +240,8 @@ export default function Nav({
                     Copyright Beyond Branding
                   </p>
                   <p ref={footerSlots[3]} className="menu-data__text">
-  ©2026
-</p>
+                      ©2026
+                  </p>
                 </div>
               </div>
             </div>

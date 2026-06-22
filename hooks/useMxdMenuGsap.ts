@@ -10,11 +10,6 @@ import {
   type MxdMenuGsapElements,
 } from "@/lib/template/mxdMenuGsap";
 
-const N_HEADER = 3;
-const N_MAIN_SPANS = 12;
-const N_CONTACT = 8;
-const N_FOOTER = 4;
-
 function compact<T>(arr: (T | null | undefined)[]): T[] {
   return arr.filter((x): x is T => x != null);
 }
@@ -37,12 +32,7 @@ function collectElements(
     footerSplitTargets,
   } = refs;
 
-  if (
-    !backdrop.current ||
-    !overlay.current ||
-    !content.current ||
-    !mediaWrapper.current
-  ) {
+  if (!backdrop.current || !overlay.current || !content.current) {
     return null;
   }
 
@@ -51,16 +41,6 @@ function collectElements(
   const contacts = compact(contactAnchors.current);
   const contactRevealEls = compact(contactRevealTargets.current);
   const footers = compact(footerSplitTargets.current);
-
-  if (
-    headerEls.length !== N_HEADER ||
-    mainSpans.length !== N_MAIN_SPANS ||
-    contacts.length !== N_CONTACT ||
-    contactRevealEls.length !== N_CONTACT ||
-    footers.length !== N_FOOTER
-  ) {
-    return null;
-  }
 
   return {
     nav,
@@ -95,21 +75,11 @@ export function useMxdMenuGsapRefs(): UseMxdMenuGsapRefs {
   const overlay = useRef<HTMLDivElement | null>(null);
   const content = useRef<HTMLDivElement | null>(null);
   const mediaWrapper = useRef<HTMLDivElement | null>(null);
-  const headerSplitTargets = useRef<(HTMLElement | null)[]>(
-    Array.from({ length: N_HEADER }, () => null),
-  );
-  const mainMenuLinkSpans = useRef<(HTMLElement | null)[]>(
-    Array.from({ length: N_MAIN_SPANS }, () => null),
-  );
-  const contactAnchors = useRef<(HTMLElement | null)[]>(
-    Array.from({ length: N_CONTACT }, () => null),
-  );
-  const contactRevealTargets = useRef<(HTMLElement | null)[]>(
-    Array.from({ length: N_CONTACT }, () => null),
-  );
-  const footerSplitTargets = useRef<(HTMLElement | null)[]>(
-    Array.from({ length: N_FOOTER }, () => null),
-  );
+  const headerSplitTargets = useRef<(HTMLElement | null)[]>([]);
+  const mainMenuLinkSpans = useRef<(HTMLElement | null)[]>([]);
+  const contactAnchors = useRef<(HTMLElement | null)[]>([]);
+  const contactRevealTargets = useRef<(HTMLElement | null)[]>([]);
+  const footerSplitTargets = useRef<(HTMLElement | null)[]>([]);
 
   return useMemo(
     () => ({
@@ -147,6 +117,7 @@ export function useMxdMenuGsap(
   hamburgerNode: HTMLElement | null,
   registerMenuReset: (fn: (() => void) | null) => void,
   refs: UseMxdMenuGsapRefs,
+  bindKey: string,
 ): void {
   const lenis = useLenis();
   const pathname = usePathname();
@@ -191,7 +162,7 @@ export function useMxdMenuGsap(
       registerMenuReset(null);
       lenis?.start();
     };
-  }, [navNode, toggleNode, hamburgerNode, lenis, registerMenuReset, refs]);
+  }, [navNode, toggleNode, hamburgerNode, lenis, registerMenuReset, refs, bindKey]);
 
   const isFirstPathRef = useRef(true);
   useEffect(() => {

@@ -213,7 +213,7 @@ export default function Hero() {
                           target="_blank"
                         >
                           <TextScramble className="mxd-scramble">
-                            Instgram
+                            Instagram
                           </TextScramble>
                         </a>
                       </CommonLoadItem>
