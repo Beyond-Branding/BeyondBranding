@@ -267,7 +267,7 @@ export default function Footer1() {
                   className="anim-uni-chars"
                   animation="animChars"
                 >
-                  IBThemes
+                  Beyond Brandingg
                 </CommonAnimatedText>
               </a>
             </div>
@@ -315,7 +315,7 @@ export default function Footer1() {
                     animation="fadeIn"
                   >
                     <p className="footer-data bright">
-                      <span>Copyright Azurio. All rights reserved</span>
+                      <span>Copyright BB. All rights reserved</span>
                     </p>
                   </CommonScrollAnimated>
                 </div>
@@ -330,13 +330,13 @@ export default function Footer1() {
                         >
                           <p className="footer-data bright">
                             <span>
-                              React Nextjs Template by&nbsp;
+                              Design & Developed by&nbsp;
                               <a
                                 href="https://themeforest.net/user/ib-themes"
                                 target="_blank"
                               >
                                 <TextScramble className="mxd-scramble">
-                                  IB Themes
+                                  BB
                                 </TextScramble>
                               </a>
                             </span>

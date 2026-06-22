@@ -10,6 +10,11 @@ import {
   type MxdMenuGsapElements,
 } from "@/lib/template/mxdMenuGsap";
 
+const N_HEADER = 3;
+const N_MAIN_SPANS = 12;
+const N_CONTACT = 8;
+const N_FOOTER = 4;
+
 function compact<T>(arr: (T | null | undefined)[]): T[] {
   return arr.filter((x): x is T => x != null);
 }

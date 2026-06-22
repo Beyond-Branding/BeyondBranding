@@ -70,7 +70,7 @@ export default function PricingCards() {
                           </div>
                           <div className="mxd-pricing-table__tag">
                             <span className="tag tag-m tag-bg accent">
-                              🦄 Special Offer
+                              Special Offer
                             </span>
                           </div>
                           <div className="mxd-pricing-table__data">
@@ -87,38 +87,14 @@ export default function PricingCards() {
                                 as="p"
                                 animation="inUp"
                               >
-                                Inspiring ideas, creative insights, and the
-                                latest in design and tech.
+                                A clean, responsive website designed to make your brand look professional,
                                 <span>
-                                  Fueling innovation for your digital journey.
+                                  easy to understand, and ready for digital growth.
                                 </span>
                               </CommonScrollAnimated>
                             </div>
                             <div className="pricing-data__info">
-                              <div className="pricing-data__price">
-                                <CommonScrollAnimated
-                                  className="pricing-data__num anim-uni-in-up"
-                                  as="div"
-                                  animation="inUp"
-                                >
-                                  <span className="pricing-data__currency">
-                                    $
-                                  </span>
-                                  <span className="pricing-data__amount">
-                                    7000
-                                  </span>
-                                  <span className="pricing-data__period">
-                                    /once
-                                  </span>
-                                </CommonScrollAnimated>
-                                <CommonScrollAnimated
-                                  className="pricing-data__caption t-small t-muted t-140 anim-uni-in-up"
-                                  as="p"
-                                  animation="inUp"
-                                >
-                                  Timeline: from 2 weeks to 1 month
-                                </CommonScrollAnimated>
-                              </div>
+                              
                               <CommonScrollAnimated
                                 className="pricing-data__btnholder anim-uni-in-up"
                                 as="div"
@@ -204,7 +180,7 @@ export default function PricingCards() {
                                   >
                                     <path d="M18,6.8h-4.5v4.5h-4.5v4.5h-4.5v-4.5h4.5v-4.5h4.5V2.3h4.5v4.5ZM0,6.7v4.5h4.5v-4.5H0Z" />
                                   </svg>
-                                  <span>SEO optimization</span>
+                                  <span>Website development</span>
                                 </CommonScrollAnimated>
                                 <CommonScrollAnimated
                                   className="anim-uni-in-up"
@@ -238,7 +214,7 @@ export default function PricingCards() {
                                   >
                                     <path d="M18,6.8h-4.5v4.5h-4.5v4.5h-4.5v-4.5h4.5v-4.5h4.5V2.3h4.5v4.5ZM0,6.7v4.5h4.5v-4.5H0Z" />
                                   </svg>
-                                  <span>Basic training</span>
+                                  <span>SEO setup</span>
                                 </CommonScrollAnimated>
                               </ul>
                             </div>
@@ -305,7 +281,7 @@ export default function PricingCards() {
                           </div>
                           <div className="mxd-pricing-table__tag">
                             <span className="tag tag-m tag-bg muted">
-                              🔥 Best choice
+                              Best choice
                             </span>
                           </div>
                           <div className="mxd-pricing-table__data">
@@ -322,38 +298,14 @@ export default function PricingCards() {
                                 as="p"
                                 animation="inUp"
                               >
-                                Ongoing creative services to{" "}
+                                Ongoing creative and digital support to keep your brand active,{" "}
                                 <span>
-                                  maintain, enhance, and grow your brand visual
-                                  identity.
+                                  consistent, and professionally presented across platforms.
                                 </span>
                               </CommonScrollAnimated>
                             </div>
                             <div className="pricing-data__info">
-                              <div className="pricing-data__price">
-                                <CommonScrollAnimated
-                                  className="pricing-data__num anim-uni-in-up"
-                                  as="div"
-                                  animation="inUp"
-                                >
-                                  <span className="pricing-data__currency">
-                                    $
-                                  </span>
-                                  <span className="pricing-data__amount">
-                                    399
-                                  </span>
-                                  <span className="pricing-data__period">
-                                    /month
-                                  </span>
-                                </CommonScrollAnimated>
-                                <CommonScrollAnimated
-                                  className="pricing-data__caption t-small t-muted t-140 anim-uni-in-up"
-                                  as="p"
-                                  animation="inUp"
-                                >
-                                  Timeline: monthly subscription
-                                </CommonScrollAnimated>
-                              </div>
+                              
                               <CommonScrollAnimated
                                 className="pricing-data__btnholder anim-uni-in-up"
                                 as="div"
@@ -405,7 +357,7 @@ export default function PricingCards() {
                                   >
                                     <path d="M18,6.8h-4.5v4.5h-4.5v4.5h-4.5v-4.5h4.5v-4.5h4.5V2.3h4.5v4.5ZM0,6.7v4.5h4.5v-4.5H0Z" />
                                   </svg>
-                                  <span>Digital and print design</span>
+                                  <span>Social media management</span>
                                 </CommonScrollAnimated>
                                 <CommonScrollAnimated
                                   className="anim-uni-in-up"
@@ -422,7 +374,7 @@ export default function PricingCards() {
                                   >
                                     <path d="M18,6.8h-4.5v4.5h-4.5v4.5h-4.5v-4.5h4.5v-4.5h4.5V2.3h4.5v4.5ZM0,6.7v4.5h4.5v-4.5H0Z" />
                                   </svg>
-                                  <span>Website updates &amp; management</span>
+                                  <span>Content strategy</span>
                                 </CommonScrollAnimated>
                                 <CommonScrollAnimated
                                   className="anim-uni-in-up"
@@ -439,7 +391,7 @@ export default function PricingCards() {
                                   >
                                     <path d="M18,6.8h-4.5v4.5h-4.5v4.5h-4.5v-4.5h4.5v-4.5h4.5V2.3h4.5v4.5ZM0,6.7v4.5h4.5v-4.5H0Z" />
                                   </svg>
-                                  <span>Social media branding</span>
+                                  <span>Video editing support</span>
                                 </CommonScrollAnimated>
                                 <CommonScrollAnimated
                                   className="anim-uni-in-up"
@@ -456,7 +408,7 @@ export default function PricingCards() {
                                   >
                                     <path d="M18,6.8h-4.5v4.5h-4.5v4.5h-4.5v-4.5h4.5v-4.5h4.5V2.3h4.5v4.5ZM0,6.7v4.5h4.5v-4.5H0Z" />
                                   </svg>
-                                  <span>Brand strategy &amp; consulting</span>
+                                  <span>Creative design support</span>
                                 </CommonScrollAnimated>
                                 <CommonScrollAnimated
                                   className="anim-uni-in-up"
@@ -473,7 +425,7 @@ export default function PricingCards() {
                                   >
                                     <path d="M18,6.8h-4.5v4.5h-4.5v4.5h-4.5v-4.5h4.5v-4.5h4.5V2.3h4.5v4.5ZM0,6.7v4.5h4.5v-4.5H0Z" />
                                   </svg>
-                                  <span>Priority creative support</span>
+                                  <span>Photography & videography direction</span>
                                 </CommonScrollAnimated>
                               </ul>
                             </div>
@@ -541,13 +493,20 @@ export default function PricingCards() {
                           <div className="mxd-pricing-table__data">
                             <div className="pricing-data__header">
                               <CommonScrollAnimated
-                                className="pricing-header__title small no-margin anim-uni-in-up"
+                                className="pricing-header__title anim-uni-in-up"
                                 as="p"
                                 animation="inUp"
                               >
-                                Customize your package
+                                Custom <span>Package</span>
+                              </CommonScrollAnimated>
+                              <CommonScrollAnimated
+                                className="pricing-header__descr t-bold anim-uni-in-up"
+                                as="p"
+                                animation="inUp"
+                              >
+                                A flexible plan built around your brand’s exact needs{" "}
                                 <span>
-                                  and get exactly what fits your vision.
+                                  whether it is social media, website, packaging, content, or complete brand presence.
                                 </span>
                               </CommonScrollAnimated>
                             </div>
@@ -603,7 +562,7 @@ export default function PricingCards() {
                                   >
                                     <path d="M18,6.8h-4.5v4.5h-4.5v4.5h-4.5v-4.5h4.5v-4.5h4.5V2.3h4.5v4.5ZM0,6.7v4.5h4.5v-4.5H0Z" />
                                   </svg>
-                                  <span>Pick the services you need</span>
+                                  <span>Choose the services you need</span>
                                 </CommonScrollAnimated>
                                 <CommonScrollAnimated
                                   className="anim-uni-in-up"
@@ -620,7 +579,7 @@ export default function PricingCards() {
                                   >
                                     <path d="M18,6.8h-4.5v4.5h-4.5v4.5h-4.5v-4.5h4.5v-4.5h4.5V2.3h4.5v4.5ZM0,6.7v4.5h4.5v-4.5H0Z" />
                                   </svg>
-                                  <span>Scalable projects</span>
+                                  <span>Social media support</span>
                                 </CommonScrollAnimated>
                                 <CommonScrollAnimated
                                   className="anim-uni-in-up"
@@ -637,7 +596,7 @@ export default function PricingCards() {
                                   >
                                     <path d="M18,6.8h-4.5v4.5h-4.5v4.5h-4.5v-4.5h4.5v-4.5h4.5V2.3h4.5v4.5ZM0,6.7v4.5h4.5v-4.5H0Z" />
                                   </svg>
-                                  <span>Flexible adjustments</span>
+                                  <span>Website design & updates</span>
                                 </CommonScrollAnimated>
                                 <CommonScrollAnimated
                                   className="anim-uni-in-up"
@@ -654,7 +613,7 @@ export default function PricingCards() {
                                   >
                                     <path d="M18,6.8h-4.5v4.5h-4.5v4.5h-4.5v-4.5h4.5v-4.5h4.5V2.3h4.5v4.5ZM0,6.7v4.5h4.5v-4.5H0Z" />
                                   </svg>
-                                  <span>Project management</span>
+                                  <span>Packaging design</span>
                                 </CommonScrollAnimated>
                                 <CommonScrollAnimated
                                   className="anim-uni-in-up"
@@ -671,7 +630,7 @@ export default function PricingCards() {
                                   >
                                     <path d="M18,6.8h-4.5v4.5h-4.5v4.5h-4.5v-4.5h4.5v-4.5h4.5V2.3h4.5v4.5ZM0,6.7v4.5h4.5v-4.5H0Z" />
                                   </svg>
-                                  <span>Ongoing support</span>
+                                  <span>Visual content creation</span>
                                 </CommonScrollAnimated>
                               </ul>
                             </div>

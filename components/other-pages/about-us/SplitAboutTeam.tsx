@@ -27,9 +27,7 @@ export default function SplitAboutTeam() {
                             className="manifest manifest-m mxd-split-lines active-cursor-permanent"
                             animation="splitLines"
                           >
-                            Our team is a blend of creative thinkers,
-                            problem-solvers and tech enthusiasts dedicated to
-                            bringing your ideas to life.
+                            Behind every project is a team that thinks beyond visuals, turning ideas into content, design, and digital experiences that help brands grow with clarity.
                             <span>
                               Together, we craft innovative solutions that
                               inspire and deliver results.
@@ -93,17 +91,9 @@ export default function SplitAboutTeam() {
                               className="t-bold t-large mxd-split-lines"
                               animation="splitLines"
                             >
-                              We thrive on collaboration, creativity, and
-                              innovation, working as a close-knit team where
-                              ideas are shared openly and challenges are solved
-                              together.
+                              We believe good creative work should feel effortless, but never random. Every idea is shaped with a clear reason, every visual has a purpose, and every detail is built to make the brand feel stronger, sharper, and easier to remember.
                               <span>
-                                With strong expertise in web development, we
-                                focus on building fast, scalable, and reliable
-                                digital products. We value clean architecture
-                                and performance, continuously refining our
-                                skills and tools to stay ahead of evolving
-                                standards.
+                                At Beyond Branding, creativity meets clarity so the final work does more than look good, it makes people notice, understand, and connect.
                               </span>
                             </CommonAnimatedText>
                           </div>
@@ -117,16 +107,7 @@ export default function SplitAboutTeam() {
                                     animation="inUp"
                                   >
                                     <TextScramble className="mxd-scramble">
-                                      Innovations
-                                    </TextScramble>
-                                  </CommonScrollAnimated>
-                                  <CommonScrollAnimated
-                                    className="tag meta-tag tag-m anim-uni-in-up"
-                                    as="span"
-                                    animation="inUp"
-                                  >
-                                    <TextScramble className="mxd-scramble">
-                                      Excellence
+                                      STRATEGY
                                     </TextScramble>
                                   </CommonScrollAnimated>
                                   <CommonScrollAnimated
@@ -138,6 +119,15 @@ export default function SplitAboutTeam() {
                                       Creativity
                                     </TextScramble>
                                   </CommonScrollAnimated>
+                                  <CommonScrollAnimated
+                                    className="tag meta-tag tag-m anim-uni-in-up"
+                                    as="span"
+                                    animation="inUp"
+                                  >
+                                    <TextScramble className="mxd-scramble">
+                                      CLARITY
+                                    </TextScramble>
+                                  </CommonScrollAnimated>
                                 </div>
                                 <div className="col-6 col-md-6 col-xl-4">
                                   <CommonScrollAnimated
@@ -146,7 +136,7 @@ export default function SplitAboutTeam() {
                                     animation="inUp"
                                   >
                                     <TextScramble className="mxd-scramble">
-                                      Experience
+                                      DETAIL
                                     </TextScramble>
                                   </CommonScrollAnimated>
                                   <CommonScrollAnimated
@@ -155,7 +145,7 @@ export default function SplitAboutTeam() {
                                     animation="inUp"
                                   >
                                     <TextScramble className="mxd-scramble">
-                                      Competence
+                                      CONSISTENCY
                                     </TextScramble>
                                   </CommonScrollAnimated>
                                   <CommonScrollAnimated
@@ -164,7 +154,7 @@ export default function SplitAboutTeam() {
                                     animation="inUp"
                                   >
                                     <TextScramble className="mxd-scramble">
-                                      Passion
+                                      Growth
                                     </TextScramble>
                                   </CommonScrollAnimated>
                                 </div>

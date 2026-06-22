@@ -52,7 +52,13 @@ export default function Nav({
     { href: "/contact", number: "/ 06", label: "Contact Us" },
   ];
 
-  useMxdMenuGsap(navNode, toggleNode, hamburgerNode, registerMenuReset, g);
+  useMxdMenuGsap(
+  navNode,
+  toggleNode,
+  hamburgerNode,
+  registerMenuReset,
+  g,
+);
 
   return (
     <nav className="mxd-menu mxd-menu--gsap" ref={setNavNode}>

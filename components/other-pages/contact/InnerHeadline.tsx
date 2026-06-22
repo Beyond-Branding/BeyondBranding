@@ -62,13 +62,9 @@ export default function InnerHeadline() {
                                     className="t-bold t-large loading-split"
                                     animation="splitLinesLoad"
                                   >
-                                    Have questions? We&apos;ve got the answers!
-                                    Here, you&apos;ll find clear and concise
-                                    information{" "}
+                                    Have an idea, a brand, or a project that needs the right creative direction? {" "}
                                     <span>
-                                      about our services, process, and what to
-                                      expect when working with us. If you need
-                                      more details, feel free to reach out!
+                                      Tell us what you are building, and Beyond Branding will help shape it into something clear, professional, and worth remembering.
                                     </span>
                                   </CommonAnimatedText>
                                 </div>
@@ -91,15 +87,15 @@ export default function InnerHeadline() {
                   <a
                     className="fullwidth-text__content small accent active-cursor"
                     data-cursor-text="Let's chat"
-                    href="mailto:hello@azurio.com?subject=Message%20from%20your%20site"
-                    aria-label="Send email to hello@azurio.com"
+                    href="mailto:beyondbrandingg@gmail.com?subject=Message%20from%20your%20site"
+                    aria-label="Send email to beyondbrandingg@gmail.com"
                   >
                     <CommonAnimatedText
                       as="span"
                       className="anim-uni-chars"
                       animation="animChars"
                     >
-                      hello@azurio.com
+                      beyondbrandingg@gmail.com
                     </CommonAnimatedText>
                   </a>
                 </div>

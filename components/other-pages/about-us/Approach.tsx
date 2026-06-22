@@ -29,13 +29,9 @@ export default function Approach() {
                           className="manifest manifest-s mxd-split-lines"
                           animation="splitLines"
                         >
-                          From pixel-perfect designs to flawless code, every
-                          aspect of our projects is crafted with care to ensure
-                          the highest standards of quality.
+                          Every project is created with one clear goal  to make your brand look sharper, communicate better, and connect with the right audience. 
                           <span>
-                            We stay ahead of design trends, offering modern and
-                            visually impactful solutions that set your brand
-                            apart.
+                            From social media and packaging to websites, campaigns, and visual content, Beyond Branding builds work that feels professional, memorable, and made for growth.
                           </span>
                         </CommonAnimatedText>
                       </div>

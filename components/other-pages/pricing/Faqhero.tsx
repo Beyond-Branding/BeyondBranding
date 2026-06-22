@@ -18,39 +18,54 @@ type FAQItem = {
 
 const FAQ_ITEMS: FAQItem[] = [
   {
-    question: "What services do you offer?",
+    question: "What services does Beyond Branding offer?",
     answer:
-      "We provide a comprehensive range of digital solutions, including website design and development, branding, digital marketing, e-commerce solutions, SEO, content creation, and ongoing support. Whether you need a new website, a brand refresh, or a digital marketing strategy, our team is equipped to help your business grow online.",
+      "Beyond Branding offers social media management, content strategy, branding, graphic design, packaging design, website design and development, photography, videography, video editing, and digital brand support.",
   },
   {
-    question: "How long does a project take?",
+    question: "Do you manage social media completely?",
     answer:
-      "Timelines vary based on project complexity. A simple website may take a few weeks, while a full-scale brand identity or custom development project could take a few months. We provide clear deadlines and keep you updated at every stage.",
+      "Yes. Social media management includes content planning, creative direction, post designs, captions, content calendars, posting support, and maintaining a consistent brand presence.",
   },
   {
-    question: "Do you work with businesses of all sizes?",
+    question: "Do you create content ideas for the brand?",
     answer:
-      "Yes! We collaborate with startups, small businesses, and large enterprises across various industries. No matter your company's size or stage, we tailor our services to meet your specific needs and goals.",
+      "Yes. Content ideas, reel concepts, captions, story ideas, monthly themes, and brand communication are planned based on your business, audience, and goals.",
   },
   {
-    question: "Can you redesign my existing website?",
+    question: "Do you provide photography, videography, and video editing?",
     answer:
-      "Absolutely. We specialize in website redesigns to improve user experience, modernize your brand, and optimize performance. We'll work with you to understand your vision and business objectives, then transform your current site into a powerful digital asset.",
+      "Yes. Shoots and edits can be planned for products, services, spaces, reels, website visuals, and social media content depending on your brand requirement.",
   },
   {
-    question: "Can you help improve my website's search engine ranking?",
+    question: "Do you design and develop websites?",
     answer:
-      "Our SEO experts use proven strategies including keyword research, on-page optimization, link building, and content creation to boost your website's visibility and ranking on search engines like Google.",
+      "Yes. Clean, responsive, and user-friendly websites are designed and developed to make your brand look professional, trustworthy, and easy to explore.",
   },
   {
-    question: "Do you provide ongoing support and maintenance?",
+    question: "Can you redesign an existing website?",
     answer:
-      "Yes! We offer ongoing website maintenance, performance monitoring, and digital marketing support to ensure your online presence remains effective and up-to-date. Our support packages can be tailored to your needs.",
+      "Yes. Existing websites can be redesigned to improve the layout, content flow, visual style, user experience, and overall brand presentation.",
   },
   {
-    question: "How do we get started?",
+    question: "Do you create packaging designs?",
     answer:
-      "Getting started is easy! Simply contact us through our website or give us a call. We'll schedule a discovery call to discuss your goals, challenges, and project requirements. From there, we'll provide a proposal outlining our recommended approach, timeline, and next steps.",
+      "Yes. Packaging designs are created for labels, boxes, pouches, and other formats with a focus on brand identity, clarity, and shelf appeal.",
+  },
+  {
+    question: "Can we choose only the services we need?",
+    answer:
+      "Yes. Services can be selected individually or combined into a custom package based on your brand’s current goals, budget, and requirements.",
+  },
+  {
+    question: "How does the process work?",
+    answer:
+      "The process starts with understanding your brand, goals, audience, and requirements. After that, the direction is planned, the work is created, feedback is taken, and final deliverables are shared.",
+  },
+  {
+    question: "How is pricing decided?",
+    answer:
+      "Pricing depends on the services required, project scope, number of deliverables, timeline, and level of support needed. A custom quotation is shared after understanding the requirement.",
   },
 ];
 
@@ -185,13 +200,11 @@ export default function InnerHeadline() {
                                   className="t-bold t-large loading-split"
                                   animation="splitLinesLoad"
                                 >
-                                  Have questions? We&apos;ve got the answers!
+                                  Have questions before we begin? We&apos;ve got the answers!
                                   Here, you&apos;ll find clear and concise
                                   information{" "}
                                   <span>
-                                    about our services, process, and what to
-                                    expect when working with us. If you need
-                                    more details, feel free to reach out!
+                                    Everything you need to know about our services, process, timelines, and how Beyond Branding helps bring your brand ideas to life.
                                   </span>
                                 </CommonAnimatedText>
                               </div>
