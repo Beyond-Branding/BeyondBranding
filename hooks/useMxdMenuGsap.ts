@@ -117,7 +117,6 @@ export function useMxdMenuGsap(
   hamburgerNode: HTMLElement | null,
   registerMenuReset: (fn: (() => void) | null) => void,
   refs: UseMxdMenuGsapRefs,
-  bindKey: string,
 ): void {
   const lenis = useLenis();
   const pathname = usePathname();
@@ -162,7 +161,7 @@ export function useMxdMenuGsap(
       registerMenuReset(null);
       lenis?.start();
     };
-  }, [navNode, toggleNode, hamburgerNode, lenis, registerMenuReset, refs, bindKey]);
+  }, [navNode, toggleNode, hamburgerNode, lenis, registerMenuReset, refs]);
 
   const isFirstPathRef = useRef(true);
   useEffect(() => {
