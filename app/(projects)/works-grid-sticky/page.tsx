@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import InnerHeadline from "@/components/projects/works-grid-sticky/InnerHeadline";
+import ProjectExpandableGallery from "@/components/projects/works-grid-sticky/ProjectExpandableGallery";
 import ProjectsGridStickyShowcase from "@/components/projects/works-grid-sticky/ProjectsGridStickyShowcase";
 import ParallaxDividerVideo from "@/components/projects/works-grid-sticky/ParallaxDividerVideo";
 import ProjectsList from "@/components/projects/works-grid-sticky/ProjectsList";
@@ -16,9 +17,7 @@ export default function WorksGridStickyPage() {
     <>
       <div className="mxd-page-content inner-page-content">
         <InnerHeadline /> 
-        <ProjectsGridStickyShowcase />
-        <ParallaxDividerVideo />
-        <ProjectsList />
+        <ProjectExpandableGallery />
         <CTA />
         <Footer1 />
       </div>
