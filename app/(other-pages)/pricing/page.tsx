@@ -22,7 +22,6 @@ export default function PricingPage() {
         <Partners />
         <ParallaxDividerVideo />
         <FaqHero />
-        <CTAWithMarquee />
         <CTA />
         <Footer1 />
       </div>

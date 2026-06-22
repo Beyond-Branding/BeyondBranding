@@ -99,8 +99,8 @@ export default function InnerHeadline() {
                                         className="medium permanent loading-split"
                                         animation="splitLinesLoad"
                                       >
-                                        New standards in{" "}
-                                        <span>digital excellence</span>
+                                        Solutions That{" "}
+                                        <span>Shape Brands</span>
                                       </CommonAnimatedText>
                                     </div>
                                   </div>

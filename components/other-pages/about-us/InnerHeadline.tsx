@@ -95,21 +95,21 @@ export default function InnerHeadline() {
                           className="inner-headline__title banners-hover centered loading-item"
                         >
                           <h1 className="small">
-                            Creating engaging{" "}
+                            Shaping Brands{" "}
                             <Link
                               ref={trigger1Ref}
                               className="inner-headline__trigger banners-trigger-1"
                               href={`/works-default`}
                             >
-                              user experiences
+                              For The Way
                             </Link>{" "}
-                            and{" "}
+                            People See{" "}
                             <Link
                               ref={trigger2Ref}
                               className="inner-headline__trigger banners-trigger-2"
                               href={`/works-default`}
                             >
-                              design solutions
+                              , Scroll & Remember
                             </Link>
                           </h1>
                         </div>
@@ -220,7 +220,7 @@ export default function InnerHeadline() {
                                 target="_blank"
                               >
                               <TextScramble className="mxd-scramble">
-                              Instgram
+                              Instagram
                               </TextScramble>
                               </a>
                             </li>

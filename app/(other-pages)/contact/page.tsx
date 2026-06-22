@@ -19,7 +19,6 @@ export default function ContactPage() {
         <Socials />
         <ParallaxDividerImage />
         <SectionTitle />
-        <CTAWithMarquee />
         <CTA />
         <Footer1 />
       </div>

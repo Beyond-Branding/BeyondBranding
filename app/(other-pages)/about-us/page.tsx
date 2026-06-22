@@ -25,7 +25,6 @@ export default function AboutUsPage() {
         <SplitAboutTeam />
         <TeamList />
         <ParallaxDividerImage2 />
-        <BlogPreview />
         <CTA />
       </>
       <Footer1 />

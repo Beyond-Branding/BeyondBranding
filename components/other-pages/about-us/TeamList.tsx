@@ -35,8 +35,8 @@ export default function TeamList() {
                           className="t-bold t-large mxd-split-lines"
                           animation="splitLines"
                         >
-                          Creatives and strategists united by a passion{" "}
-                          <span>for crafting impactful digital solutions.</span>
+                          A team of creative thinkers, planners, designers, and developers working together to{" "}
+                          <span>shape ideas into brands, content, and digital experiences that feel clear, fresh, and purposeful.</span>
                         </CommonAnimatedText>
                       </div>
                     </div>

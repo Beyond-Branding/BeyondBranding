@@ -18,8 +18,6 @@ export default function ServicesPage() {
         <InnerHeadline />
         <ServicesDescriptionStack />
         <ParallaxDividerImage />
-        <BlogPreview />
-        <CTAWithMarquee />
         <CTA />
       </>
       <Footer1 />
