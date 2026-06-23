@@ -374,7 +374,7 @@
 
 .mxd-expandable-card-bleed__title {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 6rem; /* Increased size to match Colgate example */
+  font-size: 4.8rem; /* Made 1 size smaller to prevent overflow */
   font-weight: 400;
   line-height: 1.05;
   letter-spacing: -0.02em;
@@ -390,14 +390,14 @@
 
 @media only screen and (max-width: 991px) {
   .mxd-expandable-card-bleed__title {
-    font-size: 4rem;
+    font-size: 3.6rem;
     gap: 12px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .mxd-expandable-card-bleed__title {
-    font-size: 3rem;
+    font-size: 2.6rem;
     gap: 8px;
   }
 }
@@ -700,8 +700,48 @@
 }
 
 @media only screen and (max-width: 1199px) {
+  .mxd-fullscreen-drawer-overlay {
+    overflow-y: auto !important;
+  }
+  .mxd-fullscreen-drawer-content {
+    height: auto !important;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 40px;
+  }
+  .mxd-fullscreen-gallery-grid-wrapper {
+    flex: none !important;
+    overflow: visible !important;
+    max-height: none !important;
+    height: auto !important;
+    padding: 0 24px;
+  }
   .mxd-fullscreen-gallery-grid {
-    height: 68vh;
+    height: auto !important;
+    display: flex;
+    flex-direction: row; /* 2 columns on tablet */
+    gap: 16px;
+  }
+  .mxd-fullscreen-gallery-column {
+    height: auto !important;
+    gap: 16px;
+  }
+  .mxd-fullscreen-gallery-item {
+    flex: none !important;
+    height: 380px; /* Tablet height */
+  }
+  .mxd-fullscreen-drawer-meta {
+    margin-top: 40px !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: transparent !important;
+    padding: 32px 24px 0 24px !important;
+  }
+  .mxd-meta-right {
+    max-height: none !important;
+    overflow-y: visible !important;
+    padding-right: 0 !important;
   }
 }
 
@@ -709,14 +749,10 @@
   .mxd-fullscreen-drawer-meta {
     flex-direction: column;
     gap: 15px;
-    padding: 20px 20px 24px 20px;
   }
   .mxd-meta-left,
   .mxd-meta-right {
     flex: 1 1 100%;
-  }
-  .mxd-meta-right {
-    max-height: 120px;
   }
   .mxd-meta-title {
     font-size: 3rem;
@@ -728,21 +764,20 @@
 
 @media only screen and (max-width: 767px) {
   .mxd-fullscreen-gallery-grid-wrapper {
-    overflow-y: auto;
     padding: 0 20px;
   }
   .mxd-fullscreen-gallery-grid {
-    height: auto;
-    flex-direction: column;
+    flex-direction: column; /* 1 column on mobile */
     gap: 12px;
   }
   .mxd-fullscreen-gallery-column {
-    height: auto;
     gap: 12px;
   }
   .mxd-fullscreen-gallery-item {
-    flex: none !important;
-    height: 250px;
+    height: 250px; /* Mobile height */
+  }
+  .mxd-fullscreen-drawer-meta {
+    padding: 24px 20px 0 20px !important;
   }
 }
 
@@ -762,6 +797,36 @@
     cursor: default !important;
   }
 }
+
+/* Footer Custom Styles & Responsiveness */
+.mxd-demo-footer {
+  padding-top: 8rem !important; /* Upper padding to make it readable */
+}
+
+.mxd-footer-promo__icon {
+  border-radius: 50% !important;
+  object-fit: cover !important;
+}
+
+.fw-mark__content {
+  display: block !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+}
+
+.fw-mark__content,
+.fw-mark__content span {
+  font-size: clamp(4rem, 10vw, 18rem) !important;
+}
+
+.mxd-footer-promo__link span {
+  display: block !important;
+  font-weight: 400 !important;
+  opacity: 0.65 !important;
+  margin-top: 4px !important;
+  font-size: 0.9em !important;
+}
+
 /* ------------------------------------------------*/
 /* Project Expandable Gallery Styles End */
 /* ------------------------------------------------*/
