@@ -1,17 +1,4 @@
 import type { MenuLinkItem } from "@/types/menu";
-import { homeLinks, insightLinks, worksLinks } from "@/data/menu";
-
-/** Inner routes shown under “/ Inner pages” (subset of site; excludes landing home `/`). */
-export const footer1InnerPageLinks: MenuLinkItem[] = [
-  { href: "/about-me", label: "About me" },
-  { href: "/about-us", label: "About us" },
-  { href: "/services", label: "Services" },
-  { href: "/team", label: "Our team" },
-  { href: "/pricing", label: "Pricing" },
-  { href: "/faq", label: "FAQ page" },
-  { href: "/404", label: "404 error page" },
-  { href: "/contact", label: "Contact" },
-];
 
 export type Footer1NavBlock = {
   title: string;
@@ -26,18 +13,50 @@ export type Footer1NavColumn = {
 export const footer1NavColumns: Footer1NavColumn[] = [
   {
     className: "col-12 col-md-4 mxd-grid-item",
-    blocks: [{ title: "/ Start pages", links: homeLinks }],
-  },
-  {
-    className: "col-12 col-md-4 mxd-grid-item",
     blocks: [
-      { title: "/ Portfolio", links: worksLinks },
-      { title: "/ Insights pages", links: insightLinks },
+      {
+        title: "/ Services",
+        links: [
+          { href: "/services", label: "Branding & Identity" },
+          { href: "/services", label: "Graphic & Creative Design" },
+          { href: "/services", label: "Packaging Design" },
+          { href: "/services", label: "Website Design & Development" },
+          { href: "/services", label: "Social Media Marketing" },
+          { href: "/services", label: "SEO & Content Marketing" },
+        ],
+      },
     ],
   },
   {
     className: "col-12 col-md-4 mxd-grid-item",
-    blocks: [{ title: "/ Inner pages", links: footer1InnerPageLinks }],
+    blocks: [
+      {
+        title: "/ Services",
+        links: [
+          { href: "/services", label: "Video Production & Editing" },
+          { href: "/services", label: "Photography & Videography" },
+          { href: "/services", label: "UI/UX Design" },
+          { href: "/services", label: "Print & Marketing Collateral" },
+          { href: "/services", label: "Marketing Strategy & Consulting" },
+        ],
+      },
+    ],
+  },
+  {
+    className: "col-12 col-md-4 mxd-grid-item",
+    blocks: [
+      {
+        title: "/ Inner pages",
+        links: [
+          { href: "/index-digital-agency", label: "Home" },
+          { href: "/about-us", label: "About Us" },
+          { href: "/services", label: "Services" },
+          { href: "/works-grid-sticky", label: "Works" },
+          { href: "/pricing", label: "Pricing" },
+          { href: "/contact", label: "Contact Us" },
+        ],
+      },
+    ],
   },
 ];
 
@@ -47,39 +66,37 @@ export type Footer1PromoItem = {
   iconAlt: string;
   iconWidth: number;
   iconHeight: number;
-  /** Text before the highlighted span */
   textLead: string;
-  /** Second line inside `<span>` */
   textSpan: string;
 };
 
 export const footer1PromoItems: Footer1PromoItem[] = [
   {
-    href: "https://themeforest.net/item/rayo-digital-agency-personal-portfolio-nextjs-template/60468451",
-    iconSrc: "/img/demo/logo-rayo.svg",
-    iconAlt: "Rayo React Nextjs Template Logo",
+    href: "https://www.instagram.com/mosudesignstudio/",
+    iconSrc: "/img/works/Moosu design studio logo.jpg",
+    iconAlt: "Moosu design studio Logo",
     iconWidth: 56,
     iconHeight: 56,
-    textLead: "Rayo digital agency & personal portfolio ",
-    textSpan: "React Nextjs Template",
+    textLead: "Moosu design studio\n",
+    textSpan: "Bespoke brand identity & digital experience design",
   },
   {
-    href: "https://themeforest.net/item/blayden-personal-portfolio-resume-nextjs-template/59673134",
-    iconSrc: "/img/demo/logo-blayden.svg",
-    iconAlt: "Blayden React Nextjs Template Logo",
+    href: "https://www.instagram.com/eurodecor.india/",
+    iconSrc: "/img/works/EURO DECOR LOGO.jpeg",
+    iconAlt: "EURO DECOR Logo",
     iconWidth: 56,
     iconHeight: 56,
-    textLead: "Blayden personal portfolio & resume ",
-    textSpan: "React Nextjs Template",
+    textLead: "EURO DECOR\n",
+    textSpan: "Premium interior finishing & visual identity",
   },
   {
-    href: "https://themeforest.net/item/braxton-personal-portfolio-resume-nextjs-template/59550577",
-    iconSrc: "/img/demo/logo-braxton.svg",
-    iconAlt: "Braxton React Nextjs Template Logo",
+    href: "https://www.instagram.com/comforthavenbymk/",
+    iconSrc: "/img/works/COMFORTHAVEN BY MK Logo.jpg",
+    iconAlt: "COMFORTHAVEN BY MK Logo",
     iconWidth: 56,
     iconHeight: 56,
-    textLead: "Braxton personal portfolio & resume ",
-    textSpan: "React Nextjs Template",
+    textLead: "COMFORTHAVEN BY MK\n",
+    textSpan: "Immersive home decor & e-commerce brand strategy",
   },
 ];
 

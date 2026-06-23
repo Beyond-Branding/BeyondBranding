@@ -8,9 +8,9 @@ import CommonLoadAnimation, {
   CommonLoadFade,
 } from "@/components/animations/CommonLoadAnimation";
 import AutoplayLoopVideo from "@/components/media/AutoplayLoopVideo";
-import { expandableProjectsData } from "@/data/expandableProjects";
+import { expandableProjectsData, type MediaItem } from '@/data/expandableProjects';
 
-const getAspectRatioHeightWidth = (media: any) => {
+const getAspectRatioHeightWidth = (media: MediaItem) => {
   if (media.type === "video") {
     return 9 / 16; // 16:9 landscape video height/width ratio
   }
