@@ -42,7 +42,7 @@ export default function Hero() {
               >
                 <Image
                   alt="Azurio Template Sample Image"
-                  src="/img/hero/hero-03_1.webp"
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782299351/final_4_epwybb.jpg"
                   width={1280}
                   height={800}
                 />
@@ -50,7 +50,7 @@ export default function Hero() {
               <CommonHero3DImage index={1} className="hero-02__img">
                 <Image
                   alt="Azurio Template Sample Image"
-                  src="/img/hero/hero-03_2.webp"
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782299298/FINAL_5_tmzjxs.jpg"
                   width={1280}
                   height={800}
                 />
@@ -58,7 +58,7 @@ export default function Hero() {
               <CommonHero3DImage index={2} className="hero-02__img">
                 <Image
                   alt="Azurio Template Sample Image"
-                  src="/img/hero/hero-03_3.webp"
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782299398/FINAL_7_vk3tto.jpg"
                   width={1280}
                   height={800}
                 />
@@ -66,7 +66,7 @@ export default function Hero() {
               <CommonHero3DImage index={3} className="hero-02__img">
                 <Image
                   alt="Azurio Template Sample Image"
-                  src="/img/hero/hero-03_4.webp"
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782299249/FINAL_v8_mxqqlf.jpg"
                   width={1280}
                   height={800}
                 />
@@ -74,7 +74,7 @@ export default function Hero() {
               <CommonHero3DImage index={4} className="hero-02__img">
                 <Image
                   alt="Azurio Template Sample Image"
-                  src="/img/hero/hero-03_5.webp"
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782306912/15771750ee3e02ecbb7f366a4dc7e02f_wtckkg.jpg"
                   width={1280}
                   height={800}
                 />
@@ -82,7 +82,7 @@ export default function Hero() {
               <CommonHero3DImage index={5} className="hero-02__img">
                 <Image
                   alt="Azurio Template Sample Image"
-                  src="/img/hero/hero-03_6.webp"
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782222256/Vadilal_Quick_Treat_ti5tki.jpg"
                   width={1280}
                   height={800}
                 />
@@ -90,7 +90,7 @@ export default function Hero() {
               <CommonHero3DImage index={6} className="hero-02__img">
                 <Image
                   alt="Azurio Template Sample Image"
-                  src="/img/hero/hero-03_7.webp"
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782222256/Travel_ijb03r.jpg"
                   width={1280}
                   height={800}
                 />
@@ -98,7 +98,7 @@ export default function Hero() {
               <CommonHero3DImage index={7} className="hero-02__img">
                 <Image
                   alt="Azurio Template Sample Image"
-                  src="/img/hero/hero-03_8.webp"
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782222256/Art_of_Making_Tea__A_Vibrant_Street_Scene_Street_Photography_Instagram_ce83ty.jpg"
                   width={1280}
                   height={800}
                 />
@@ -106,7 +106,7 @@ export default function Hero() {
               <CommonHero3DImage index={8} className="hero-02__img">
                 <Image
                   alt="Azurio Template Sample Image"
-                  src="/img/hero/hero-03_9.webp"
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782300895/home7_rdnlbl.jpg"
                   width={1280}
                   height={800}
                 />
@@ -114,15 +114,15 @@ export default function Hero() {
               <CommonHero3DImage index={9} className="hero-02__img">
                 <Image
                   alt="Azurio Template Sample Image"
-                  src="/img/hero/hero-03_10.webp"
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782301570/fec12b204e8734aead51c74543950f66_ve4yua.jpg"
                   width={1280}
-                  height={800}
+                  height={1000}
                 />
               </CommonHero3DImage>
               <CommonHero3DImage index={10} className="hero-02__img">
                 <Image
                   alt="Azurio Template Sample Image"
-                  src="/img/hero/hero-03_11.webp"
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782302203/53a8511697fc59af49da68eb3a07da56_cneg1j.jpg"
                   width={1280}
                   height={800}
                 />
@@ -130,7 +130,7 @@ export default function Hero() {
               <CommonHero3DImage index={11} className="hero-02__img">
                 <Image
                   alt="Azurio Template Sample Image"
-                  src="/img/hero/hero-03_12.webp"
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782301119/download_1_ep7wko.jpg"
                   width={1280}
                   height={800}
                 />
@@ -138,7 +138,7 @@ export default function Hero() {
               <CommonHero3DImage index={12} className="hero-02__img">
                 <Image
                   alt="Azurio Template Sample Image"
-                  src="/img/hero/hero-03_13.webp"
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782302203/b3db83f72ef2432c49f2ddef22c2311d_ghrjlx.jpg"
                   width={1280}
                   height={800}
                 />
@@ -146,7 +146,7 @@ export default function Hero() {
               <CommonHero3DImage index={13} className="hero-02__img">
                 <Image
                   alt="Azurio Template Sample Image"
-                  src="/img/hero/hero-03_14.webp"
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782302203/7853ad3494426f63493fb6be256775f1_hfpmz1.jpg"
                   width={1280}
                   height={800}
                 />
@@ -154,7 +154,7 @@ export default function Hero() {
               <CommonHero3DImage index={14} className="hero-02__img">
                 <Image
                   alt="Azurio Template Sample Image"
-                  src="/img/hero/hero-03_15.webp"
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782302640/b8b4bbdb086824d7da474c337e4c6ff5_epqy4h.jpg"
                   width={1280}
                   height={800}
                 />
@@ -162,7 +162,7 @@ export default function Hero() {
               <CommonHero3DImage index={15} className="hero-02__img">
                 <Image
                   alt="Azurio Template Sample Image"
-                  src="/img/hero/hero-03_16.webp"
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782302807/1b398d3f6c18cf39d381820de2c48fb8_sdyhwp.jpg"
                   width={1280}
                   height={800}
                 />
@@ -170,7 +170,7 @@ export default function Hero() {
               <CommonHero3DImage index={16} className="hero-02__img">
                 <Image
                   alt="Azurio Template Sample Image"
-                  src="/img/hero/hero-03_17.webp"
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782304741/62330ad9a4147b2fc12774912afbf4cc_agooid.jpg"
                   width={1280}
                   height={800}
                 />
@@ -178,7 +178,7 @@ export default function Hero() {
               <CommonHero3DImage index={17} className="hero-02__img">
                 <Image
                   alt="Azurio Template Sample Image"
-                  src="/img/hero/hero-03_18.webp"
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782305413/43d319ae28d359ee55c029ef1a57666a_vsj76e.jpg"
                   width={1280}
                   height={800}
                 />
@@ -186,7 +186,7 @@ export default function Hero() {
               <CommonHero3DImage index={18} className="hero-02__img">
                 <Image
                   alt="Azurio Template Sample Image"
-                  src="/img/hero/hero-03_19.webp"
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782305048/da8d6ac6658539493c003b741e05d257_il1vmw.jpg"
                   width={1280}
                   height={800}
                 />
@@ -194,7 +194,7 @@ export default function Hero() {
               <CommonHero3DImage index={19} className="hero-02__img">
                 <Image
                   alt="Azurio Template Sample Image"
-                  src="/img/hero/hero-03_20.webp"
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782305234/064fb018f4fd244ca39c35d4a1179722_qe25i8.jpg"
                   width={1280}
                   height={800}
                 />
@@ -261,7 +261,7 @@ export default function Hero() {
             <CommonHero3DCover className="mxd-hero-02__cover-img">
               <Image
                 alt="Azurio Template Sample Image"
-                src="https://res.cloudinary.com/dgm9owkl5/image/upload/v1781270826/Imagecover_g6jv9c.png"
+                src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782305860/hero-03_cover_kwl4x1.webp"
                 width={1920}
                 height={1200}
                 priority
