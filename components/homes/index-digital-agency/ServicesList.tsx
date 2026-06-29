@@ -59,7 +59,7 @@ export default function ServicesList() {
                 {/* services item */}
                 <Link
                   className="mxd-services-list__item active-cursor-image-tr"
-                  data-cursor-image="/img/services/500x500_s01.webp"
+                  data-cursor-image="https://res.cloudinary.com/daoju0r3c/image/upload/v1782715491/image_33_sujwqw.png"
                   href={`/services`}
                 >
                   <div className="mxd-services-list__divider top" />
@@ -89,7 +89,7 @@ export default function ServicesList() {
                 {/* services item */}
                 <Link
                   className="mxd-services-list__item active-cursor-image-tr"
-                  data-cursor-image="/img/services/500x500_s02.webp"
+                  data-cursor-image="https://res.cloudinary.com/daoju0r3c/image/upload/v1782717383/image_34_sexlcu.png"
                   href={`/services`}
                 >
                   <div className="mxd-services-list__divider top" />
@@ -119,7 +119,7 @@ export default function ServicesList() {
                 {/* services item */}
                 <Link
                   className="mxd-services-list__item active-cursor-image-tr"
-                  data-cursor-image="/img/services/500x500_s03.webp"
+                  data-cursor-image="https://res.cloudinary.com/daoju0r3c/image/upload/v1782717928/image_35_zrdmr1.png"
                   href={`/services`}
                 >
                   <div className="mxd-services-list__divider top" />
@@ -149,7 +149,7 @@ export default function ServicesList() {
                 {/* services item */}
                 <Link
                   className="mxd-services-list__item active-cursor-image-tr"
-                  data-cursor-image="/img/services/500x500_s04.webp"
+                  data-cursor-image="https://res.cloudinary.com/daoju0r3c/image/upload/v1782718710/image_36_eiavqf.png"
                   href={`/services`}
                 >
                   <div className="mxd-services-list__divider top" />
@@ -179,7 +179,7 @@ export default function ServicesList() {
                 {/* services item */}
                 <Link
                   className="mxd-services-list__item active-cursor-image-tr"
-                  data-cursor-image="/img/services/500x500_s05.webp"
+                  data-cursor-image="https://res.cloudinary.com/daoju0r3c/image/upload/v1782720624/image_37_knkpzl.png"
                   href={`/services`}
                 >
                   <div className="mxd-services-list__divider top" />
@@ -208,7 +208,7 @@ export default function ServicesList() {
                 </Link>
                 <Link
                   className="mxd-services-list__item active-cursor-image-tr"
-                  data-cursor-image="/img/services/500x500_s05.webp"
+                  data-cursor-image="https://res.cloudinary.com/daoju0r3c/image/upload/v1782729352/image_44_ovepnj.png"
                   href={`/services`}
                 >
                   <div className="mxd-services-list__divider top" />
@@ -237,7 +237,7 @@ export default function ServicesList() {
                 </Link>
                 <Link
                   className="mxd-services-list__item active-cursor-image-tr"
-                  data-cursor-image="/img/services/500x500_s05.webp"
+                  data-cursor-image="https://res.cloudinary.com/daoju0r3c/image/upload/v1782727102/image_40_ozqj8q.png"
                   href={`/services`}
                 >
                   <div className="mxd-services-list__divider top" />
@@ -266,7 +266,7 @@ export default function ServicesList() {
                 </Link>
                 <Link
                   className="mxd-services-list__item active-cursor-image-tr"
-                  data-cursor-image="/img/services/500x500_s05.webp"
+                  data-cursor-image="https://res.cloudinary.com/daoju0r3c/image/upload/v1782722324/image_38_auaobf.png"
                   href={`/services`}
                 >
                   <div className="mxd-services-list__divider top" />
@@ -295,7 +295,7 @@ export default function ServicesList() {
                 </Link>
                 <Link
                   className="mxd-services-list__item active-cursor-image-tr"
-                  data-cursor-image="/img/services/500x500_s05.webp"
+                  data-cursor-image="https://res.cloudinary.com/daoju0r3c/image/upload/v1782727458/image_41_rhckr7.png"
                   href={`/services`}
                 >
                   <div className="mxd-services-list__divider top" />
@@ -324,7 +324,7 @@ export default function ServicesList() {
                 </Link>
                 <Link
                   className="mxd-services-list__item active-cursor-image-tr"
-                  data-cursor-image="/img/services/500x500_s05.webp"
+                  data-cursor-image="https://res.cloudinary.com/daoju0r3c/image/upload/v1782727991/image_42_zeulvd.png"
                   href={`/services`}
                 >
                   <div className="mxd-services-list__divider top" />
@@ -353,7 +353,7 @@ export default function ServicesList() {
                 </Link>
                 <Link
                   className="mxd-services-list__item active-cursor-image-tr"
-                  data-cursor-image="/img/services/500x500_s05.webp"
+                  data-cursor-image="https://res.cloudinary.com/daoju0r3c/image/upload/v1782728250/image_43_bwphc3.png"
                   href={`/services`}
                 >
                   <div className="mxd-services-list__divider top" />

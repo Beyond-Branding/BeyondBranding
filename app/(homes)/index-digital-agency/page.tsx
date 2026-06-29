@@ -7,7 +7,7 @@ import ParallaxDividerVideo from "@/components/homes/index-digital-agency/Parall
 import TestimonialsSticky from "@/components/homes/index-digital-agency/TestimonialsSticky";
 import ParallaxDividerImage from "@/components/homes/index-digital-agency/ParallaxDividerImage";
 import Partners from "@/components/homes/index-digital-agency/Partners";
-import MarqueeDivider from "@/components/homes/index-digital-agency/MarqueeDivider";
+// import MarqueeDivider from "@/components/homes/index-digital-agency/MarqueeDivider";
 import CTA from "@/components/homes/index-digital-agency/CTA";
 import Footer1 from "@/components/footers/Footer1";
 export const metadata: Metadata = {
@@ -24,7 +24,7 @@ export default function IndexDigitalAgencyPage() {
         <ProjectsShowcase />
         <ServicesList />
         <ParallaxDividerVideo />
-        <MarqueeDivider />
+        {/* <MarqueeDivider /> */}
         <Partners />
         <TestimonialsSticky />
         <ParallaxDividerImage />
