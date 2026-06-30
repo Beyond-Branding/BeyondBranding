@@ -363,7 +363,7 @@
 }
 
 .divider-image-6 {
-  background-image: url(../img/dividers/1920x1200_dv06.webp);
+  background-image: url("https://res.cloudinary.com/daoju0r3c/image/upload/v1782809055/image_51_hnjrvi.png");
 }
 
 .divider-image-7 {
@@ -387,11 +387,11 @@
 }
 
 .divider-image-12 {
-  background-image: url(../img/dividers/1920x1200_dv12.webp);
+  background-image: url("https://res.cloudinary.com/daoju0r3c/image/upload/v1782822549/image_54_zojx0t.png");
 }
 
 .divider-image-13 {
-  background-image: url(../img/dividers/1920x1200_dv13.webp);
+  background-image: url("https://res.cloudinary.com/daoju0r3c/image/upload/v1782825326/image_55_ar9xdt.png");
 }
 
 .divider-image-14 {
@@ -16597,20 +16597,34 @@ form textarea:required:valid {
 
 .mxd-clients__logo {
   width: 100%;
-  height: 4.2rem;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
+
 .mxd-clients__logo img,
 .mxd-clients__logo svg {
   display: block;
-  width: auto;
+  max-width: 260px;
+  width: 100%;
   height: 100%;
+  object-fit: contain;
 }
+
 .mxd-clients__logo svg {
   fill: var(--t-bright);
 }
+
 @media only screen and (min-width: 768px) {
   .mxd-clients__logo {
-    height: 4.8rem;
+    height: 140px;
+  }
+
+  .mxd-clients__logo img,
+  .mxd-clients__logo svg {
+    max-width: 300px;
   }
 }
 

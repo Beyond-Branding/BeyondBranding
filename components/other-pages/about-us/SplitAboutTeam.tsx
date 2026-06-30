@@ -58,7 +58,7 @@ export default function SplitAboutTeam() {
                       >
                         <Image
                           alt="Azurio Template Sample Image"
-                          src="/img/illustrations/team01.webp"
+                          src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782823435/team01_s3adx8.webp"
                           width={1000}
                           height={1500}
                         />
@@ -77,7 +77,7 @@ export default function SplitAboutTeam() {
                         >
                           <Image
                             alt="Azurio Template Sample Image"
-                            src="/img/illustrations/team02.webp"
+                            src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782823435/team02_fwwjah.webp"
                             width={1500}
                             height={1000}
                           />
