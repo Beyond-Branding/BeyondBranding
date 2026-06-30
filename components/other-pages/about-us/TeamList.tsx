@@ -55,7 +55,7 @@ export default function TeamList() {
                   <div className="row g-0 d-flex flex-column flex-md-row">
                     <div className="col-12 col-md-3 mxd-grid-item order-2 order-md-1">
                       <div className="mxd-team-list__position">
-                        <p>Co-founder &amp; head of development</p>
+                        <p>Founder of Beyond Brandingg</p>
                       </div>
                     </div>
                     <div className="col-12 col-md-6 mxd-grid-item order-1 order-md-2">
@@ -69,7 +69,7 @@ export default function TeamList() {
                           />
                         </div>
                         <div className="mxd-team-list__name">
-                          <p>Alex Berry</p>
+                          <p>Margi Shah</p>
                         </div>
                       </div>
                     </div>
@@ -102,7 +102,7 @@ export default function TeamList() {
                   <div className="row g-0 d-flex flex-column flex-md-row">
                     <div className="col-12 col-md-3 mxd-grid-item order-2 order-md-1">
                       <div className="mxd-team-list__position">
-                        <p>Co-founder &amp; head of design</p>
+                        <p>Co-founder of Beyond Brandingg</p>
                       </div>
                     </div>
                     <div className="col-12 col-md-6 mxd-grid-item order-1 order-md-2">
@@ -116,7 +116,7 @@ export default function TeamList() {
                           />
                         </div>
                         <div className="mxd-team-list__name">
-                          <p>Helen Lemon</p>
+                          <p>Roshni Hathiyani</p>
                         </div>
                       </div>
                     </div>
@@ -145,7 +145,7 @@ export default function TeamList() {
                   <div className="row g-0 d-flex flex-column flex-md-row">
                     <div className="col-12 col-md-3 mxd-grid-item order-2 order-md-1">
                       <div className="mxd-team-list__position">
-                        <p>Creative Designer</p>
+                        <p>Intern</p>
                       </div>
                     </div>
                     <div className="col-12 col-md-6 mxd-grid-item order-1 order-md-2">
@@ -159,7 +159,7 @@ export default function TeamList() {
                           />
                         </div>
                         <div className="mxd-team-list__name">
-                          <p>Sarah Olive</p>
+                          <p>Nidhi Gupta</p>
                         </div>
                       </div>
                     </div>
@@ -185,7 +185,7 @@ export default function TeamList() {
                   <div className="row g-0 d-flex flex-column flex-md-row">
                     <div className="col-12 col-md-3 mxd-grid-item order-2 order-md-1">
                       <div className="mxd-team-list__position">
-                        <p>Brand Identity Expert</p>
+                        <p>Social Media Intern</p>
                       </div>
                     </div>
                     <div className="col-12 col-md-6 mxd-grid-item order-1 order-md-2">
@@ -199,7 +199,7 @@ export default function TeamList() {
                           />
                         </div>
                         <div className="mxd-team-list__name">
-                          <p>Johanna Cherry</p>
+                          <p>Sania Qureshi</p>
                         </div>
                       </div>
                     </div>
@@ -225,7 +225,7 @@ export default function TeamList() {
                   <div className="row g-0 d-flex flex-column flex-md-row">
                     <div className="col-12 col-md-3 mxd-grid-item order-2 order-md-1">
                       <div className="mxd-team-list__position">
-                        <p>Digital Marketing Strategist</p>
+                        <p>Social Media Executive</p>
                       </div>
                     </div>
                     <div className="col-12 col-md-6 mxd-grid-item order-1 order-md-2">
@@ -239,7 +239,7 @@ export default function TeamList() {
                           />
                         </div>
                         <div className="mxd-team-list__name">
-                          <p>John Lemon</p>
+                          <p>Anjali</p>
                         </div>
                       </div>
                     </div>

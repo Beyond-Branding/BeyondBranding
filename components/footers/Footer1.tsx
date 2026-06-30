@@ -15,6 +15,7 @@ import {
   footer1NavColumns,
   footer1PromoItems,
 } from "@/data/footer";
+import { FaInstagram, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const navLinkClass = "anim-uni-slide-down";
 
@@ -62,7 +63,7 @@ export default function Footer1() {
                         Beyond 
                       </TextScramble>
                       <TextScramble className="mxd-scramble">
-                        Branding
+                        Brandingg
                       </TextScramble>
                     </div>
                   </Link>
@@ -75,8 +76,7 @@ export default function Footer1() {
                   >
                     We do things differently here! <br />
                     <span>
-                      Showcase your projects, services and expertise with
-                      impact.
+                      This is Where we Make It Happen
                     </span>
                   </CommonAnimatedText>
                 </div>
@@ -128,50 +128,92 @@ export default function Footer1() {
                   </div>
                 </nav>
               </div>
-              <div className="col-12 col-xxl-3 mxd-demo-footer__item mxd-grid-item">
-                <div className="mxd-demo-footer__promo">
-                  <div className="mxd-footer-nav02__block">
-                    <div className="mxd-footer-nav02__title">
-                      <CommonScrollAnimated
-                        className="footer-data anim-uni-slide-down"
-                        as="p"
-                        animation="slideDownLine"
-                      >
-                        <span>/ Our works</span>
-                      </CommonScrollAnimated>
-                    </div>
-                    <div className="mxd-footer-nav02__list">
-                      <div className="mxd-footer-promo__list">
-                        {footer1PromoItems.map((item) => (
-                          <a
-                            key={item.iconSrc}
-                            className="mxd-footer-promo__item"
-                            href={item.href}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <Image
-                              className="mxd-footer-promo__icon"
-                              alt={item.iconAlt}
-                              src={item.iconSrc}
-                              width={item.iconWidth}
-                              height={item.iconHeight}
-                            />
-                            <CommonAnimatedText
-                              as="p"
-                              className="t-medium t-bold mxd-footer-promo__link mxd-split-lines-reverse"
-                              animation="splitLinesReverse"
-                            >
-                              {item.textLead}
-                              <span>{item.textSpan}</span>
-                            </CommonAnimatedText>
-                          </a>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+  <div className="col-12 col-xxl-3 mxd-demo-footer__item mxd-grid-item">
+  <div className="mxd-demo-footer__promo">
+    <div className="mxd-footer-nav02__block">
+
+      <div className="mxd-footer-nav02__title">
+        <CommonScrollAnimated
+          className="footer-data anim-uni-slide-down"
+          as="p"
+          animation="slideDownLine"
+        >
+          <span>/ Connect With Us</span>
+        </CommonScrollAnimated>
+      </div>
+
+      <div className="mxd-footer-nav02__list">
+        <div className="mxd-footer-promo__list">
+
+          {/* Instagram */}
+          <a
+            className="mxd-footer-promo__item"
+            href="https://instagram.com/beyondbranding"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram
+              size={42}
+              className="mxd-footer-promo__icon"
+            />
+
+            <CommonAnimatedText
+              as="p"
+              className="t-medium t-bold mxd-footer-promo__link mxd-split-lines-reverse"
+              animation="splitLinesReverse"
+            >
+              Instagram
+              <span>@beyondbranding</span>
+            </CommonAnimatedText>
+          </a>
+
+          {/* LinkedIn */}
+          <a
+            className="mxd-footer-promo__item"
+            href="https://linkedin.com/company/beyondbranding"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin
+              size={42}
+              className="mxd-footer-promo__icon"
+            />
+
+            <CommonAnimatedText
+              as="p"
+              className="t-medium t-bold mxd-footer-promo__link mxd-split-lines-reverse"
+              animation="splitLinesReverse"
+            >
+              LinkedIn
+              <span>Beyond Branding</span>
+            </CommonAnimatedText>
+          </a>
+
+          {/* Email */}
+          <a
+            className="mxd-footer-promo__item"
+            href="mailto:hello@beyondbranding.co.in"
+          >
+            <FaEnvelope
+              size={42}
+              className="mxd-footer-promo__icon"
+            />
+
+            <CommonAnimatedText
+              as="p"
+              className="t-medium t-bold mxd-footer-promo__link mxd-split-lines-reverse"
+              animation="splitLinesReverse"
+            >
+              Email
+              <span>hello@beyondbranding.co.in</span>
+            </CommonAnimatedText>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
             </div>
           </div>
         </div>
@@ -223,7 +265,7 @@ export default function Footer1() {
                   className="anim-uni-chars"
                   animation="animChars"
                 >
-                  Beyond Branding
+                  Beyond Brandingg
                 </CommonAnimatedText>
               </a>
             </div>

@@ -121,7 +121,7 @@ export default function InnerHeadline() {
                       >
                         <Image
                           alt="Azurio Template Sample Image"
-                          src="/img/illustrations/about-us-01.webp"
+                          src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782819653/about-us-01_yzpwem.webp"
                           width={640}
                           height={480}
                         />
@@ -132,7 +132,7 @@ export default function InnerHeadline() {
                       >
                         <Image
                           alt="Azurio Template Sample Image"
-                          src="/img/illustrations/about-us-02.webp"
+                          src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782819654/about-us-02_cbqehe.webp"
                           width={560}
                           height={700}
                         />
@@ -143,7 +143,7 @@ export default function InnerHeadline() {
                       >
                         <Image
                           alt="Azurio Template Sample Image"
-                          src="/img/illustrations/about-us-03.webp"
+                          src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782819653/about-us-03_wr9opy.webp"
                           width={640}
                           height={480}
                         />
@@ -154,7 +154,7 @@ export default function InnerHeadline() {
                       >
                         <Image
                           alt="Azurio Template Sample Image"
-                          src="/img/illustrations/about-us-04.webp"
+                          src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782819653/about-us-04_xzycca.webp"
                           width={560}
                           height={700}
                         />
@@ -165,7 +165,7 @@ export default function InnerHeadline() {
                       >
                         <Image
                           alt="Azurio Template Sample Image"
-                          src="/img/illustrations/about-us-05.webp"
+                          src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782819653/about-us-05_wf6u3v.webp"
                           width={560}
                           height={700}
                         />
@@ -176,7 +176,7 @@ export default function InnerHeadline() {
                       >
                         <Image
                           alt="Azurio Template Sample Image"
-                          src="/img/illustrations/about-us-06.webp"
+                          src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782819653/about-us-06_jugyqy.webp"
                           width={640}
                           height={480}
                         />
@@ -187,7 +187,7 @@ export default function InnerHeadline() {
                       >
                         <Image
                           alt="Azurio Template Sample Image"
-                          src="/img/illustrations/about-us-07.webp"
+                          src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782819653/about-us-07_fk85c4.webp"
                           width={560}
                           height={700}
                         />
@@ -198,7 +198,7 @@ export default function InnerHeadline() {
                       >
                         <Image
                           alt="Azurio Template Sample Image"
-                          src="/img/illustrations/about-us-08.webp"
+                          src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782819653/about-us-08_wh9ztu.webp"
                           width={640}
                           height={480}
                         />

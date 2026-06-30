@@ -23,7 +23,7 @@ export default function InnerHeadline() {
                   <div className="inner-headline__bg">
                     <Image
                       alt="Azurio Template Sample Image"
-                      src="/img/backgrounds/1920x1280_bg01.webp"
+                      src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782823000/1920x1280_bg01_yomyjz.webp"
                       width={1920}
                       height={1280}
                     />

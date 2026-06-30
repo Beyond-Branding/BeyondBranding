@@ -57,7 +57,7 @@ export default function Partners() {
                             </div>
                             <div className="mxd-clients__descr">
                               <p className="t-medium">
-  Developed a professional brand identity and website for Naivaidya Healthcare, creating a trusted and engaging digital experience.
+Built a professional brand identity and website for Naivaidya Healthcare, creating a trusted digital presence.
 </p>
                             </div>
                           </CommonCardBatchAnimated>
@@ -127,7 +127,7 @@ export default function Partners() {
                             </div>
                             <div className="mxd-clients__descr">
                               <p className="t-medium">
-  Crafted a strong digital presence for Adam Exports through social media strategy, content creation, and website development.
+  Enhanced Adam Exports' digital presence through social media and website development.
 </p>
                             </div>
                           </CommonCardBatchAnimated>
@@ -148,7 +148,7 @@ export default function Partners() {
                             </div>
                             <div className="mxd-clients__descr">
                               <p className="t-medium">
-                                Managed social media for Gra by Ragi, creating compelling content that reflected the brand's elegance and craftsmanship.
+                                Managed social media for Gra by Ragi, creating content that reflected the brand's elegance.
                               </p>
                             </div>
                           </CommonCardBatchAnimated>
@@ -169,7 +169,7 @@ export default function Partners() {
                             </div>
                             <div className="mxd-clients__descr">
                               <p className="t-medium">
-  Transformed Terra Love through strategic rebranding, thoughtful packaging design, and a refined digital experience.
+ Redefined Terra Love through strategic rebranding and packaging design.
 </p>
                             </div>
                           </CommonCardBatchAnimated>
@@ -197,7 +197,7 @@ export default function Partners() {
                             </div>
                             <div className="mxd-clients__descr">
                               <p className="t-medium">
-  Strengthened Vriinc's brand presence through strategic marketing, impactful collaterals, and distinctive sub-brand development.
+  Strengthened Vriinc's brand presence through marketing and sub-brand development.
 </p>
                             </div>
                           </CommonCardBatchAnimated>
@@ -218,7 +218,7 @@ export default function Partners() {
                             </div>
                             <div className="mxd-clients__descr">
                               <p className="t-medium">
-  Enhanced Moosu's digital presence with creative social media strategies designed to boost engagement and brand awareness.
+  Strengthened Moosu's digital presence through creative social media campaigns.
 </p>
                             </div>
                           </CommonCardBatchAnimated>
@@ -239,7 +239,7 @@ export default function Partners() {
                             </div>
                             <div className="mxd-clients__descr">
                               <p className="t-medium">
-  Partnered with Bima Bajar to provide strategic marketing direction and consulting for long-term brand success.
+  Partnered with Bima Bajar to deliver strategic marketing guidance and brand growth.
 </p>
                             </div>
                           </CommonCardBatchAnimated>

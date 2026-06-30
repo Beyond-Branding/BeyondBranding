@@ -97,7 +97,7 @@ export default function TestimonialsSticky() {
                               <div className="mxd-testimonials-card__btngroup">
                                 <a
                                   className="btn btn-line-icon btn-line-icon-small btn-line-default slide-right"
-                                  href="#0"
+                                  href="https://nyhc.in/"
                                 >
                                   <TextScramble className="btn-caption mxd-scramble">
                                     Project Page
@@ -116,28 +116,28 @@ export default function TestimonialsSticky() {
                             </div>
                             <div className="mxd-testimonials-card__content">
                               <p className="mxd-testimonials-card__descr">
-                                Working with Azurio team was
-                                <span>an absolute pleasure!</span>
+                                The team delivered a website and
+                                <span>brand identity that truly reflects our vision.</span>
                               </p>
                             </div>
                             <div className="mxd-testimonials-card__author">
                               <div className="mxd-testimonials-card__photo">
                                 <Image
                                   alt="Azurio Template Example Image"
-                                  src="/img/avatars/300x300_ava-01.webp"
+                                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782733615/naivadiyalogo_qcgq23.png"
                                   width={300}
                                   height={300}
                                 />
                               </div>
                               <div className="mxd-testimonials-card__data">
                                 <p className="mxd-testimonials-card__name">
-                                  John Lemon
+                                  Dr. Saurabh Jain
                                 </p>
                                 <p className="mxd-testimonials-card__position">
-                                  Brand manager in
-                                  <a href="#">
+                                  
+                                  <a href="https://nyhc.in/">
                                     <TextScramble className="mxd-scramble">
-                                      Instant design
+                                      Consultant Physician Naivaidya Healthcare
                                     </TextScramble>
                                   </a>
                                 </p>
@@ -153,7 +153,7 @@ export default function TestimonialsSticky() {
                             >
                               <Image
                                 alt="Azurio Template Example Image"
-                                src="/img/avatars/800x800_ava-01.webp"
+                                src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782804005/image_46_wruvat.png"
                                 width={800}
                                 height={800}
                               />
@@ -177,7 +177,7 @@ export default function TestimonialsSticky() {
                                 <div className="mxd-testimonials-card__btngroup">
                                   <a
                                     className="btn btn-line-icon btn-line-icon-small btn-line-default slide-right"
-                                    href="#0"
+                                    href="https://deeeartstudios.com/"
                                   >
                                     <TextScramble className="btn-caption mxd-scramble">
                                       Project Page
@@ -195,32 +195,30 @@ export default function TestimonialsSticky() {
                                 </div>
                               </div>
                               <p className="mxd-testimonials-card__descr">
-                                Azurio team took the time to understand our
-                                business needs{" "}
-                                <span>
-                                  and translated them into a beautifully
-                                  designed, user-friendly website.
-                                </span>
-                              </p>
+  Beyond Branding delivered an elegant, user-friendly website{" "}
+  <span>
+    that perfectly reflects our passion for art and tattooing.
+  </span>
+</p>
                             </div>
                             <div className="mxd-testimonials-card__author">
                               <div className="mxd-testimonials-card__photo">
                                 <Image
                                   alt="Azurio Template Example Image"
-                                  src="/img/avatars/300x300_ava-02.webp"
+                                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782804555/dees-art-studio_h5bwvv_1_ykjto1.png"
                                   width={300}
                                   height={300}
                                 />
                               </div>
                               <div className="mxd-testimonials-card__data">
                                 <p className="mxd-testimonials-card__name">
-                                  Ashley Cherry
+                                  Diksha Dubb
                                 </p>
                                 <p className="mxd-testimonials-card__position">
-                                  SEO in
-                                  <a href="#">
+                                  
+                                  <a href="https://deeeartstudios.com/">
                                     <TextScramble className="mxd-scramble">
-                                      Eye Candy
+                                      Dee art Studios
                                     </TextScramble>
                                   </a>
                                 </p>
@@ -244,7 +242,7 @@ export default function TestimonialsSticky() {
                             >
                               <Image
                                 alt="Azurio Template Example Image"
-                                src="/img/avatars/800x800_ava-02.webp"
+                                src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782805245/image_47_td49h6.png"
                                 width={800}
                                 height={800}
                               />
@@ -267,7 +265,7 @@ export default function TestimonialsSticky() {
                               <div className="mxd-testimonials-card__btngroup">
                                 <a
                                   className="btn btn-line-icon btn-line-icon-small btn-line-default slide-right"
-                                  href="#0"
+                                  href="https://www.instagram.com/grabyragi?igsh=MTk4bmZ4aGgyYTI2dQ=="
                                 >
                                   <TextScramble className="btn-caption mxd-scramble">
                                     Project Page
@@ -286,32 +284,30 @@ export default function TestimonialsSticky() {
                             </div>
                             <div className="mxd-testimonials-card__content">
                               <p className="mxd-testimonials-card__descr">
-                                The Azurio team nailed it! They understood our
-                                vision{" "}
-                                <span>
-                                  and delivered a sleek, intuitive site that our
-                                  clients love.
-                                </span>
-                              </p>
+  The team truly understood our brand{" "}
+  <span>
+    and created engaging content that beautifully reflected our aesthetic.
+  </span>
+</p>
                             </div>
                             <div className="mxd-testimonials-card__author">
                               <div className="mxd-testimonials-card__photo">
                                 <Image
                                   alt="Azurio Template Example Image"
-                                  src="/img/avatars/300x300_ava-03.webp"
+                                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782740126/WhatsApp_Image_2026-06-29_at_6.52.17_PM-removebg-preview_tpmckc.png"
                                   width={300}
                                   height={300}
                                 />
                               </div>
                               <div className="mxd-testimonials-card__data">
                                 <p className="mxd-testimonials-card__name">
-                                  Lea Tomato
+                                  Ragi Patwa
                                 </p>
                                 <p className="mxd-testimonials-card__position">
-                                  Senior designer in
-                                  <a href="#">
+                                  
+                                  <a href="https://www.instagram.com/grabyragi?igsh=MTk4bmZ4aGgyYTI2dQ==">
                                     <TextScramble className="mxd-scramble">
-                                      The Way
+                                      Gra By Ragi
                                     </TextScramble>
                                   </a>
                                 </p>
@@ -328,7 +324,7 @@ export default function TestimonialsSticky() {
                             >
                               <Image
                                 alt="Azurio Template Example Image"
-                                src="/img/avatars/800x800_ava-03.webp"
+                                src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782805244/image_48_gzvdve.png"
                                 width={800}
                                 height={800}
                               />
@@ -358,7 +354,7 @@ export default function TestimonialsSticky() {
                                 <div className="mxd-testimonials-card__btngroup">
                                   <a
                                     className="btn btn-line-icon btn-line-icon-small btn-line-default slide-right"
-                                    href="#0"
+                                    href="https://www.instagram.com/onestop_retail?igsh=MWQ1bXlwNHczM3lyOQ=="
                                   >
                                     <TextScramble className="btn-caption mxd-scramble">
                                       Project Page
@@ -376,32 +372,30 @@ export default function TestimonialsSticky() {
                                 </div>
                               </div>
                               <p className="mxd-testimonials-card__descr">
-                                The team attention to detail, creativity, and
-                                technical expertise exceeded our expectations.
-                                <span>
-                                  We have received so much positive feedback
-                                  from our customers already.
-                                </span>
-                              </p>
+  Beyond Brandingg delivered a seamless and professional experience.{" "}
+  <span>
+    The final outcome beautifully reflects our brand identity and values.
+  </span>
+</p>
                             </div>
                             <div className="mxd-testimonials-card__author">
                               <div className="mxd-testimonials-card__photo">
                                 <Image
                                   alt="Azurio Template Example Image"
-                                  src="/img/avatars/300x300_ava-04.webp"
+                                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782805794/image-removebg-preview_6_1_kzfvf4.png"
                                   width={300}
                                   height={300}
                                 />
                               </div>
                               <div className="mxd-testimonials-card__data">
                                 <p className="mxd-testimonials-card__name">
-                                  Patrick Pineapple
+                                  Vidhit Dedhia
                                 </p>
                                 <p className="mxd-testimonials-card__position">
-                                  SEO in
-                                  <a href="#">
+                                  
+                                  <a href="https://www.instagram.com/onestop_retail?igsh=MWQ1bXlwNHczM3lyOQ==">
                                     <TextScramble className="mxd-scramble">
-                                      Instant design
+                                      One Stop Retail
                                     </TextScramble>
                                   </a>
                                 </p>
@@ -425,7 +419,7 @@ export default function TestimonialsSticky() {
                               <div className="mxd-testimonials-card__btngroup">
                                 <a
                                   className="btn btn-line-icon btn-line-icon-small btn-line-default slide-right"
-                                  href="#0"
+                                  href="https://www.instagram.com/saaro_beyondpackging?igsh=MWd4bWQ2dHpuMWx1OQ=="
                                 >
                                   <TextScramble className="btn-caption mxd-scramble">
                                     Project Page
@@ -444,30 +438,30 @@ export default function TestimonialsSticky() {
                             </div>
                             <div className="mxd-testimonials-card__content">
                               <p className="mxd-testimonials-card__descr">
-                                Amazing experience!
-                                <span>
-                                  Our new website truly reflects our brand.
-                                </span>
-                              </p>
+  Thoughtful, creative, and detail-oriented.
+  <span>
+    Every aspect of our brand now feels more refined and impactful.
+  </span>
+</p>
                             </div>
                             <div className="mxd-testimonials-card__author">
                               <div className="mxd-testimonials-card__photo">
                                 <Image
                                   alt="Azurio Template Example Image"
-                                  src="/img/avatars/300x300_ava-05.webp"
+                                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782806719/image_49_p6km27.png"
                                   width={300}
                                   height={300}
                                 />
                               </div>
                               <div className="mxd-testimonials-card__data">
                                 <p className="mxd-testimonials-card__name">
-                                  Mary Cucumber
+                                  Mr. Ramesh Chadda
                                 </p>
                                 <p className="mxd-testimonials-card__position">
-                                  Brand manager in
-                                  <a href="#">
+                                  
+                                  <a href="https://www.instagram.com/saaro_beyondpackging?igsh=MWd4bWQ2dHpuMWx1OQ==">
                                     <TextScramble className="mxd-scramble">
-                                      Hyper
+                                      Saaro
                                     </TextScramble>
                                   </a>
                                 </p>
@@ -483,7 +477,7 @@ export default function TestimonialsSticky() {
                             >
                               <Image
                                 alt="Azurio Template Example Image"
-                                src="/img/avatars/800x800_ava-04.webp"
+                                src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782806981/image_50_qiwo9a.png"
                                 width={800}
                                 height={800}
                               />

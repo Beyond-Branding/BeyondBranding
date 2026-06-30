@@ -28,7 +28,7 @@ const CARDS: Card[] = [
   ["Logo Design", "Brand Systems", "Visual Language"],
   ["Brand Guidelines", "Tone & Style", "Identity Design"],
     ],
-    image: "/img/services/services-stack/s01.webp",
+    image: "https://res.cloudinary.com/daoju0r3c/image/upload/v1782827386/image_56_bovd4b.png",
     descrClass: "t-large t-bold services-card__descr",
     descr: (
       <>
@@ -46,7 +46,7 @@ const CARDS: Card[] = [
   ["Content Planning", "Post Design", "Reels"],
   ["Captions", "Story Ideas", "Profile Management"],
 ],
-    image: "/img/services/services-stack/s02.webp",
+    image: "https://res.cloudinary.com/daoju0r3c/image/upload/v1782827411/image_60_bjzpsl.png",
     descrClass: "t-bold t-large services-card__descr",
     descr: (
       <>
@@ -64,7 +64,7 @@ const CARDS: Card[] = [
   ["Social Posts", "Campaigns", "Ads"],
   ["Brochures", "Brand Creatives", "Digital Design"],
 ],
-    image: "/img/services/services-stack/s03.webp",
+    image: "https://res.cloudinary.com/daoju0r3c/image/upload/v1782827387/image_57_e2ppmj.png",
     descrClass: "t-bold t-large services-card__descr",
     descr: (
       <>
@@ -82,7 +82,7 @@ const CARDS: Card[] = [
   ["Label Design", "Box Design", "Product Packaging"],
   ["Print Files", "Shelf Impact", "Brand Story"],
 ],
-    image: "/img/services/services-stack/s04.webp",
+    image: "https://res.cloudinary.com/daoju0r3c/image/upload/v1782827381/image_58_mtolll.png",
     descrClass: "t-bold t-large services-card__descr",
     descr: (
       <>
@@ -100,7 +100,7 @@ const CARDS: Card[] = [
     ["Website Design", "Landing Pages", "UI Design"],
     ["Responsive Build", "Development", "User Experience"],
   ],
-  image: "/img/services/services-stack/s05.webp",
+  image: "https://res.cloudinary.com/daoju0r3c/image/upload/v1782827405/image_59_z7lxcf.png",
   descrClass: "t-bold t-large services-card__descr",
   descr: (
     <>
@@ -118,7 +118,7 @@ const CARDS: Card[] = [
     ["SEO Strategy", "Website Content", "Blogs"],
     ["Keywords", "Copywriting", "Digital Growth"],
   ],
-  image: "/img/services/services-stack/s06.webp",
+  image: "https://res.cloudinary.com/daoju0r3c/image/upload/v1782827404/image_66_mhvzos.png",
   descrClass: "t-bold t-large services-card__descr",
   descr: (
     <>
@@ -136,7 +136,7 @@ const CARDS: Card[] = [
     ["Reels", "Brand Videos", "Product Videos"],
     ["Campaigns", "Editing", "Motion Content"],
   ],
-  image: "/img/services/services-stack/s07.webp",
+  image: "https://res.cloudinary.com/daoju0r3c/image/upload/v1782827395/image_62_hnn9ic.png",
   descrClass: "t-bold t-large services-card__descr",
   descr: (
     <>
@@ -154,7 +154,7 @@ const CARDS: Card[] = [
     ["Product Shoots", "Brand Shoots", "Space Shoots"],
     ["Reels", "Lifestyle Content", "Visual Storytelling"],
   ],
-  image: "/img/services/services-stack/s08.webp",
+  image: "https://res.cloudinary.com/daoju0r3c/image/upload/v1782827386/image_61_rhpa6d.png",
   descrClass: "t-bold t-large services-card__descr",
   descr: (
     <>
@@ -172,7 +172,7 @@ const CARDS: Card[] = [
     ["User Flow", "Wireframes", "Interface Design"],
     ["App Design", "Website UX", "Digital Experience"],
   ],
-  image: "/img/services/services-stack/s09.webp",
+  image: "https://res.cloudinary.com/daoju0r3c/image/upload/v1782827397/image_63_atnus3.png",
   descrClass: "t-bold t-large services-card__descr",
   descr: (
     <>
@@ -190,7 +190,7 @@ const CARDS: Card[] = [
     ["Brochures", "Business Cards", "Catalogues"],
     ["Flyers", "Posters", "Print Design"],
   ],
-  image: "/img/services/services-stack/s10.webp",
+  image: "https://res.cloudinary.com/daoju0r3c/image/upload/v1782827401/image_64_eqa0n1.png",
   descrClass: "t-bold t-large services-card__descr",
   descr: (
     <>
@@ -208,7 +208,7 @@ const CARDS: Card[] = [
     ["Brand Strategy", "Campaign Planning", "Content Direction"],
     ["Audience Study", "Growth Plans", "Consulting"],
   ],
-  image: "/img/services/services-stack/s11.webp",
+  image: "https://res.cloudinary.com/daoju0r3c/image/upload/v1782827399/image_65_zl4v9z.png",
   descrClass: "t-bold t-large services-card__descr",
   descr: (
     <>
