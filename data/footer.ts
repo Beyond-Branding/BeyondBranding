@@ -51,7 +51,7 @@ export const footer1NavColumns: Footer1NavColumn[] = [
           { href: "/index-digital-agency", label: "Home" },
           { href: "/about-us", label: "About Us" },
           { href: "/services", label: "Services" },
-          { href: "/works-grid-sticky", label: "Works" },
+          // { href: "/works-grid-sticky", label: "Works" },
           { href: "/pricing", label: "Pricing" },
           { href: "/contact", label: "Contact Us" },
         ],

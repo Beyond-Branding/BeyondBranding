@@ -50,7 +50,7 @@ export default function SectionTitle() {
                               as="p"
                               animation="inUp"
                             >
-                              New York
+                              Mumbai, India
                             </CommonScrollAnimated>
                           </div>
                           <ul>
@@ -64,11 +64,11 @@ export default function SectionTitle() {
                                 href="https://goo.gl/maps/nWXKpGaDPuyH6gxRA"
                                 target="_blank"
                               >
-                                11 West 53 Street,
+                                6th Floor, Room No.606,
                                 <br />
-                                New York, NY
+                                Kenorita Garment Hub, Western Express Highway,
                                 <br />
-                                10019
+                                400 060, Mumbai, India
                               </a>
                             </CommonScrollAnimated>
                           </ul>
@@ -79,11 +79,11 @@ export default function SectionTitle() {
                               animation="inUp"
                             >
                               <a
-                                href="tel:+12127089400"
+                                href="tel:+91 8369835146"
                                 className="tag tag-s-mobile"
                               >
                                 <TextScramble className="mxd-scramble">
-                                  +1 212-708-9400
+                                  +91 8369835146
                                 </TextScramble>
                               </a>
                             </CommonScrollAnimated>
@@ -93,72 +93,11 @@ export default function SectionTitle() {
                               animation="inUp"
                             >
                               <a
-                                href="mailto:hello@azurio.com?subject=Message%20from%20your%20site"
+                                href="mailto:beyondbrandingg@gmail.com?subject=Message%20from%20your%20site"
                                 className="tag tag-s-mobile"
                               >
                                 <TextScramble className="mxd-scramble">
-                                  hello@azurio.com
-                                </TextScramble>
-                              </a>
-                            </CommonScrollAnimated>
-                          </ul>
-                        </div>
-                        {/* contact data item */}
-                        <div className="col-12 col-md-6 col-xl-5 datalist__item">
-                          <div className="datalist__title">
-                            <CommonScrollAnimated
-                              className="t-bold t-large t-caption anim-uni-in-up"
-                              as="p"
-                              animation="inUp"
-                            >
-                              Oakland
-                            </CommonScrollAnimated>
-                          </div>
-                          <ul>
-                            <CommonScrollAnimated
-                              className="anim-uni-in-up"
-                              as="li"
-                              animation="inUp"
-                            >
-                              <a
-                                className="tag tag-s-mobile"
-                                href="https://goo.gl/maps/xap5o3MZBuC6DFHz8"
-                                target="_blank"
-                              >
-                                3400 Broadway,
-                                <br />
-                                Oakland, CA
-                                <br />
-                                94611
-                              </a>
-                            </CommonScrollAnimated>
-                          </ul>
-                          <ul>
-                            <CommonScrollAnimated
-                              className="anim-uni-in-up"
-                              as="li"
-                              animation="inUp"
-                            >
-                              <a
-                                href="tel:+15104570211"
-                                className="tag tag-s-mobile"
-                              >
-                                <TextScramble className="mxd-scramble">
-                                  +1 510-457-0211
-                                </TextScramble>
-                              </a>
-                            </CommonScrollAnimated>
-                            <CommonScrollAnimated
-                              className="anim-uni-in-up"
-                              as="li"
-                              animation="inUp"
-                            >
-                              <a
-                                href="mailto:hello@azurio.com?subject=Message%20from%20your%20site"
-                                className="tag tag-s-mobile"
-                              >
-                                <TextScramble className="mxd-scramble">
-                                  hello@azurio.com
+                                  beyondbrandingg@gmail.com
                                 </TextScramble>
                               </a>
                             </CommonScrollAnimated>

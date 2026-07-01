@@ -197,7 +197,7 @@ Built a professional brand identity and website for Naivaidya Healthcare, creati
                             </div>
                             <div className="mxd-clients__descr">
                               <p className="t-medium">
-  Strengthened Vriinc's brand presence through marketing and sub-brand development.
+  Strengthened Vriin C brand presence through marketing and sub-brand development.
 </p>
                             </div>
                           </CommonCardBatchAnimated>
@@ -218,7 +218,7 @@ Built a professional brand identity and website for Naivaidya Healthcare, creati
                             </div>
                             <div className="mxd-clients__descr">
                               <p className="t-medium">
-  Strengthened Moosu's digital presence through creative social media campaigns.
+  Strengthened Mosu's digital presence through creative social media campaigns.
 </p>
                             </div>
                           </CommonCardBatchAnimated>

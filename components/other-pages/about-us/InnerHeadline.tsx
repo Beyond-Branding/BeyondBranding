@@ -79,14 +79,14 @@ export default function InnerHeadline() {
                     <div className="inner-headline__centered">
                       <CommonLoadItem index={0}>
                         <div className="inner-headline__link loading-item">
-                          <SmoothAnchorLink
+                          {/* <SmoothAnchorLink
                             className="btn btn-line btn-line-default"
                             targetId="process"
                           >
                             <TextScramble className="btn-caption mxd-scramble">
                               Studio
                             </TextScramble>
-                          </SmoothAnchorLink>
+                          </SmoothAnchorLink> */}
                         </div>
                       </CommonLoadItem>
                       <CommonLoadItem index={1}>

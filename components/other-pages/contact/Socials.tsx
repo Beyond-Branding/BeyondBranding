@@ -50,7 +50,7 @@ export default function Socials() {
                           as="div"
                           animation="slideDownLine"
                         >
-                          <span>Dribbble</span>
+                          <span>Instagram</span>
                         </CommonScrollAnimated>
                       </div>
                       <CommonScrollAnimated
@@ -106,7 +106,7 @@ export default function Socials() {
                           as="div"
                           animation="slideDownLine"
                         >
-                          <span>Behance</span>
+                          <span>Linkedln</span>
                         </CommonScrollAnimated>
                       </div>
                       <CommonScrollAnimated
@@ -162,7 +162,7 @@ export default function Socials() {
                           as="div"
                           animation="slideDownLine"
                         >
-                          <span>Github</span>
+                          <span>Email</span>
                         </CommonScrollAnimated>
                       </div>
                       <CommonScrollAnimated
@@ -218,63 +218,7 @@ export default function Socials() {
                           as="div"
                           animation="slideDownLine"
                         >
-                          <span>Codepen</span>
-                        </CommonScrollAnimated>
-                      </div>
-                      <CommonScrollAnimated
-                        className="socials-list__arrow accent anim-uni-slide-down"
-                        as="div"
-                        animation="slideDownLine"
-                      >
-                        <i>
-                          <svg
-                            version="1.1"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlnsXlink="http://www.w3.org/1999/xlink"
-                            x="0px"
-                            y="0px"
-                            viewBox="0 0 18 18"
-                            enableBackground="new 0 0 18 18"
-                            xmlSpace="preserve"
-                          >
-                            <path
-                              d="M18,0v14.4h-3.6V7.2h-3.6V3.6H3.6V0H18z M7.2,10.8h3.6V7.2H7.2C7.2,7.2,7.2,10.8,7.2,10.8z M3.6,14.4h3.6v-3.6H3.6V14.4z
-                            M0,18h3.6v-3.6H0V18z"
-                            />
-                          </svg>
-                        </i>
-                      </CommonScrollAnimated>
-                      <CommonScrollAnimated
-                        className="socials-list__divider accent divider-bottom anim-uni-clip-in"
-                        as="div"
-                        animation="clipIn"
-                      />
-                    </a>
-                    {/* socials item */}
-                    <a
-                      className="socials-list__item slide-right-up"
-                      href="https://www.figma.com/community"
-                      target="_blank"
-                    >
-                      <CommonScrollAnimated
-                        className="socials-list__divider accent divider-top anim-uni-clip-in"
-                        as="div"
-                        animation="clipIn"
-                      />
-                      <div className="socials-list__info">
-                        <CommonScrollAnimated
-                          className="socials-list__number accent anim-uni-slide-down"
-                          as="div"
-                          animation="slideDownLine"
-                        >
-                          <span>[05]</span>
-                        </CommonScrollAnimated>
-                        <CommonScrollAnimated
-                          className="socials-list__name accent anim-uni-slide-down"
-                          as="div"
-                          animation="slideDownLine"
-                        >
-                          <span>Figma Community</span>
+                          <span>Phone</span>
                         </CommonScrollAnimated>
                       </div>
                       <CommonScrollAnimated

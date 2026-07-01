@@ -205,7 +205,7 @@ export default function TestimonialsSticky() {
                               <div className="mxd-testimonials-card__photo">
                                 <Image
                                   alt="Azurio Template Example Image"
-                                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782804555/dees-art-studio_h5bwvv_1_ykjto1.png"
+                                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782896894/image_71_ajlpow.png"
                                   width={300}
                                   height={300}
                                 />
@@ -242,7 +242,7 @@ export default function TestimonialsSticky() {
                             >
                               <Image
                                 alt="Azurio Template Example Image"
-                                src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782805245/image_47_td49h6.png"
+                                src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782895459/image_70_1_e8nsqs.png"
                                 width={800}
                                 height={800}
                               />
@@ -324,7 +324,7 @@ export default function TestimonialsSticky() {
                             >
                               <Image
                                 alt="Azurio Template Example Image"
-                                src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782805244/image_48_gzvdve.png"
+                                src="https://res.cloudinary.com/daoju0r3c/image/upload/v1782894585/image_69_csxyzv.png"
                                 width={800}
                                 height={800}
                               />

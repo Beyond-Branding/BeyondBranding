@@ -145,7 +145,7 @@ export default function TeamList() {
                   <div className="row g-0 d-flex flex-column flex-md-row">
                     <div className="col-12 col-md-3 mxd-grid-item order-2 order-md-1">
                       <div className="mxd-team-list__position">
-                        <p>Intern</p>
+                        <p>Creative Head</p>
                       </div>
                     </div>
                     <div className="col-12 col-md-6 mxd-grid-item order-1 order-md-2">
@@ -153,13 +153,13 @@ export default function TeamList() {
                         <div className="mxd-team-list__photo">
                           <Image
                             alt="Azurio Template Sample Image"
-                            src="/img/avatars/300x300_ava-02.webp"
+                            src="/img/avatars/300x300_ava-03.webp"
                             width={300}
                             height={300}
                           />
                         </div>
                         <div className="mxd-team-list__name">
-                          <p>Nidhi Gupta</p>
+                          <p>Jigar Hathiyani</p>
                         </div>
                       </div>
                     </div>
@@ -185,7 +185,7 @@ export default function TeamList() {
                   <div className="row g-0 d-flex flex-column flex-md-row">
                     <div className="col-12 col-md-3 mxd-grid-item order-2 order-md-1">
                       <div className="mxd-team-list__position">
-                        <p>Social Media Intern</p>
+                        <p>Video Editor & Graphic Designer</p>
                       </div>
                     </div>
                     <div className="col-12 col-md-6 mxd-grid-item order-1 order-md-2">
@@ -194,6 +194,46 @@ export default function TeamList() {
                           <Image
                             alt="Azurio Template Sample Image"
                             src="/img/avatars/300x300_ava-03.webp"
+                            width={300}
+                            height={300}
+                          />
+                        </div>
+                        <div className="mxd-team-list__name">
+                          <p>Sukhraj Singh</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-12 col-md-3 mxd-grid-item order-3 order-md-3">
+                      <div className="mxd-team-list__socials">
+                        <ul>
+                          <li>
+                            <a href="https://www.linkedin.com/" target="_blank">
+                              <TextScramble className="mxd-scramble">
+                                Linkedin
+                              </TextScramble>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* single item */}
+              <div className="mxd-team-list__item">
+                <div className="container-fluid p-0 mxd-team-list__inner">
+                  <div className="row g-0 d-flex flex-column flex-md-row">
+                    <div className="col-12 col-md-3 mxd-grid-item order-2 order-md-1">
+                      <div className="mxd-team-list__position">
+                        <p>Social Media Executive</p>
+                      </div>
+                    </div>
+                    <div className="col-12 col-md-6 mxd-grid-item order-1 order-md-2">
+                      <div className="mxd-team-list__data">
+                        <div className="mxd-team-list__photo">
+                          <Image
+                            alt="Azurio Template Sample Image"
+                            src="/img/avatars/300x300_ava-02.webp"
                             width={300}
                             height={300}
                           />
@@ -233,13 +273,93 @@ export default function TeamList() {
                         <div className="mxd-team-list__photo">
                           <Image
                             alt="Azurio Template Sample Image"
+                            src="/img/avatars/300x300_ava-03.webp"
+                            width={300}
+                            height={300}
+                          />
+                        </div>
+                        <div className="mxd-team-list__name">
+                          <p>Anjali Chandarana</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-12 col-md-3 mxd-grid-item order-3 order-md-3">
+                      <div className="mxd-team-list__socials">
+                        <ul>
+                          <li>
+                            <a href="https://www.linkedin.com/" target="_blank">
+                              <TextScramble className="mxd-scramble">
+                                Linkedin
+                              </TextScramble>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* single item */}
+              <div className="mxd-team-list__item">
+                <div className="container-fluid p-0 mxd-team-list__inner">
+                  <div className="row g-0 d-flex flex-column flex-md-row">
+                    <div className="col-12 col-md-3 mxd-grid-item order-2 order-md-1">
+                      <div className="mxd-team-list__position">
+                        <p>Intern</p>
+                      </div>
+                    </div>
+                    <div className="col-12 col-md-6 mxd-grid-item order-1 order-md-2">
+                      <div className="mxd-team-list__data">
+                        <div className="mxd-team-list__photo">
+                          <Image
+                            alt="Azurio Template Sample Image"
                             src="/img/avatars/300x300_ava-01.webp"
                             width={300}
                             height={300}
                           />
                         </div>
                         <div className="mxd-team-list__name">
-                          <p>Anjali</p>
+                          <p>Nidhi Gupta</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-12 col-md-3 mxd-grid-item order-3 order-md-3">
+                      <div className="mxd-team-list__socials">
+                        <ul>
+                          <li>
+                            <a href="https://www.linkedin.com/" target="_blank">
+                              <TextScramble className="mxd-scramble">
+                                Linkedin
+                              </TextScramble>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* single item */}
+              <div className="mxd-team-list__item">
+                <div className="container-fluid p-0 mxd-team-list__inner">
+                  <div className="row g-0 d-flex flex-column flex-md-row">
+                    <div className="col-12 col-md-3 mxd-grid-item order-2 order-md-1">
+                      <div className="mxd-team-list__position">
+                        <p>Jr Web Developer</p>
+                      </div>
+                    </div>
+                    <div className="col-12 col-md-6 mxd-grid-item order-1 order-md-2">
+                      <div className="mxd-team-list__data">
+                        <div className="mxd-team-list__photo">
+                          <Image
+                            alt="Azurio Template Sample Image"
+                            src="/img/avatars/300x300_ava-03.webp"
+                            width={300}
+                            height={300}
+                          />
+                        </div>
+                        <div className="mxd-team-list__name">
+                          <p>Abin Pillai</p>
                         </div>
                       </div>
                     </div>

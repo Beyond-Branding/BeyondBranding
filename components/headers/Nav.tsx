@@ -47,9 +47,9 @@ export default function Nav({
     { href: "/index-digital-agency", number: "/ 01", label: "Home" },
     { href: "/about-us", number: "/ 02", label: "About Us" },
     { href: "/services", number: "/ 03", label: "Services" },
-    { href: "/works-grid-sticky", number: "/ 04", label: "Works" },
-    { href: "/pricing", number: "/ 05", label: "Pricing" },
-    { href: "/contact", number: "/ 06", label: "Contact Us" },
+    // { href: "/works-grid-sticky", number: "/ 04", label: "Works" },
+    { href: "/pricing", number: "/ 04", label: "Pricing" },
+    { href: "/contact", number: "/ 05", label: "Contact Us" },
   ];
 
   useMxdMenuGsap(
@@ -95,10 +95,10 @@ export default function Nav({
             <div ref={g.mediaWrapper} className="menu-media__wrapper">
               {/* <Image   alt="Image"    src="/img/gifs/dolores.gif" width="322" height="374" /> */}
               <AutoplayLoopVideo
-                poster="video/900x1280_menu.webp"
+                poster="https://res.cloudinary.com/daoju0r3c/video/upload/v1782906286/moon_lhzy8z.mp4"
                 sources={[
-                  { type: "video/mp4", src: "video/900x1280_menu.mp4" },
-                  { type: "video/webm", src: "video/900x1280_menu.webm" },
+                  { type: "video/mp4", src: "https://res.cloudinary.com/daoju0r3c/video/upload/v1782906286/moon_lhzy8z.mp4" },
+                  { type: "video/webm", src: "https://res.cloudinary.com/daoju0r3c/video/upload/v1782906286/moon_lhzy8z.webm" },
                 ]}
               />
             </div>
