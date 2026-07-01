@@ -26,8 +26,8 @@ export default function IndexDigitalAgencyPage() {
         <ParallaxDividerVideo />
         {/* <MarqueeDivider /> */}
         <Partners />
-        <TestimonialsSticky />
         <ParallaxDividerImage />
+        <TestimonialsSticky />
         <CTA />
       </>
       <Footer1 />

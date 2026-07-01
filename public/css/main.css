@@ -363,7 +363,7 @@
 }
 
 .divider-image-6 {
-  background-image: url("https://res.cloudinary.com/daoju0r3c/image/upload/v1782809055/image_51_hnjrvi.png");
+  background-image: url("https://res.cloudinary.com/daoju0r3c/image/upload/v1782893048/image_67_zlht6g.png");
 }
 
 .divider-image-7 {
@@ -375,7 +375,7 @@
 }
 
 .divider-image-9 {
-  background-image: url(../img/dividers/1920x1200_dv09.webp);
+  background-image: url("https://res.cloudinary.com/daoju0r3c/image/upload/v1782893048/image_67_zlht6g.png");
 }
 
 .divider-image-10 {
@@ -2428,7 +2428,7 @@ html.lenis body {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 28cqw;
+  font-size: 24cqw;
   line-height: 0.746;
 }
 .fullwidth-text__content span {
@@ -2467,7 +2467,7 @@ html.lenis body {
     font-size: 28cqw;
   }
   .fullwidth-text__content.small {
-    font-size: 10.46cqw;
+    font-size: 6.50cqw;
   }
 }
 
