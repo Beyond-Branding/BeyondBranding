@@ -21,12 +21,12 @@ export interface ExpandableProject {
 export const expandableProjectsData: ExpandableProject[] = [
   {
     id: "project-01",
-    title: "Mosu-design-studio",
+    title: "Kho Kha",
     category: "Brand Identity",
     description:
-      "Mosu-design-studio BESPOKE - crafted, not advertised.Not everything we do is explained.Want to see what we create?Scroll.",
+      "Kho Kha BESPOKE - crafted, not advertised.Not everything we do is explained.Want to see what we create?Scroll.",
     coverType: "image",
-    coverSrc: "/img/works/showcase-sticky/pr02-01.webp",
+    coverSrc: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789806175/hero_image_tewp37.png",
     badgeColor: "#222222",
     gallery: [
       {

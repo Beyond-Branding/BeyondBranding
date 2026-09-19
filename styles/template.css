@@ -103,20 +103,20 @@
 .mxd-expandable-card-bleed {
   position: relative;
   width: 100%;
-  height: 105vh; /* Increased from 95vh for more height */
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   background-color: var(--base-bright);
 }
 
 @media only screen and (max-width: 991px) {
   .mxd-expandable-card-bleed {
-    height: 80vh;
+    aspect-ratio: 16 / 10;
   }
 }
 
 @media only screen and (max-width: 575px) {
   .mxd-expandable-card-bleed {
-    height: 70vh;
+    aspect-ratio: 4 / 3;
   }
 }
 

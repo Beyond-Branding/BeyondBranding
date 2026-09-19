@@ -44,10 +44,10 @@ export default function Nav({
   );
   const footerSlots = useMemo(() => makeSlotters(g.footerSplitTargets, 4), [g]);
   const menuItems = [
-    { href: "/index-digital-agency", number: "/ 01", label: "Home" },
+    { href: "/", number: "/ 01", label: "Home" },
     { href: "/about-us", number: "/ 02", label: "About Us" },
     { href: "/services", number: "/ 03", label: "Services" },
-    // { href: "/works-grid-sticky", number: "/ 04", label: "Works" },
+    { href: "/works-grid-sticky", number: "/ 04", label: "Works" },
     { href: "/pricing", number: "/ 04", label: "Pricing" },
     { href: "/contact", number: "/ 05", label: "Contact Us" },
   ];
