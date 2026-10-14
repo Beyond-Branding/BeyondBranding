@@ -983,3 +983,84 @@
 .mxd-collage-item--empty {
   background: rgba(255, 255, 255, 0.18);
 }
+/* ================= Euro Decor ================= */
+
+/* page background + readable text on the light page */
+.mxd-fullscreen-drawer-overlay--collage[data-layout="eurodecor"] {
+  background-color: #e5e6e8; /* if Kho Kha's grey is different, copy its value here */
+}
+.mxd-fullscreen-drawer-overlay--collage[data-layout="eurodecor"] .mxd-fullscreen-drawer-meta {
+  background-color: transparent;
+  border-top-color: rgba(0, 0, 0, 0.15);
+}
+.mxd-fullscreen-drawer-overlay--collage[data-layout="eurodecor"] .mxd-meta-title { color: #1a1a1a; }
+.mxd-fullscreen-drawer-overlay--collage[data-layout="eurodecor"] .mxd-meta-category { color: rgba(0, 0, 0, 0.55); }
+.mxd-fullscreen-drawer-overlay--collage[data-layout="eurodecor"] .mxd-meta-description { color: rgba(0, 0, 0, 0.75); }
+.mxd-fullscreen-drawer-overlay--collage[data-layout="eurodecor"] .close-text { color: #1a1a1a; }
+.mxd-fullscreen-drawer-overlay--collage[data-layout="eurodecor"] .close-svg { stroke: #1a1a1a; }
+
+/* blue frame (mobile first: stacked) */
+.mxd-collage-scroll .mxd-collage-frame--eurodecor-1,
+.mxd-collage-scroll .mxd-collage-frame--eurodecor-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 240px;
+  gap: 12px;
+  padding: 12px;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: auto;
+  box-sizing: border-box;
+  /* approximate Canva blue, pick the exact colours with Canva's colour picker */
+  background: linear-gradient(180deg, #0c4a9b 0%, #1f63b4 45%, #5e97d6 100%);
+}
+
+.mxd-collage-scroll .mxd-collage-frame--eurodecor-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--eurodecor-2 .mxd-collage-item {
+  min-width: 0;
+  min-height: 0;
+}
+
+.mxd-collage-scroll .mxd-collage-frame--eurodecor-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--eurodecor-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--eurodecor-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--eurodecor-2 .mxd-collage-item video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mxd-collage-item--empty {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* desktop and tablet: 16:9 frames, slots placed by percentage */
+@media only screen and (min-width: 768px) {
+  .mxd-collage-scroll .mxd-collage-frame--eurodecor-1,
+  .mxd-collage-scroll .mxd-collage-frame--eurodecor-2 {
+    display: block;
+    position: relative;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+  }
+
+  .mxd-collage-scroll .mxd-collage-frame--eurodecor-1 .mxd-collage-item,
+  .mxd-collage-scroll .mxd-collage-frame--eurodecor-2 .mxd-collage-item {
+    position: absolute;
+  }
+
+    .mxd-collage-frame--eurodecor-1 .mxd-collage-item--1 { left: 3.35%;  top: 1.99%;  width: 30.39%; height: 46.02%; }
+  .mxd-collage-frame--eurodecor-1 .mxd-collage-item--2 { left: 35.42%; top: 1.99%;  width: 22.23%; height: 46.02%; }
+  .mxd-collage-frame--eurodecor-1 .mxd-collage-item--3 { left: 60.22%; top: 1.99%;  width: 36.76%; height: 96.02%; }
+  .mxd-collage-frame--eurodecor-1 .mxd-collage-item--4 { left: 3.35%;  top: 50.40%; width: 30.39%; height: 47.81%; }
+  .mxd-collage-frame--eurodecor-1 .mxd-collage-item--5 { left: 35.42%; top: 50.40%; width: 22.23%; height: 47.81%; }
+
+  /* Slide 2 */
+  .mxd-collage-frame--eurodecor-2 .mxd-collage-item--1 { left: 2.12%;  top: 3.98%;  width: 29.16%; height: 92.45%; }
+  .mxd-collage-frame--eurodecor-2 .mxd-collage-item--2 { left: 32.63%; top: 3.98%;  width: 24.47%; height: 45.53%; }
+  .mxd-collage-frame--eurodecor-2 .mxd-collage-item--3 { left: 58.99%; top: 3.98%;  width: 38.66%; height: 36.38%; }
+  .mxd-collage-frame--eurodecor-2 .mxd-collage-item--4 { left: 32.63%; top: 52.68%; width: 36.76%; height: 43.74%; }
+  .mxd-collage-frame--eurodecor-2 .mxd-collage-item--5 { left: 71.17%; top: 42.74%; width: 26.48%; height: 55.07%; }
+}

@@ -9,4 +9,8 @@ export const brandLayouts: Record<string, number[][]> = {
      [3, -1, 2, -1, 1, -1],
      [6, 2, -1, 5, -1],   // Frame 2: slot 1 Ganesh, 2 burgundy, 3 palace (missing), 4 Diwali, 5 heritage (missing)
    ],
+       eurodecor: [
+    [4, 5, 2, 6, 3],      // Slide 1: Masterpiece, Laminates, video, bedroom, cabinet
+    [-1, 1, -1, 0, 7],    // Slide 2: logo video (missing), Right Surface, ZERO (missing), Every Great Interior, Parquetry
+  ],
 };

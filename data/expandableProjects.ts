@@ -83,6 +83,7 @@ export const expandableProjectsData: ExpandableProject[] = [
   {
     id: "project-02",
     title: "Euro Decor",
+     
     category: "UI/UX Design / Development",
     description:
       "A B2B SaaS dashboard designed to optimize business analytics and workflow productivity. Features high-performance interactive charts, drag-and-drop widgets, and real-time data sync.",
@@ -90,6 +91,7 @@ export const expandableProjectsData: ExpandableProject[] = [
     coverSrc: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789821426/hero_image_zokkrl.png",
     coverPoster: "video/640x360_stone-geometry-banner.webp",
     badgeColor: "#333333",
+    layout: "eurodecor",
     gallery: [
       {
         type: "image",
