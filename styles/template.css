@@ -830,3 +830,156 @@
 /* ------------------------------------------------*/
 /* Project Expandable Gallery Styles End */
 /* ------------------------------------------------*/
+
+/* ===== Collage layout (Canva slides) ===== */
+
+/* light grey page, lavender "slides" on it */
+.mxd-fullscreen-drawer-overlay--collage {
+  background-color: #e7e7ea;
+}
+
+/* dark text on the light grey page */
+.mxd-fullscreen-drawer-overlay--collage .close-text { color: #1b1b1b; }
+.mxd-fullscreen-drawer-overlay--collage .close-icon-wrap {
+  border-color: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.05);
+}
+.mxd-fullscreen-drawer-overlay--collage .close-svg { stroke: #1b1b1b; }
+.mxd-fullscreen-drawer-overlay--collage .mxd-meta-title { color: #1b1b1b; }
+.mxd-fullscreen-drawer-overlay--collage .mxd-meta-category { color: rgba(0, 0, 0, 0.5); }
+.mxd-fullscreen-drawer-overlay--collage .mxd-meta-description { color: rgba(0, 0, 0, 0.7); }
+.mxd-fullscreen-drawer-overlay--collage .mxd-fullscreen-drawer-meta {
+  background-color: transparent;
+  border-top-color: rgba(0, 0, 0, 0.15);
+}
+
+/* page scroll + visible scrollbar (desktop) */
+@media only screen and (min-width: 1200px) {
+  .mxd-fullscreen-drawer-overlay--collage .mxd-fullscreen-drawer-content {
+    overflow-y: auto;
+    justify-content: flex-start;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.08);
+  }
+  .mxd-fullscreen-drawer-overlay--collage .mxd-fullscreen-drawer-content::-webkit-scrollbar {
+    display: block;
+    width: 10px;
+  }
+  .mxd-fullscreen-drawer-overlay--collage .mxd-fullscreen-drawer-content::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.08);
+  }
+  .mxd-fullscreen-drawer-overlay--collage .mxd-fullscreen-drawer-content::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 6px;
+  }
+}
+
+/* the slides, stacked in normal flow with a grey gap between */
+.mxd-collage-scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  gap: clamp(24px, 4vw, 48px);
+  width: 100%;
+  padding: 0 0 clamp(24px, 4vw, 48px) 0;
+  box-sizing: border-box;
+}
+
+.mxd-collage-frame {
+  display: grid;
+  box-sizing: border-box;
+  width: min(92vw, 1180px);
+  aspect-ratio: 16 / 9;
+  padding: clamp(18px, 3.2vw, 40px);
+  gap: clamp(14px, 2.2vw, 28px);
+  background-color: #c8a2d3;
+  background-image:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.22) 50%, transparent 50%),
+    linear-gradient(rgba(255, 255, 255, 0.22) 50%, transparent 50%);
+  background-size: 28px 28px;   /* lavender-pink checks */
+}
+
+.mxd-collage-item {
+  overflow: hidden;
+  border-radius: 16px;
+  min-width: 0;
+  min-height: 0;
+}
+
+.mxd-collage-item img,
+.mxd-collage-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 0;
+}
+
+/* Slide 1: wide | portrait | portrait  /  square | square | wide */
+.mxd-collage-frame--khokha-1 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 1.05fr 1fr;
+}
+.mxd-collage-frame--khokha-1 .mxd-collage-item--1 { grid-column: 1 / span 6;  grid-row: 1; }
+.mxd-collage-frame--khokha-1 .mxd-collage-item--2 { grid-column: 7 / span 3;  grid-row: 1; }
+.mxd-collage-frame--khokha-1 .mxd-collage-item--3 { grid-column: 10 / span 3; grid-row: 1; }
+.mxd-collage-frame--khokha-1 .mxd-collage-item--4 { grid-column: 1 / span 3;  grid-row: 2; }
+.mxd-collage-frame--khokha-1 .mxd-collage-item--5 { grid-column: 4 / span 3;  grid-row: 2; }
+.mxd-collage-frame--khokha-1 .mxd-collage-item--6 { grid-column: 7 / span 6;  grid-row: 2; }
+
+/* ===== Kho Kha Frame 2 only: 16:9, three columns, palace spans both rows ===== */
+@media only screen and (min-width: 768px) {
+  .mxd-collage-scroll .mxd-collage-frame--khokha-2 {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+    grid-template-columns: minmax(0, 111fr) minmax(0, 194fr) minmax(0, 147fr);
+    grid-template-rows: minmax(0, 1.17fr) minmax(0, 1fr);
+    grid-auto-rows: auto;
+  }
+
+  .mxd-collage-scroll .mxd-collage-frame--khokha-2 .mxd-collage-item {
+    position: relative;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  /* images fill their cell instead of pushing it taller */
+  .mxd-collage-scroll .mxd-collage-frame--khokha-2 .mxd-collage-item img,
+  .mxd-collage-scroll .mxd-collage-frame--khokha-2 .mxd-collage-item video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mxd-collage-scroll .mxd-collage-frame--khokha-2 .mxd-collage-item--1 { grid-column: 1; grid-row: 1; }
+  .mxd-collage-scroll .mxd-collage-frame--khokha-2 .mxd-collage-item--2 { grid-column: 2; grid-row: 1; }
+  .mxd-collage-scroll .mxd-collage-frame--khokha-2 .mxd-collage-item--3 { grid-column: 3; grid-row: 1 / span 2; }
+  .mxd-collage-scroll .mxd-collage-frame--khokha-2 .mxd-collage-item--4 { grid-column: 1; grid-row: 2; }
+  .mxd-collage-scroll .mxd-collage-frame--khokha-2 .mxd-collage-item--5 { grid-column: 2; grid-row: 2; }
+}
+/* Mobile: stack everything */
+@media only screen and (max-width: 767px) {
+  .mxd-collage-frame {
+    width: calc(100% - 40px);
+    aspect-ratio: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-auto-rows: 240px;
+  }
+  .mxd-collage-frame .mxd-collage-item {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+}
+.mxd-collage-item--empty {
+  background: rgba(255, 255, 255, 0.35);
+}
+.mxd-collage-item--empty {
+  background: rgba(255, 255, 255, 0.18);
+}

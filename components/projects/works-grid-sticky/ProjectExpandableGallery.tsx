@@ -9,6 +9,7 @@ import CommonLoadAnimation, {
 } from "@/components/animations/CommonLoadAnimation";
 import AutoplayLoopVideo from "@/components/media/AutoplayLoopVideo";
 import { expandableProjectsData, type MediaItem } from '@/data/expandableProjects';
+import { brandLayouts } from "./brandLayouts";
 
 const getAspectRatioHeightWidth = (media: MediaItem) => {
   if (media.type === "video") {
@@ -30,6 +31,10 @@ export default function ProjectExpandableGallery() {
   const cardRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
 
   const activeProject = expandableProjectsData.find((p) => p.id === activeId);
+
+    const collageSections = activeProject?.layout
+    ? brandLayouts[activeProject.layout]
+    : undefined;
 
   // Disable scroll when the full-page drawer is active
   useEffect(() => {
@@ -243,7 +248,8 @@ export default function ProjectExpandableGallery() {
                 damping: 38,
                 stiffness: 220,
               }}
-              className="mxd-fullscreen-drawer-overlay"
+             className={`mxd-fullscreen-drawer-overlay${collageSections ? " mxd-fullscreen-drawer-overlay--collage" : ""}`}
+              data-layout={activeProject.layout}
               style={{ cursor: isNearCorner ? "none" : "default" }}
               onMouseMove={handleOverlayMouseMove}
               onClick={handleOverlayClick}
@@ -297,7 +303,52 @@ export default function ProjectExpandableGallery() {
               </div>
 
               <div className="mxd-fullscreen-drawer-content">
-                {/* Fixed Height Grid Wrapper to fit all in one page height */}
+                               {collageSections && (
+                  <div className="mxd-collage-scroll">
+                    {collageSections.map((frameItems, frameIdx) => (
+                      <div
+                        key={frameIdx}
+                        className={`mxd-collage-frame mxd-collage-frame--${activeProject.layout}-${frameIdx + 1}`}
+                      >
+                        {frameItems.map((galleryIdx, slotIdx) => {
+                          const media = activeProject.gallery[galleryIdx];
+                          if (!media)
+  return (
+    <div
+      key={slotIdx}
+      className={`mxd-collage-item mxd-collage-item--${slotIdx + 1} mxd-collage-item--empty`}
+    />
+  );
+                          return (
+                            <div
+                              key={slotIdx}
+                              className={`mxd-collage-item mxd-collage-item--${slotIdx + 1}`}
+                            >
+                              {media.type === "video" ? (
+                                <AutoplayLoopVideo
+                                  className="mxd-fullscreen-gallery-video"
+                                  poster={media.poster}
+                                  sources={[{ src: media.src, type: "video/mp4" }]}
+                                />
+                              ) : (
+                                <Image
+                                  className="mxd-fullscreen-gallery-image"
+                                  src={media.src}
+                                  alt={`${activeProject.title} frame ${frameIdx + 1} image ${slotIdx + 1}`}
+                                  width={media.width || 800}
+                                  height={media.height || 600}
+                                  priority={frameIdx === 0 && slotIdx === 0}
+                                />
+                              )}
+                            </div>
+                          );
+                        })}
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {!collageSections && (
                 <div className="mxd-fullscreen-gallery-grid-wrapper">
                   <div className="mxd-fullscreen-gallery-grid">
                     {columns.map((colItems, colIdx) => (
@@ -339,6 +390,7 @@ export default function ProjectExpandableGallery() {
                   </div>
                 </div>
 
+                )}
                 {/* Metadata block (Title left, Description right - scrollable) */}
                 <div className="mxd-fullscreen-drawer-meta">
                   <div className="mxd-meta-left">
