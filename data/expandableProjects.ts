@@ -152,6 +152,7 @@ export const expandableProjectsData: ExpandableProject[] = [
     coverSrc: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789822302/hero_image_eoisjb.png",
     coverPoster: "video/640x360_stone-geometry-banner.webp",
     badgeColor: "#333333",
+    layout: "mosu",
     gallery: [
       {
         type: "image",
@@ -205,6 +206,7 @@ export const expandableProjectsData: ExpandableProject[] = [
     coverType: "image",
     coverSrc: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789822590/hero_image_ul8mjl.png",
     badgeColor: "#222222",
+        layout: "pbl",
     gallery: [
       {
         type: "image",
@@ -258,6 +260,7 @@ export const expandableProjectsData: ExpandableProject[] = [
     coverType: "image",
     coverSrc:"https://res.cloudinary.com/daoju0r3c/image/upload/v1789823046/Luxury_Skincare_Boxes_on_Red_Platforms_uqshoj.png",
     badgeColor: "#222222",
+        layout: "continuity",
     gallery: [
       {
         type: "image",
@@ -319,6 +322,7 @@ export const expandableProjectsData: ExpandableProject[] = [
     coverSrc: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789823465/hero_image_vuumev.png",
     coverPoster: "video/640x360_stone-geometry-banner.webp",
     badgeColor: "#333333",
+        layout: "saaro",
     gallery: [
       {
         type: "image",
@@ -375,6 +379,7 @@ export const expandableProjectsData: ExpandableProject[] = [
     coverSrc: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789824099/hero_image_mrs0oh.png",
     coverPoster: "video/640x360_stone-geometry-banner.webp",
     badgeColor: "#333333",
+    layout: "trisha",
     gallery: [
       {
         type: "image",
@@ -429,6 +434,7 @@ export const expandableProjectsData: ExpandableProject[] = [
     coverSrc: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789824599/hero_image_h5d5xa.png",
     coverPoster: "video/640x360_stone-geometry-banner.webp",
     badgeColor: "#333333",
+    layout: "palm",
     gallery: [
       {
         type: "image",
@@ -483,6 +489,7 @@ export const expandableProjectsData: ExpandableProject[] = [
     coverSrc: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789824671/hero_image_kydgf6.png",
     coverPoster: "video/640x360_stone-geometry-banner.webp",
     badgeColor: "#333333",
+    layout: "onestop", 
     gallery: [
       {
         type: "image",
@@ -538,6 +545,7 @@ export const expandableProjectsData: ExpandableProject[] = [
     coverSrc: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789825450/hero_image_an32ee.png",
     coverPoster: "video/640x360_stone-geometry-banner.webp",
     badgeColor: "#333333",
+    layout: "terra", 
     gallery: [
       {
         type: "image",
