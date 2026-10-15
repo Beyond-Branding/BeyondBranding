@@ -1694,3 +1694,451 @@
 .mxd-collage-scroll .mxd-collage-frame--terra-2 .mxd-collage-item--empty {
   background: rgba(255, 255, 255, 0.2);
 }
+/* ===== All brands: no background colour + full-screen collage ===== */
+
+/* 1. Drawer: use the whole screen, no side padding or max-width */
+.mxd-fullscreen-drawer-overlay--collage .mxd-fullscreen-drawer-content {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* 2. Scroll wrapper: edge to edge, no colour */
+.mxd-fullscreen-drawer-overlay--collage .mxd-collage-scroll {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: none !important;
+}
+
+/* 3. Every frame (every brand, every slide) fills one full screen, no colour */
+.mxd-collage-scroll .mxd-collage-frame {
+  width: 100% !important;
+  max-width: none !important;
+  height: 100vh !important;
+  min-height: 100vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  background: none !important;
+  border-radius: 0 !important;
+}
+
+/* 4. Remove any per-brand overlay colour; plain dark behind the grid */
+.mxd-fullscreen-drawer-overlay[data-layout] {
+  background: #0b0b0b !important;
+}
+/* ===== Madhuram & Nasreen ===== */
+.mxd-collage-scroll .mxd-collage-frame--madhuram-1,
+.mxd-collage-scroll .mxd-collage-frame--madhuram-2,
+.mxd-collage-scroll .mxd-collage-frame--nasreen-1 {
+  display: grid;
+  gap: 12px;
+}
+.mxd-collage-scroll .mxd-collage-frame--madhuram-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--madhuram-2 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--nasreen-1 .mxd-collage-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0;
+}
+.mxd-collage-scroll .mxd-collage-frame--madhuram-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--madhuram-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--madhuram-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--madhuram-2 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--nasreen-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--nasreen-1 .mxd-collage-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Madhuram slide 1: one full slot */
+.mxd-collage-scroll .mxd-collage-frame--madhuram-1 {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+/* Madhuram slide 2: 3 x 2 equal grid */
+.mxd-collage-scroll .mxd-collage-frame--madhuram-2 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+
+/* Nasreen: top  = sunset (wide) | My Forte | laptop
+            bottom = About Us (wide) | Coaching (narrow) | Mission (wide) */
+.mxd-collage-scroll .mxd-collage-frame--nasreen-1 {
+  grid-template-columns: 317fr 175fr 48fr 264fr;
+  grid-template-rows: 1fr 1fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--nasreen-1 .mxd-collage-item:nth-child(1) { grid-column: 1;     grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--nasreen-1 .mxd-collage-item:nth-child(2) { grid-column: 2 / 4; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--nasreen-1 .mxd-collage-item:nth-child(3) { grid-column: 4;     grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--nasreen-1 .mxd-collage-item:nth-child(4) { grid-column: 1;     grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--nasreen-1 .mxd-collage-item:nth-child(5) { grid-column: 2;     grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--nasreen-1 .mxd-collage-item:nth-child(6) { grid-column: 3 / 5; grid-row: 2; }
+
+/* Empty slots (missing media) */
+.mxd-collage-scroll .mxd-collage-frame--madhuram-2 .mxd-collage-item--empty {
+  background: rgba(255, 255, 255, 0.12);
+}
+/* ===== Srvvasya & Exxpression ===== */
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-1,
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-2,
+.mxd-collage-scroll .mxd-collage-frame--exxpression-1,
+.mxd-collage-scroll .mxd-collage-frame--exxpression-2 {
+  display: grid;
+  gap: 12px;
+}
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-2 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--exxpression-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--exxpression-2 .mxd-collage-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0;
+}
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-2 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--exxpression-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--exxpression-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--exxpression-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--exxpression-2 .mxd-collage-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Srvvasya slide 1: website (wide, top-left) | tall poster | edge poster
+                     bookmark | book (bottom-left) */
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-1 {
+  grid-template-columns: 90fr 100fr 102fr 56fr;
+  grid-template-rows: 110fr 83fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-1 .mxd-collage-item:nth-child(1) { grid-column: 1 / 3; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-1 .mxd-collage-item:nth-child(2) { grid-column: 1;     grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-1 .mxd-collage-item:nth-child(3) { grid-column: 2;     grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-1 .mxd-collage-item:nth-child(4) { grid-column: 3;     grid-row: 1 / 3; }
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-1 .mxd-collage-item:nth-child(5) { grid-column: 4;     grid-row: 1 / 3; }
+
+/* Srvvasya slide 2: edge | tall Vriin C | Energize You over We evolve */
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-2 {
+  grid-template-columns: 48fr 139fr 170fr;
+  grid-template-rows: 1fr 1fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-2 .mxd-collage-item:nth-child(1) { grid-column: 1; grid-row: 1 / 3; }
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-2 .mxd-collage-item:nth-child(2) { grid-column: 2; grid-row: 1 / 3; }
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-2 .mxd-collage-item:nth-child(3) { grid-column: 3; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-2 .mxd-collage-item:nth-child(4) { grid-column: 3; grid-row: 2; }
+
+/* Exxpression slide 1: 3 on top (104 | 145 | 112), 3 below (148 | 132 | 77) */
+.mxd-collage-scroll .mxd-collage-frame--exxpression-1 {
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 105fr 86fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--exxpression-1 .mxd-collage-item:nth-child(1) { grid-column: 1 / 4;   grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--exxpression-1 .mxd-collage-item:nth-child(2) { grid-column: 4 / 8;   grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--exxpression-1 .mxd-collage-item:nth-child(3) { grid-column: 8 / 13;  grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--exxpression-1 .mxd-collage-item:nth-child(4) { grid-column: 1 / 6;   grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--exxpression-1 .mxd-collage-item:nth-child(5) { grid-column: 6 / 10;  grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--exxpression-1 .mxd-collage-item:nth-child(6) { grid-column: 10 / 13; grid-row: 2; }
+
+/* Exxpression slide 2: big laptop video | floor plan over interior */
+.mxd-collage-scroll .mxd-collage-frame--exxpression-2 {
+  grid-template-columns: 265fr 112fr;
+  grid-template-rows: 1fr 1fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--exxpression-2 .mxd-collage-item:nth-child(1) { grid-column: 1; grid-row: 1 / 3; }
+.mxd-collage-scroll .mxd-collage-frame--exxpression-2 .mxd-collage-item:nth-child(2) { grid-column: 2; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--exxpression-2 .mxd-collage-item:nth-child(3) { grid-column: 2; grid-row: 2; }
+
+/* Empty slots (missing media) */
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-1 .mxd-collage-item--empty,
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-2 .mxd-collage-item--empty,
+.mxd-collage-scroll .mxd-collage-frame--exxpression-1 .mxd-collage-item--empty {
+  background: rgba(255, 255, 255, 0.12);
+}
+/* ===== Mildas Diamonds & Pallavi Foundation ===== */
+.mxd-collage-scroll .mxd-collage-frame--mildas-1,
+.mxd-collage-scroll .mxd-collage-frame--mildas-2,
+.mxd-collage-scroll .mxd-collage-frame--pallavi-1,
+.mxd-collage-scroll .mxd-collage-frame--pallavi-2 {
+  display: grid;
+  gap: 12px;
+}
+.mxd-collage-scroll .mxd-collage-frame--mildas-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--mildas-2 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--pallavi-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--pallavi-2 .mxd-collage-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0;
+}
+.mxd-collage-scroll .mxd-collage-frame--mildas-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--mildas-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--mildas-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--mildas-2 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--pallavi-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--pallavi-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--pallavi-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--pallavi-2 .mxd-collage-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Mildas slide 1: big video | two stacked on the right */
+.mxd-collage-scroll .mxd-collage-frame--mildas-1 {
+  grid-template-columns: 303fr 85fr;
+  grid-template-rows: 1fr 1fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--mildas-1 .mxd-collage-item:nth-child(1) { grid-column: 1; grid-row: 1 / 3; }
+.mxd-collage-scroll .mxd-collage-frame--mildas-1 .mxd-collage-item:nth-child(2) { grid-column: 2; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--mildas-1 .mxd-collage-item:nth-child(3) { grid-column: 2; grid-row: 2; }
+
+/* Mildas slide 2: 3 x 2, tall top row, short bottom row */
+.mxd-collage-scroll .mxd-collage-frame--mildas-2 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 138fr 70fr;
+}
+
+/* Pallavi slide 1: logo over collage on the left | big video */
+.mxd-collage-scroll .mxd-collage-frame--pallavi-1 {
+  grid-template-columns: 100fr 272fr;
+  grid-template-rows: 1fr 1fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--pallavi-1 .mxd-collage-item:nth-child(1) { grid-column: 1; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--pallavi-1 .mxd-collage-item:nth-child(2) { grid-column: 1; grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--pallavi-1 .mxd-collage-item:nth-child(3) { grid-column: 2; grid-row: 1 / 3; }
+
+/* Pallavi slide 2: top 3 (hero | news | tiles), bottom 3 (carousel | trees | vision) */
+.mxd-collage-scroll .mxd-collage-frame--pallavi-2 {
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: 138fr 74fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--pallavi-2 .mxd-collage-item:nth-child(1) { grid-column: 1 / 10;  grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--pallavi-2 .mxd-collage-item:nth-child(2) { grid-column: 10 / 20; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--pallavi-2 .mxd-collage-item:nth-child(3) { grid-column: 20 / 25; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--pallavi-2 .mxd-collage-item:nth-child(4) { grid-column: 1 / 11;  grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--pallavi-2 .mxd-collage-item:nth-child(5) { grid-column: 11 / 16; grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--pallavi-2 .mxd-collage-item:nth-child(6) { grid-column: 16 / 25; grid-row: 2; }
+
+/* Empty slots (missing media) */
+.mxd-collage-scroll .mxd-collage-frame--mildas-2 .mxd-collage-item--empty,
+.mxd-collage-scroll .mxd-collage-frame--pallavi-2 .mxd-collage-item--empty {
+  background: rgba(255, 255, 255, 0.12);
+}
+/* ===== Valdaria & Prisha Designs ===== */
+.mxd-collage-scroll .mxd-collage-frame--valdaria-1,
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2,
+.mxd-collage-scroll .mxd-collage-frame--prisha-1,
+.mxd-collage-scroll .mxd-collage-frame--prisha-2 {
+  display: grid;
+  gap: 12px;
+}
+.mxd-collage-scroll .mxd-collage-frame--valdaria-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--prisha-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--prisha-2 .mxd-collage-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0;
+}
+.mxd-collage-scroll .mxd-collage-frame--valdaria-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--valdaria-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--prisha-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--prisha-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--prisha-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--prisha-2 .mxd-collage-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Valdaria slide 1: big video | two stacked on the right */
+.mxd-collage-scroll .mxd-collage-frame--valdaria-1 {
+  grid-template-columns: 310fr 87fr;
+  grid-template-rows: 97fr 127fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--valdaria-1 .mxd-collage-item:nth-child(1) { grid-column: 1; grid-row: 1 / 3; }
+.mxd-collage-scroll .mxd-collage-frame--valdaria-1 .mxd-collage-item:nth-child(2) { grid-column: 2; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--valdaria-1 .mxd-collage-item:nth-child(3) { grid-column: 2; grid-row: 2; }
+
+/* Valdaria slide 2: top  = A | B | C+D (logo) | E
+                     bottom = A | B+C (logo) | D | E */
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 {
+  grid-template-columns: 92fr 100fr 25fr 98fr 90fr;
+  grid-template-rows: 127fr 96fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 .mxd-collage-item:nth-child(1) { grid-column: 1;     grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 .mxd-collage-item:nth-child(2) { grid-column: 2;     grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 .mxd-collage-item:nth-child(3) { grid-column: 3 / 5; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 .mxd-collage-item:nth-child(4) { grid-column: 5;     grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 .mxd-collage-item:nth-child(5) { grid-column: 1;     grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 .mxd-collage-item:nth-child(6) { grid-column: 2 / 4; grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 .mxd-collage-item:nth-child(7) { grid-column: 4;     grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 .mxd-collage-item:nth-child(8) { grid-column: 5;     grid-row: 2; }
+
+/* Prisha slide 1: 2 tall videos | two stacked on the right */
+.mxd-collage-scroll .mxd-collage-frame--prisha-1 {
+  grid-template-columns: 120fr 118fr 132fr;
+  grid-template-rows: 98fr 105fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--prisha-1 .mxd-collage-item:nth-child(1) { grid-column: 1; grid-row: 1 / 3; }
+.mxd-collage-scroll .mxd-collage-frame--prisha-1 .mxd-collage-item:nth-child(2) { grid-column: 2; grid-row: 1 / 3; }
+.mxd-collage-scroll .mxd-collage-frame--prisha-1 .mxd-collage-item:nth-child(3) { grid-column: 3; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--prisha-1 .mxd-collage-item:nth-child(4) { grid-column: 3; grid-row: 2; }
+
+/* Prisha slide 2: 2 stacked | graphic over tall frame | big laptop video */
+.mxd-collage-scroll .mxd-collage-frame--prisha-2 {
+  grid-template-columns: 93fr 80fr 190fr;
+  grid-template-rows: 30fr 69fr 99fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--prisha-2 .mxd-collage-item:nth-child(1) { grid-column: 1; grid-row: 1 / 3; }
+.mxd-collage-scroll .mxd-collage-frame--prisha-2 .mxd-collage-item:nth-child(2) { grid-column: 1; grid-row: 3; }
+.mxd-collage-scroll .mxd-collage-frame--prisha-2 .mxd-collage-item:nth-child(3) { grid-column: 2; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--prisha-2 .mxd-collage-item:nth-child(4) { grid-column: 2; grid-row: 2 / 4; }
+.mxd-collage-scroll .mxd-collage-frame--prisha-2 .mxd-collage-item:nth-child(5) { grid-column: 3; grid-row: 1 / 4; }
+
+/* Empty slots (missing media) */
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 .mxd-collage-item--empty,
+.mxd-collage-scroll .mxd-collage-frame--prisha-2 .mxd-collage-item--empty {
+  background: rgba(255, 255, 255, 0.12);
+}
+/* ===== Shivdi Cha Raja ===== */
+.mxd-collage-scroll .mxd-collage-frame--shivdi-1,
+.mxd-collage-scroll .mxd-collage-frame--shivdi-2 {
+  display: grid;
+  gap: 12px;
+}
+.mxd-collage-scroll .mxd-collage-frame--shivdi-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--shivdi-2 .mxd-collage-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0;
+}
+.mxd-collage-scroll .mxd-collage-frame--shivdi-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--shivdi-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--shivdi-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--shivdi-2 .mxd-collage-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Slide 1: three equal tall videos */
+.mxd-collage-scroll .mxd-collage-frame--shivdi-1 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+
+/* Slide 2: tall | tall (wider) | two stacked */
+.mxd-collage-scroll .mxd-collage-frame--shivdi-2 {
+  grid-template-columns: 122fr 161fr 90fr;
+  grid-template-rows: 117fr 94fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--shivdi-2 .mxd-collage-item:nth-child(1) { grid-column: 1; grid-row: 1 / 3; }
+.mxd-collage-scroll .mxd-collage-frame--shivdi-2 .mxd-collage-item:nth-child(2) { grid-column: 2; grid-row: 1 / 3; }
+.mxd-collage-scroll .mxd-collage-frame--shivdi-2 .mxd-collage-item:nth-child(3) { grid-column: 3; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--shivdi-2 .mxd-collage-item:nth-child(4) { grid-column: 3; grid-row: 2; }
+
+/* Empty slots (missing media) */
+.mxd-collage-scroll .mxd-collage-frame--shivdi-1 .mxd-collage-item--empty,
+.mxd-collage-scroll .mxd-collage-frame--shivdi-2 .mxd-collage-item--empty {
+  background: rgba(255, 255, 255, 0.12);
+}
+/* ===== The Content Team ===== */
+.mxd-collage-scroll .mxd-collage-frame--contentteam-1,
+.mxd-collage-scroll .mxd-collage-frame--contentteam-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 12px;
+}
+.mxd-collage-scroll .mxd-collage-frame--contentteam-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--contentteam-2 .mxd-collage-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0;
+}
+.mxd-collage-scroll .mxd-collage-frame--contentteam-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--contentteam-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--contentteam-2 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--contentteam-2 .mxd-collage-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Empty slot (missing video) */
+.mxd-collage-scroll .mxd-collage-frame--contentteam-2 .mxd-collage-item--empty {
+  background: rgba(255, 255, 255, 0.12);
+}
+/* 3. Every frame fills one screen, with a small margin on all four sides */
+.mxd-collage-scroll .mxd-collage-frame {
+  width: 100% !important;
+  max-width: none !important;
+  height: 100vh !important;
+  min-height: 100vh !important;
+  margin: 0 !important;
+  padding: clamp(16px, 2.5vw, 40px) !important;   /* space on top, bottom, left and right */
+  box-sizing: border-box !important;
+  background: none !important;
+  border-radius: 0 !important;
+}
+/* ===== Wider, more visible scrollbar in the expanded view ===== */
+.mxd-fullscreen-drawer-overlay,
+.mxd-fullscreen-drawer-content {
+  scrollbar-width: auto;                                  /* Firefox: thick */
+  scrollbar-color: rgba(255, 255, 255, 0.65) rgba(255, 255, 255, 0.12); /* thumb, track */
+}
+.mxd-fullscreen-drawer-overlay::-webkit-scrollbar,
+.mxd-fullscreen-drawer-content::-webkit-scrollbar {
+  width: 16px;                                            /* Chrome / Edge: thickness */
+}
+.mxd-fullscreen-drawer-overlay::-webkit-scrollbar-track,
+.mxd-fullscreen-drawer-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.12);                  /* track (the groove) */
+}
+.mxd-fullscreen-drawer-overlay::-webkit-scrollbar-thumb,
+.mxd-fullscreen-drawer-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.65);                  /* the bar you drag */
+  border-radius: 8px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+.mxd-fullscreen-drawer-overlay::-webkit-scrollbar-thumb:hover,
+.mxd-fullscreen-drawer-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.9);
+  background-clip: padding-box;
+}

@@ -600,6 +600,7 @@ export const expandableProjectsData: ExpandableProject[] = [
     coverType: "image",
     coverSrc: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789825063/hero_image_1_ps8bve.png",
     badgeColor: "#222222",
+     layout: "madhuram",
     gallery: [
       {
         type: "image",
@@ -654,6 +655,7 @@ export const expandableProjectsData: ExpandableProject[] = [
     coverType: "image",
     coverSrc: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826032/hero_image_2_adxnob.png",
     badgeColor: "#333333",
+    layout: "nasreen",
     gallery: [
       {
         type: "image",
@@ -709,6 +711,7 @@ export const expandableProjectsData: ExpandableProject[] = [
     coverSrc: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826465/Copy_of_bb_website_content_35_az2m4y.png",
     coverPoster: "video/640x360_stone-geometry-banner.webp",
     badgeColor: "#333333",
+      layout: "srvvasya",
     gallery: [
       {
         type: "image",
@@ -770,6 +773,7 @@ export const expandableProjectsData: ExpandableProject[] = [
     coverType: "image",
     coverSrc: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826834/hero_image_3_grzplh.png",
     badgeColor: "#222222",
+      layout: "exxpression",
     gallery: [
       {
         type: "image",
@@ -824,6 +828,7 @@ export const expandableProjectsData: ExpandableProject[] = [
     coverSrc: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789827318/hero_image__vuc0qt.png",
     coverPoster: "video/640x360_stone-geometry-banner.webp",
     badgeColor: "#333333",
+     layout: "mildas",
     gallery: [
       {
         type: "image",
@@ -878,6 +883,7 @@ export const expandableProjectsData: ExpandableProject[] = [
     coverType: "image",
     coverSrc: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789827507/hero_image_4_iyow2p.png",
     badgeColor: "#222222",
+      layout: "pallavi",
     gallery: [
       {
         type: "image",
@@ -931,6 +937,7 @@ export const expandableProjectsData: ExpandableProject[] = [
     coverType: "image",
     coverSrc: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789827668/hero_image__pybeyx.png",
     badgeColor: "#222222",
+      layout: "valdaria",
     gallery: [
       {
         type: "image",
@@ -984,6 +991,7 @@ export const expandableProjectsData: ExpandableProject[] = [
     coverType: "image",
     coverSrc:"https://res.cloudinary.com/daoju0r3c/image/upload/v1789828822/hero_image_kagne0.png",
     badgeColor: "#222222",
+     layout: "prisha",
     gallery: [
       {
         type: "image",
@@ -1044,6 +1052,7 @@ export const expandableProjectsData: ExpandableProject[] = [
     coverType: "image",
     coverSrc:"https://res.cloudinary.com/daoju0r3c/image/upload/v1789829764/hero_image__zgws70.png",
     badgeColor: "#222222",
+        layout: "shivdi",
     gallery: [
       {
         type: "image",
@@ -1104,6 +1113,7 @@ export const expandableProjectsData: ExpandableProject[] = [
     coverType: "image",
     coverSrc:"https://res.cloudinary.com/daoju0r3c/image/upload/v1789830523/hero_image__x0d3uu.png",
     badgeColor: "#222222",
+       layout: "contentteam",
     gallery: [
       {
         type: "video",
