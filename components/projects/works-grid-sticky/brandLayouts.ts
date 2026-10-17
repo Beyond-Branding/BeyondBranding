@@ -41,48 +41,48 @@ export const brandLayouts: Record<string, number[][]> = {
     [3, 2, 0],            // Slide 1: big video | brochure | acacia board
     [2, 0, 1, 4],         // Slide 2: brochure | acacia board | About Us | price poster
   ],
-    terra: [
+        terra: [
     [3, 6, 5],            // Slide 1: laptop | serum bottle | serum text
-    [0, 2, 1, -1, 4],      // Slide 2: Why you'll love it | cream | product group | avocado "What is it?" (7) | avocado bottle
+    [0, 2, 1, 7, 4],      // Slide 2: Why you'll love it | cream | product group | avocado "What is it?" (7) | avocado bottle
   ],
-    madhuram: [
+      madhuram: [
     [3],                       // Slide 1: product video
-    [6, -1, 2, -1, 5, 0],      // Slide 2: dark purple | gold box + sweets (missing) | lotus | green peacock box (missing) | Kesar Peda gold | pink geometric
+    [6, 7, 2, 8, 5, 0],        // Slide 2: dark purple | gold box + sweets (7) | lotus | green peacock box (8) | Kesar Peda gold | pink geometric
   ],
-  nasreen: [
-    [1, 3, 2, 7, 0, 6],        // Slide: sunset banner | My Forte | laptop | About Us | Coaching Monthly | Mission
+   nasreen: [
+    [1, 3, 2, 7, 0, 6],        // Slide: sunset banner | My Forte | laptop | About Us (7) | Coaching Monthly | Mission
   ],
-    srvvasya: [
-    [-1, 4, 0, 6, -1],     // Slide 1: website mockup (missing) | bookmark | Soul Leadership book | "Want to level up" poster | edge of next poster (missing)
-    [-1, 1, 2, 5],         // Slide 2: edge of previous poster (missing) | Vriin C poster | Energize You | We evolve together
+       srvvasya: [
+    [8, 4, 0, 6, 9],     // Slide 1: website mockup | bookmark | book | tree poster | arms-raised poster (edge)
+    [9, 1, 2, 5],        // Slide 2: arms-raised poster (edge) | Vriin C poster | Energize You | We evolve together
   ],
-  exxpression: [
-    [-1, 1, 5, -1, 0, -1], // Slide 1: letterhead (missing) | stationery set | brochure | envelopes (missing) | logo sign | business cards (missing)
+    exxpression: [
+    [7, 1, 5, 8, 0, 6],    // Slide 1: letterhead (7) | stationery set | brochure | envelopes (8) | logo sign | business cards (hero, 6)
     [3, 4, 2],             // Slide 2: laptop video | floor plan | interior
   ],
-    mildas: [
+       mildas: [
     [3, 5, 4],                // Slide 1: video | drop earring | rose-gold fan necklace
-    [0, 1, 2, -1, 6, -1],     // Slide 2: necklace | earring | ring | IIJS sign (missing) | showcase | wide showcase (missing)
+    [0, 1, 2, 7, 6, 8],       // Slide 2: necklace | earring | ring | IIJS sign (7) | showcase | wide showcase (8)
   ],
-  pallavi: [
+    pallavi: [
     [0, 4, 3],                // Slide 1: logo | vision/awards collage | video
-    [-1, -1, 2, 5, 6, 4],     // Slide 2: website hero (missing) | news page (missing) | What We Do tiles | What We Do carousel | tree planting | vision/awards
+    [7, 8, 2, 5, 6, 4],       // Slide 2: website hero (7) | news page (8) | tiles | What We Do | tree planting | vision/awards
   ],
-    valdaria: [
-    [2, 4, 1],                        // Slide 1: video (choker + IIJS) | blue Valdaria box | pendant poster
-    [6, -1, -1, 0, 3, -1, -1, 5],     // Slide 2: long necklace | earrings (missing) | logo tile (missing) | bangles
-                                      //          flower necklace | logo tile (missing) | U-necklace (missing) | emerald choker
+     valdaria: [
+    [2, 4, 1],                      // Slide 1: video | blue Valdaria box | pendant poster
+    [6, 7, 8, 0, 3, 8, 9, 5],       // Slide 2: long necklace | earrings (7) | logo (8) | bangles | flower necklace | logo (8) | U-necklace (9) | emerald choker
   ],
-  prisha: [
-    [7, 3, 5, 4],                     // Slide 1: video clip | beads video | woman painting | Ganesha frame
-    [0, 2, -1, 1, 6],                 // Slide 2: Get In Touch | shell flower | squares graphic (missing) | Shrinathji frame | laptop video
+   prisha: [
+    [7, 3, 5, 4],           // Slide 1: video clip | beads video | woman painting | Ganesha frame
+    [0, 2, 8, 1, 6],     // Slide 2: Get In Touch | shell flower | squares | Shrinathji | laptop video
   ],
-    shivdi: [
-    [-1, -1, -1],        // Slide 1: three vertical videos (rain / underwater temple / street) - all missing
-    [-1, 0, 4, 1],       // Slide 2: "Parampara" poster (missing) | 75th Shivdicha Raja temple | pink poster | Ganesha poster
+     shivdi: [
+    [8, 9, 10],          // Slide 1: rain | underwater temple | street
+    [3, 0, 4, 1],        // Slide 2: Parampara video | 75th Shivdicha Raja | pink poster | Ganesha poster
   ],
     contentteam: [
-    [4, 3, 1],      // Slide 1: street / set BTS video | red circular set video | stage dance video
-    [0, -1, 2],     // Slide 2: red-jacket video | dancers video (missing) | orange stage video
+    [4, 8, 1],      // Slide 1: TCT BTS | red circular set | BTS Music Ka Mahol
+    [0, 3, 2],      // Slide 2: red-jacket | Rajeev Helping | orange stage
   ],
 };
+  

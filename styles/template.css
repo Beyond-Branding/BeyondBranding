@@ -2142,3 +2142,16 @@
   background: rgba(255, 255, 255, 0.9);
   background-clip: padding-box;
 }
+
+.mxd-collage-scroll .mxd-collage-frame--prisha-2 .mxd-collage-item--3 img {
+  object-fit: contain;
+}
+/* .mxd-fullscreen-drawer-overlay[data-layout="khokha"],
+.mxd-fullscreen-drawer-overlay[data-layout="khokha"] .mxd-fullscreen-drawer-content,
+.mxd-fullscreen-drawer-overlay[data-layout="khokha"] .mxd-collage-scroll,
+.mxd-fullscreen-drawer-overlay[data-layout="khokha"] [class*="mxd-collage-frame"] {
+  background: #b494c4 !important;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.14) 0 28px, rgba(255,255,255,0) 28px 56px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.14) 0 28px, rgba(255,255,255,0) 28px 56px) !important;
+} */

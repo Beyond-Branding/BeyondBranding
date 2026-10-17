@@ -700,63 +700,76 @@ export const expandableProjectsData: ExpandableProject[] = [
     ],
   },
 
+     {
+    id: "project-10",
+    title: "Terraa Love",
+    category: "Identity & Strategy",
+    description:
+      "A comprehensive brand strategy and visual identity redesign for Aura, focusing on minimalist aesthetics, luxury textures, and sustainable packaging. We crafted a unique typographic language and materials guide that elevates their premium market position.",
+    coverType: "image",
+    coverSrc: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789825450/hero_image_an32ee.png",
+    coverPoster: "video/640x360_stone-geometry-banner.webp",
+    badgeColor: "#333333",
+    layout: "terra",
+    gallery: [
+      // 0 Why you'll love it
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789825449/Copy_of_bb_website_content_29_plush9.png",
+        width: 1280,
+        height: 722,
+      },
+      // 1 product group
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789825449/Copy_of_bb_website_content_25_s0kmmj.png",
+        width: 500,
+        height: 500,
+      },
+      // 2 cream
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789825448/Copy_of_bb_website_content_27_rsr7uq.png",
+        width: 1280,
+        height: 722,
+      },
+      // 3 laptop video
+      {
+        type: "video",
+        src: "https://res.cloudinary.com/daoju0r3c/video/upload/v1789825458/keep_thecontent_as_it_is_just_kpjzqg.mp4",
+        poster: "video/640x360_stone-geometry-banner.webp",
+      },
+      // 4 avocado bottle
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789825448/Copy_of_bb_website_content_26_jddhdp.png",
+        width: 500,
+        height: 500,
+      },
+      // 5 serum text (What is it? Vitamin C)
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789825448/Copy_of_bb_website_content_24_xmqzx0.png",
+        width: 1280,
+        height: 722,
+      },
+      // 6 serum bottle
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789825448/Copy_of_bb_website_content_23_xexgli.png",
+        width: 500,
+        height: 500,
+      },
+      // 7 NEW: "What is it?" avocado body lotion - Slide 2 slot 4
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789825449/Copy_of_bb_website_content_28_qwdalw.png",
+        width: 1280,
+        height: 722,
+      },
+    ],
+  },
     {
-id: "project-10",
-title: "Terraa Love",
-category: "Identity & Strategy",
-description:
-"A comprehensive brand strategy and visual identity redesign for Aura, focusing on minimalist aesthetics, luxury textures, and sustainable packaging. We crafted a unique typographic language and materials guide that elevates their premium market position.",
-coverType: "image",
-coverSrc: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789825450/hero_image_an32ee.png",
-coverPoster: "video/640x360_stone-geometry-banner.webp",
-badgeColor: "#333333",
-layout: "terra",
-gallery: [
-{
-type: "image",
-src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789825449/Copy_of_bb_website_content_29_plush9.png",
-width: 1280,
-height: 722,
-},
-{
-type: "image",
-src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789825449/Copy_of_bb_website_content_25_s0kmmj.png",
-width: 500,
-height: 500,
-},
-{
-type: "image",
-src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789825448/Copy_of_bb_website_content_27_rsr7uq.png",
-width: 1280,
-height: 722,
-},
-{
-type: "video",
-src: "https://res.cloudinary.com/daoju0r3c/video/upload/v1789825458/keep_thecontent_as_it_is_just_kpjzqg.mp4",
-poster: "video/640x360_stone-geometry-banner.webp",
-},
-{
-type: "image",
-src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789825448/Copy_of_bb_website_content_26_jddhdp.png",
-width: 500,
-height: 500,
-},
-{
-type: "image",
-src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789825448/Copy_of_bb_website_content_24_xmqzx0.png",
-width: 1280,
-height: 722,
-},
-{
-type: "image",
-src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789825448/Copy_of_bb_website_content_23_xexgli.png",
-width: 500,
-height: 500,
-},
-],
-},
-
-  {
     id: "project-11",
     title: "Madhuram",
     category: "Brand Identity",
@@ -765,53 +778,74 @@ height: 500,
     coverType: "image",
     coverSrc: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789825063/hero_image_1_ps8bve.png",
     badgeColor: "#222222",
-     layout: "madhuram",
+    layout: "madhuram",
     gallery: [
+      // 0 pink geometric
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789825308/image-gen-6_20260826-094515_w1uylp.png",
         width: 1280,
         height: 722,
       },
+      // 1 dark green gold box (not used in the layout)
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789825309/image-gen-9_5_fv2tym.png",
         width: 500,
         height: 500,
       },
+      // 2 lotus
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789825310/image-gen-1_20260826-094453_t86sqa.png",
         width: 1280,
         height: 722,
       },
+      // 3 product video
       {
         type: "video",
         src: "https://res.cloudinary.com/daoju0r3c/video/upload/v1789825313/remove_the_gemini_logo_1_lx6nti.mp4",
         poster: "https://res.cloudinary.com/daoju0r3c/video/upload/v1789825313/remove_the_gemini_logo_1_lx6nti.mp4",
       },
+      // 4 green Kesar Peda (not used in the layout)
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789825637/image-gen-3_20260826-094502_rl65b3.png",
         width: 500,
         height: 500,
       },
+      // 5 Kesar Peda gold peacock
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789825311/image-gen-2_20260826-094457_hn94wh.png",
         width: 1280,
         height: 722,
       },
+      // 6 dark purple
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789825639/image-gen-7_20260826-094520_mglecu.png",
         width: 500,
         height: 500,
       },
+      // 7 NEW: gold Kesar Peda box + sweets (image-gen-4) - Slide 2 slot 2
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1792223360/image-gen-4_20260826-094507_cvpmfe.png",
+        width: 1280,
+        height: 722,
+      },
+      // 8 NEW: green palm / peacock box (image-gen-8(7).png) - Slide 2 slot 4
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1792223482/image-gen-8_7_a9b5yv.png",
+        width: 1280,
+        height: 722,
+      },
     ],
   },
 
-  {
+    {
     id: "project-12",
     title: "Nasreen Khan Chanana",
     category: "Identity & Strategy",
@@ -822,51 +856,65 @@ height: 500,
     badgeColor: "#333333",
     layout: "nasreen",
     gallery: [
+      // 0 Coaching Monthly
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826109/ChatGPT_Image_Sep_2_2026_12_15_34_PM_cbj8hb.png",
         width: 1280,
         height: 722,
       },
+            // 1 sunset banner: top half of the file
       {
         type: "image",
-        src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826105/Copy_of_bb_website_content_42_vc6xso.png",
-        width: 500,
-        height: 500,
+        src: "https://res.cloudinary.com/daoju0r3c/image/upload/c_crop,g_north,w_1.0,h_0.50/v1789826105/Copy_of_bb_website_content_42_vc6xso.png",
+        width: 1280,
+        height: 722,
       },
+      // 2 laptop
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826106/Copy_of_bb_website_content_41_qv6uzj.png",
         width: 1280,
         height: 722,
       },
+      // 3 My Forte
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826103/Screenshot_2026-09-02_123005_vc9pch.png",
         width: 1280,
         height: 722,
       },
+      // 4 hero (not used in the layout)
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826032/hero_image_2_adxnob.png",
         width: 500,
         height: 500,
       },
+      // 5 hero duplicate (not used in the layout)
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826032/hero_image_2_adxnob.png",
         width: 1280,
         height: 722,
       },
+      // 6 Mission
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826104/Screenshot_2026-09-02_121806_ejqrok.png",
         width: 500,
         height: 500,
       },
+            // 7 About Us green panel: bottom half of the file
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/daoju0r3c/image/upload/c_crop,g_south,w_1.0,h_0.50/v1789826105/Copy_of_bb_website_content_42_vc6xso.png",
+        width: 1280,
+        height: 722,
+      },
     ],
   },
-  {
+    {
     id: "project-13",
     title: "Srvvasya",
     category: "UI/UX Design / Development",
@@ -876,60 +924,82 @@ height: 500,
     coverSrc: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826465/Copy_of_bb_website_content_35_az2m4y.png",
     coverPoster: "video/640x360_stone-geometry-banner.webp",
     badgeColor: "#333333",
-      layout: "srvvasya",
+    layout: "srvvasya",
     gallery: [
+      // 0 Soul Leadership book
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826464/Copy_of_bb_website_content_33_xmxudv.png",
         width: 1280,
         height: 843,
       },
+      // 1 Vriin C poster
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826998/ss1_fjfiye.png",
         width: 500,
         height: 500,
       },
+      // 2 Energize You
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826466/WhatsApp_Image_2026-09-01_at_4.54.56_PM_jlhgpa.jpg",
         width: 1280,
         height: 722,
       },
+      // 3 logo (not used in the layout)
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826470/hero_image_i8ezrj.png",
         width: 1280,
         height: 843,
       },
+      // 4 bookmark
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826464/Copy_of_bb_website_content_34_egyrgp.png",
         width: 500,
         height: 500,
       },
+      // 5 We evolve together
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826997/ss2_fhxlfv.png",
         width: 1280,
         height: 843,
       },
+      // 6 "Want to level up" poster
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789827092/ss3_aov7tt.png",
         width: 500,
         height: 500,
       },
+      // 7 duplicate of item 6 (not used in the layout)
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789827092/ss3_aov7tt.png",
         width: 1280,
         height: 843,
       },
+      // 8 NEW: website mockup (same file as the cover) - Slide 1 slot 1
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826465/Copy_of_bb_website_content_35_az2m4y.png",
+        width: 1280,
+        height: 843,
+      },
+            // 9 NEW: arms-raised poster (PDF page 2) - edge slots
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1792228737/vriin_poster-2_xtenfq.png",
+        width: 500,
+        height: 1000,
+      },
     ],
   },
 
-  {
+    {
     id: "project-14",
     title: "Exxpression Interior",
     category: "Brand Identity",
@@ -938,52 +1008,73 @@ height: 500,
     coverType: "image",
     coverSrc: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826834/hero_image_3_grzplh.png",
     badgeColor: "#222222",
-      layout: "exxpression",
+    layout: "exxpression",
     gallery: [
+      // 0 logo sign (image-gen-2)
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826952/image-gen-2_20260825-122505_qbupu6.png",
         width: 1280,
         height: 722,
       },
+      // 1 stationery set (image-gen-1)
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826951/image-gen-1_20260825-122501_ysx2k0.png",
         width: 500,
         height: 500,
       },
+      // 2 interior
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826954/39ad4487-e38e-49b2-9155-125bb8f3c063_ckadwn.png",
         width: 1280,
         height: 722,
       },
+      // 3 laptop video
       {
         type: "video",
         src: "https://res.cloudinary.com/daoju0r3c/video/upload/v1789826952/9_yealzv.mp4",
         poster: "https://res.cloudinary.com/daoju0r3c/video/upload/v1789826952/9_yealzv.mp4",
       },
+      // 4 floor plan
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826952/a01c07e6-fe94-447d-8f44-45889e8d5fe7_xr6umh.png",
         width: 500,
         height: 500,
       },
+      // 5 brochure (image-gen-5)
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826949/image-gen-5_20260825-122519_jvfvqm.png",
         width: 1280,
         height: 722,
       },
+      // 6 hero (also used for the business-cards slot)
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826834/hero_image_3_grzplh.png",
         width: 500,
         height: 500,
       },
+      // 7 NEW: letterhead (image-gen-4) - Slide 1 slot 1
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826950/image-gen-4_20260825-122514_muaoy9.png",
+        width: 500,
+        height: 500,
+      },
+      // 8 NEW: envelopes (image-gen-3) - Slide 1 slot 4
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789826951/image-gen-3_20260825-122510_lspn6r.png",
+        width: 1280,
+        height: 722,
+      },
     ],
   },
-  {
+    {
     id: "project-15",
     title: "Mildas Diamonds",
     category: "Identity & Strategy",
@@ -993,53 +1084,74 @@ height: 500,
     coverSrc: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789827318/hero_image__vuc0qt.png",
     coverPoster: "video/640x360_stone-geometry-banner.webp",
     badgeColor: "#333333",
-     layout: "mildas",
+    layout: "mildas",
     gallery: [
+      // 0 necklace
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789827321/image-gen-4_20260826-054357_1_bwhccj.png",
         width: 1280,
         height: 722,
       },
+      // 1 ear stud
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789827319/image-gen-2_20260826-054350_dxfqbu.png",
         width: 500,
         height: 500,
       },
+      // 2 ring
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789827319/image-gen-3_20260826-054354_zbquxd.png",
         width: 1280,
         height: 722,
       },
+      // 3 video
       {
         type: "video",
         src: "https://res.cloudinary.com/daoju0r3c/video/upload/v1789827310/Create_a_premium_realistic_c_qrzpbp.mp4",
         poster: "video/640x360_stone-geometry-banner.webp",
       },
+      // 4 rose-gold fan necklace
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789827315/image-gen-5_20260826-054401_3_pgbvsk.png",
         width: 500,
         height: 500,
       },
+      // 5 drop earring
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789827311/image-gen-1_20260826-054347_xtsaj9.png",
         width: 1280,
         height: 722,
       },
+      // 6 showcase (d83d0eff)
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789827312/d83d0eff-a044-4150-a34b-6325c531c3ae_smflkh.png",
         width: 500,
         height: 500,
       },
+      // 7 NEW: IIJS sign (93f0ff55) - Slide 2 slot 4
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789827308/93f0ff55-4e18-45e6-a17c-74547bcec45d_to2myg.png",
+        width: 500,
+        height: 500,
+      },
+      // 8 NEW: wide showcase, blue floor (08103178) - Slide 2 slot 6
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789827311/08103178-fa0c-4fce-98a8-98bae3da4145_ahi1o1.png",
+        width: 1280,
+        height: 722,
+      },
     ],
   },
 
-  {
+    {
     id: "project-16",
     title: "Pallavi Foundation",
     category: "Brand Identity",
@@ -1048,46 +1160,67 @@ height: 500,
     coverType: "image",
     coverSrc: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789827507/hero_image_4_iyow2p.png",
     badgeColor: "#222222",
-      layout: "pallavi",
+    layout: "pallavi",
     gallery: [
+      // 0 logo
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789827506/Copy_of_bb_website_content_10_gi8rrp.png",
         width: 1280,
         height: 722,
       },
+      // 1 (not used in the layout)
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789827505/Copy_of_bb_website_content_11_vmft5y.png",
         width: 500,
         height: 500,
       },
+      // 2 "Change That / Inspire / Us" tiles
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789827504/Copy_of_bb_website_content_12_xhwfsc.png",
         width: 1280,
         height: 722,
       },
+      // 3 video
       {
         type: "video",
         src: "https://res.cloudinary.com/daoju0r3c/video/upload/v1789827422/Create_a_smooth_premium_image_tnehaf.mp4",
         poster: "https://res.cloudinary.com/daoju0r3c/video/upload/v1789827422/Create_a_smooth_premium_image_tnehaf.mp4",
       },
+      // 4 vision / awards collage
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789827417/Copy_of_bb_website_content_13_ibwtk0.png",
         width: 500,
         height: 500,
       },
+      // 5 What We Do
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789827417/Copy_of_bb_website_content_14_knhjkp.png",
         width: 1280,
         height: 722,
       },
+      // 6 tree planting
       {
         type: "image",
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789827416/Copy_of_bb_website_content_15_xjarwp.png",
+        width: 500,
+        height: 500,
+      },
+      // 7 NEW: website hero (Great Futures) - Slide 2 slot 1
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789827415/Copy_of_bb_website_content_17_dzscy7.png",
+        width: 1280,
+        height: 722,
+      },
+      // 8 NEW: news page - Slide 2 slot 2
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789827416/Copy_of_bb_website_content_16_tgeb1d.png",
         width: 500,
         height: 500,
       },
@@ -1144,6 +1277,27 @@ height: 500,
         src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1789828491/sv2_jlfm3e.png",
         width: 500,
         height: 500,
+      },
+       // 7 earrings - Slide 2 slot 2
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1792233744/Valdaria_earrings_szwytc.png",
+        width: 1400,
+        height: 1421,
+      },
+      // 8 logo - Slide 2 slots 3 and 6
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1792233787/Valdaria_logo_ejhfy5.png",
+        width: 1400,
+        height: 1114,
+      },
+      // 9 U-necklace - Slide 2 slot 7
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1792233817/Valdaria_U_necklace_bq9swj.png",
+        width: 1400,
+        height: 1096,
       },
     ],
   },
@@ -1204,6 +1358,13 @@ height: 500,
         src: "https://res.cloudinary.com/daoju0r3c/video/upload/v1789828825/Video-70649_imp9sr.mp4",
         width: 1280,
         height: 843,
+      },
+            // 8 NEW: blue + pink squares graphic - Slide 2 slot 3
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/daoju0r3c/image/upload/v1792235732/Prisha_squares_chl3m8.png",
+        width: 1000,
+        height: 837,
       },
     ],
   },
@@ -1266,6 +1427,27 @@ height: 500,
         width: 1280,
         height: 843,
       },
+            // 8 NEW: rain video (reel2.mp4) - Slide 1 slot 1
+      {
+        type: "video",
+        src: "https://res.cloudinary.com/daoju0r3c/video/upload/v1792234648/reel2_1_fz6ctj.mp4",
+        width: 500,
+        height: 900,
+      },
+      // 9 NEW: underwater temple video (reel3.mp4) - Slide 1 slot 2
+      {
+        type: "video",
+        src: "https://res.cloudinary.com/daoju0r3c/video/upload/v1792235000/reel3_1_rtnxhb.mp4",
+        width: 500,
+        height: 900,
+      },
+      // 10 NEW: street video (reel4.mp4) - Slide 1 slot 3
+      {
+        type: "video",
+        src: "https://res.cloudinary.com/daoju0r3c/video/upload/v1792235400/reel4_yOeTuKuU_brhepo.mp4",
+        width: 500,
+        height: 900,
+      },
     ],
   },
 
@@ -1324,6 +1506,13 @@ height: 500,
       {
         type: "video",
         src: "https://res.cloudinary.com/daoju0r3c/video/upload/v1789830563/IMG_8020_avpfvv.mov",
+        width: 1280,
+        height: 722,
+      },
+            // 8 NEW: red circular set (IMG_8017) - Slide 1 slot 2
+      {
+        type: "video",
+        src: "https://res.cloudinary.com/daoju0r3c/video/upload/v1792237600/IMG_8017_1_1_1_jpwwak.mov",
         width: 1280,
         height: 722,
       },
