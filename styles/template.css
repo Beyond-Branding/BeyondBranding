@@ -2157,20 +2157,26 @@
     repeating-linear-gradient(90deg, rgba(255,255,255,0.14) 0 28px, rgba(255,255,255,0) 28px 56px) !important;
 } */
 
-/* brand names: white on dark covers */
+
+/* brand names on the works grid: white on every card */
 .mxd-portfolio-grid-item .mxd-expandable-card-bleed__title,
-.mxd-portfolio-grid-item .mxd-expandable-card-bleed__plus {
+.mxd-portfolio-grid-item .mxd-expandable-card-bleed__plus,
+.mxd-portfolio-grid-item .mxd-expandable-card-bleed__category {
   color: #ffffff !important;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
 }
 
-/* keep dark text on the light covers: Euro Decor, Terraa Love, Mildas */
-.mxd-portfolio-grid-item:nth-child(2) .mxd-expandable-card-bleed__title,
-.mxd-portfolio-grid-item:nth-child(2) .mxd-expandable-card-bleed__plus,
-.mxd-portfolio-grid-item:nth-child(10) .mxd-expandable-card-bleed__title,
-.mxd-portfolio-grid-item:nth-child(10) .mxd-expandable-card-bleed__plus,
-.mxd-portfolio-grid-item:nth-child(15) .mxd-expandable-card-bleed__title,
-.mxd-portfolio-grid-item:nth-child(15) .mxd-expandable-card-bleed__plus {
-  color: #1a1a1a !important;
-  text-shadow: none;
+/* brand name + description below the grid: white on every brand,
+   on a dark strip so it stays readable on the light-background brands */
+.mxd-fullscreen-drawer-overlay .mxd-fullscreen-drawer-meta {
+  background-color: #0d0d0d !important;
+  border-top-color: rgba(255, 255, 255, 0.15) !important;
+}
+.mxd-fullscreen-drawer-overlay .mxd-fullscreen-drawer-meta,
+.mxd-fullscreen-drawer-overlay .mxd-meta-title,
+.mxd-fullscreen-drawer-overlay .mxd-meta-category,
+.mxd-fullscreen-drawer-overlay .mxd-meta-description {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
