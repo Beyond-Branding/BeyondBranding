@@ -830,3 +830,1353 @@
 /* ------------------------------------------------*/
 /* Project Expandable Gallery Styles End */
 /* ------------------------------------------------*/
+
+/* ===== Collage layout (Canva slides) ===== */
+
+/* light grey page, lavender "slides" on it */
+.mxd-fullscreen-drawer-overlay--collage {
+  background-color: #e7e7ea;
+}
+
+/* dark text on the light grey page */
+.mxd-fullscreen-drawer-overlay--collage .close-text { color: #1b1b1b; }
+.mxd-fullscreen-drawer-overlay--collage .close-icon-wrap {
+  border-color: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.05);
+}
+.mxd-fullscreen-drawer-overlay--collage .close-svg { stroke: #1b1b1b; }
+.mxd-fullscreen-drawer-overlay--collage .mxd-meta-title { color: #1b1b1b; }
+.mxd-fullscreen-drawer-overlay--collage .mxd-meta-category { color: rgba(0, 0, 0, 0.5); }
+.mxd-fullscreen-drawer-overlay--collage .mxd-meta-description { color: rgba(0, 0, 0, 0.7); }
+.mxd-fullscreen-drawer-overlay--collage .mxd-fullscreen-drawer-meta {
+  background-color: transparent;
+  border-top-color: rgba(0, 0, 0, 0.15);
+}
+
+/* page scroll + visible scrollbar (desktop) */
+@media only screen and (min-width: 1200px) {
+  .mxd-fullscreen-drawer-overlay--collage .mxd-fullscreen-drawer-content {
+    overflow-y: auto;
+    justify-content: flex-start;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.08);
+  }
+  .mxd-fullscreen-drawer-overlay--collage .mxd-fullscreen-drawer-content::-webkit-scrollbar {
+    display: block;
+    width: 10px;
+  }
+  .mxd-fullscreen-drawer-overlay--collage .mxd-fullscreen-drawer-content::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.08);
+  }
+  .mxd-fullscreen-drawer-overlay--collage .mxd-fullscreen-drawer-content::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 6px;
+  }
+}
+
+/* the slides, stacked in normal flow with a grey gap between */
+.mxd-collage-scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  gap: clamp(24px, 4vw, 48px);
+  width: 100%;
+  padding: 0 0 clamp(24px, 4vw, 48px) 0;
+  box-sizing: border-box;
+}
+
+.mxd-collage-frame {
+  display: grid;
+  box-sizing: border-box;
+  width: min(92vw, 1180px);
+  aspect-ratio: 16 / 9;
+  padding: clamp(18px, 3.2vw, 40px);
+  gap: clamp(14px, 2.2vw, 28px);
+  background-color: #c8a2d3;
+  background-image:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.22) 50%, transparent 50%),
+    linear-gradient(rgba(255, 255, 255, 0.22) 50%, transparent 50%);
+  background-size: 28px 28px;   /* lavender-pink checks */
+}
+
+.mxd-collage-item {
+  overflow: hidden;
+  border-radius: 16px;
+  min-width: 0;
+  min-height: 0;
+}
+
+.mxd-collage-item img,
+.mxd-collage-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 0;
+}
+
+/* Slide 1: wide | portrait | portrait  /  square | square | wide */
+.mxd-collage-frame--khokha-1 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 1.05fr 1fr;
+}
+.mxd-collage-frame--khokha-1 .mxd-collage-item--1 { grid-column: 1 / span 6;  grid-row: 1; }
+.mxd-collage-frame--khokha-1 .mxd-collage-item--2 { grid-column: 7 / span 3;  grid-row: 1; }
+.mxd-collage-frame--khokha-1 .mxd-collage-item--3 { grid-column: 10 / span 3; grid-row: 1; }
+.mxd-collage-frame--khokha-1 .mxd-collage-item--4 { grid-column: 1 / span 3;  grid-row: 2; }
+.mxd-collage-frame--khokha-1 .mxd-collage-item--5 { grid-column: 4 / span 3;  grid-row: 2; }
+.mxd-collage-frame--khokha-1 .mxd-collage-item--6 { grid-column: 7 / span 6;  grid-row: 2; }
+
+/* ===== Kho Kha Frame 2 only: 16:9, three columns, palace spans both rows ===== */
+@media only screen and (min-width: 768px) {
+  .mxd-collage-scroll .mxd-collage-frame--khokha-2 {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+    grid-template-columns: minmax(0, 111fr) minmax(0, 194fr) minmax(0, 147fr);
+    grid-template-rows: minmax(0, 1.17fr) minmax(0, 1fr);
+    grid-auto-rows: auto;
+  }
+
+  .mxd-collage-scroll .mxd-collage-frame--khokha-2 .mxd-collage-item {
+    position: relative;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  /* images fill their cell instead of pushing it taller */
+  .mxd-collage-scroll .mxd-collage-frame--khokha-2 .mxd-collage-item img,
+  .mxd-collage-scroll .mxd-collage-frame--khokha-2 .mxd-collage-item video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mxd-collage-scroll .mxd-collage-frame--khokha-2 .mxd-collage-item--1 { grid-column: 1; grid-row: 1; }
+  .mxd-collage-scroll .mxd-collage-frame--khokha-2 .mxd-collage-item--2 { grid-column: 2; grid-row: 1; }
+  .mxd-collage-scroll .mxd-collage-frame--khokha-2 .mxd-collage-item--3 { grid-column: 3; grid-row: 1 / span 2; }
+  .mxd-collage-scroll .mxd-collage-frame--khokha-2 .mxd-collage-item--4 { grid-column: 1; grid-row: 2; }
+  .mxd-collage-scroll .mxd-collage-frame--khokha-2 .mxd-collage-item--5 { grid-column: 2; grid-row: 2; }
+}
+/* Mobile: stack everything */
+@media only screen and (max-width: 767px) {
+  .mxd-collage-frame {
+    width: calc(100% - 40px);
+    aspect-ratio: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-auto-rows: 240px;
+  }
+  .mxd-collage-frame .mxd-collage-item {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+}
+.mxd-collage-item--empty {
+  background: rgba(255, 255, 255, 0.35);
+}
+.mxd-collage-item--empty {
+  background: rgba(255, 255, 255, 0.18);
+}
+/* ================= Euro Decor ================= */
+
+/* page background + readable text on the light page */
+.mxd-fullscreen-drawer-overlay--collage[data-layout="eurodecor"] {
+  background-color: #e5e6e8; /* if Kho Kha's grey is different, copy its value here */
+}
+.mxd-fullscreen-drawer-overlay--collage[data-layout="eurodecor"] .mxd-fullscreen-drawer-meta {
+  background-color: transparent;
+  border-top-color: rgba(0, 0, 0, 0.15);
+}
+.mxd-fullscreen-drawer-overlay--collage[data-layout="eurodecor"] .mxd-meta-title { color: #1a1a1a; }
+.mxd-fullscreen-drawer-overlay--collage[data-layout="eurodecor"] .mxd-meta-category { color: rgba(0, 0, 0, 0.55); }
+.mxd-fullscreen-drawer-overlay--collage[data-layout="eurodecor"] .mxd-meta-description { color: rgba(0, 0, 0, 0.75); }
+.mxd-fullscreen-drawer-overlay--collage[data-layout="eurodecor"] .close-text { color: #1a1a1a; }
+.mxd-fullscreen-drawer-overlay--collage[data-layout="eurodecor"] .close-svg { stroke: #1a1a1a; }
+
+/* blue frame (mobile first: stacked) */
+.mxd-collage-scroll .mxd-collage-frame--eurodecor-1,
+.mxd-collage-scroll .mxd-collage-frame--eurodecor-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 240px;
+  gap: 12px;
+  padding: 12px;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: auto;
+  box-sizing: border-box;
+  /* approximate Canva blue, pick the exact colours with Canva's colour picker */
+  background: linear-gradient(180deg, #0c4a9b 0%, #1f63b4 45%, #5e97d6 100%);
+}
+
+.mxd-collage-scroll .mxd-collage-frame--eurodecor-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--eurodecor-2 .mxd-collage-item {
+  min-width: 0;
+  min-height: 0;
+}
+
+.mxd-collage-scroll .mxd-collage-frame--eurodecor-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--eurodecor-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--eurodecor-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--eurodecor-2 .mxd-collage-item video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mxd-collage-item--empty {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* desktop and tablet: 16:9 frames, slots placed by percentage */
+@media only screen and (min-width: 768px) {
+  .mxd-collage-scroll .mxd-collage-frame--eurodecor-1,
+  .mxd-collage-scroll .mxd-collage-frame--eurodecor-2 {
+    display: block;
+    position: relative;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+  }
+
+  .mxd-collage-scroll .mxd-collage-frame--eurodecor-1 .mxd-collage-item,
+  .mxd-collage-scroll .mxd-collage-frame--eurodecor-2 .mxd-collage-item {
+    position: absolute;
+  }
+
+    .mxd-collage-frame--eurodecor-1 .mxd-collage-item--1 { left: 3.35%;  top: 1.99%;  width: 30.39%; height: 46.02%; }
+  .mxd-collage-frame--eurodecor-1 .mxd-collage-item--2 { left: 35.42%; top: 1.99%;  width: 22.23%; height: 46.02%; }
+  .mxd-collage-frame--eurodecor-1 .mxd-collage-item--3 { left: 60.22%; top: 1.99%;  width: 36.76%; height: 96.02%; }
+  .mxd-collage-frame--eurodecor-1 .mxd-collage-item--4 { left: 3.35%;  top: 50.40%; width: 30.39%; height: 47.81%; }
+  .mxd-collage-frame--eurodecor-1 .mxd-collage-item--5 { left: 35.42%; top: 50.40%; width: 22.23%; height: 47.81%; }
+
+  /* Slide 2 */
+  .mxd-collage-frame--eurodecor-2 .mxd-collage-item--1 { left: 2.12%;  top: 3.98%;  width: 29.16%; height: 92.45%; }
+  .mxd-collage-frame--eurodecor-2 .mxd-collage-item--2 { left: 32.63%; top: 3.98%;  width: 24.47%; height: 45.53%; }
+  .mxd-collage-frame--eurodecor-2 .mxd-collage-item--3 { left: 58.99%; top: 3.98%;  width: 38.66%; height: 36.38%; }
+  .mxd-collage-frame--eurodecor-2 .mxd-collage-item--4 { left: 32.63%; top: 52.68%; width: 36.76%; height: 43.74%; }
+  .mxd-collage-frame--eurodecor-2 .mxd-collage-item--5 { left: 71.17%; top: 42.74%; width: 26.48%; height: 55.07%; }
+}
+/* ================= Mosu ================= */
+
+.mxd-fullscreen-drawer-overlay--collage[data-layout="mosu"] {
+  background-color: #e5e6e8;
+}
+.mxd-fullscreen-drawer-overlay--collage[data-layout="mosu"] .mxd-fullscreen-drawer-meta {
+  background-color: transparent;
+  border-top-color: rgba(0, 0, 0, 0.15);
+}
+.mxd-fullscreen-drawer-overlay--collage[data-layout="mosu"] .mxd-meta-title { color: #1a1a1a; }
+.mxd-fullscreen-drawer-overlay--collage[data-layout="mosu"] .mxd-meta-category { color: rgba(0, 0, 0, 0.55); }
+.mxd-fullscreen-drawer-overlay--collage[data-layout="mosu"] .mxd-meta-description { color: rgba(0, 0, 0, 0.75); }
+.mxd-fullscreen-drawer-overlay--collage[data-layout="mosu"] .close-text { color: #1a1a1a; }
+.mxd-fullscreen-drawer-overlay--collage[data-layout="mosu"] .close-svg { stroke: #1a1a1a; }
+
+/* orange frames (mobile first: stacked) */
+.mxd-collage-scroll .mxd-collage-frame--mosu-1,
+.mxd-collage-scroll .mxd-collage-frame--mosu-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 240px;
+  gap: 12px;
+  padding: 12px;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: auto;
+  box-sizing: border-box;
+  /* approximate Canva orange with soft vertical bands, pick exact colours in Canva */
+  background:
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.06) 0 8%, rgba(255, 255, 255, 0) 8% 16%),
+    #f26a0f;
+}
+
+.mxd-collage-scroll .mxd-collage-frame--mosu-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--mosu-2 .mxd-collage-item {
+  min-width: 0;
+  min-height: 0;
+}
+
+.mxd-collage-scroll .mxd-collage-frame--mosu-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--mosu-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--mosu-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--mosu-2 .mxd-collage-item video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* slide 1 panel has a cream background like the Canva panel */
+.mxd-collage-scroll .mxd-collage-frame--mosu-1 .mxd-collage-item--1 {
+  background: #fdebc8;
+  border-radius: 28px;
+}
+
+/* desktop and tablet: 16:9 frames, slots placed by percentage */
+@media only screen and (min-width: 768px) {
+  .mxd-collage-scroll .mxd-collage-frame--mosu-1,
+  .mxd-collage-scroll .mxd-collage-frame--mosu-2 {
+    display: block;
+    position: relative;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+  }
+
+  .mxd-collage-scroll .mxd-collage-frame--mosu-1 .mxd-collage-item,
+  .mxd-collage-scroll .mxd-collage-frame--mosu-2 .mxd-collage-item {
+    position: absolute;
+  }
+
+  /* Slide 1: one big panel */
+  .mxd-collage-frame--mosu-1 .mxd-collage-item--1 { left: 5.66%; top: 4.07%; width: 88.67%; height: 91.86%; }
+
+  /* Slide 2 */
+  .mxd-collage-frame--mosu-2 .mxd-collage-item--1 { left: 1.69%;  top: 4.94%;  width: 34.58%; height: 90.56%; }
+  .mxd-collage-frame--mosu-2 .mxd-collage-item--2 { left: 38.31%; top: 4.94%;  width: 31.45%; height: 42.49%; }
+  .mxd-collage-frame--mosu-2 .mxd-collage-item--3 { left: 71.69%; top: 4.94%;  width: 26.02%; height: 42.49%; }
+  .mxd-collage-frame--mosu-2 .mxd-collage-item--4 { left: 38.31%; top: 50.21%; width: 21.81%; height: 45.28%; }
+  .mxd-collage-frame--mosu-2 .mxd-collage-item--5 { left: 62.89%; top: 50.21%; width: 13.73%; height: 45.28%; }
+  .mxd-collage-frame--mosu-2 .mxd-collage-item--6 { left: 79.52%; top: 50.21%; width: 18.19%; height: 45.28%; }
+}
+.mxd-collage-scroll .mxd-collage-frame--mosu-1 .mxd-collage-item--1 img {
+  object-fit: contain;
+  background: #fdebc8;
+}
+/* ================= Pro Boxing League ================= */
+
+.mxd-fullscreen-drawer-overlay--collage[data-layout="pbl"] {
+  background-color: #e5e6e8;
+}
+.mxd-fullscreen-drawer-overlay--collage[data-layout="pbl"] .mxd-fullscreen-drawer-meta {
+  background-color: transparent;
+  border-top-color: rgba(0, 0, 0, 0.15);
+}
+.mxd-fullscreen-drawer-overlay--collage[data-layout="pbl"] .mxd-meta-title { color: #1a1a1a; }
+.mxd-fullscreen-drawer-overlay--collage[data-layout="pbl"] .mxd-meta-category { color: rgba(0, 0, 0, 0.55); }
+.mxd-fullscreen-drawer-overlay--collage[data-layout="pbl"] .mxd-meta-description { color: rgba(0, 0, 0, 0.75); }
+.mxd-fullscreen-drawer-overlay--collage[data-layout="pbl"] .close-text { color: #1a1a1a; }
+.mxd-fullscreen-drawer-overlay--collage[data-layout="pbl"] .close-svg { stroke: #1a1a1a; }
+
+/* green frames (mobile first: stacked) */
+.mxd-collage-scroll .mxd-collage-frame--pbl-1,
+.mxd-collage-scroll .mxd-collage-frame--pbl-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 260px;
+  gap: 12px;
+  padding: 12px;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: auto;
+  box-sizing: border-box;
+  background: radial-gradient(ellipse at 50% 90%, #c3ea79 0%, #9cc860 40%, #74a04e 75%, #5f9f45 100%);
+}
+
+.mxd-collage-scroll .mxd-collage-frame--pbl-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--pbl-2 .mxd-collage-item {
+  min-width: 0;
+  min-height: 0;
+  background: #0b0b0b;
+}
+
+.mxd-collage-scroll .mxd-collage-frame--pbl-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--pbl-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--pbl-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--pbl-2 .mxd-collage-item video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* desktop and tablet: 16:9 frames, slots placed by percentage */
+@media only screen and (min-width: 768px) {
+  .mxd-collage-scroll .mxd-collage-frame--pbl-1,
+  .mxd-collage-scroll .mxd-collage-frame--pbl-2 {
+    display: block;
+    position: relative;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+  }
+
+  .mxd-collage-scroll .mxd-collage-frame--pbl-1 .mxd-collage-item,
+  .mxd-collage-scroll .mxd-collage-frame--pbl-2 .mxd-collage-item {
+    position: absolute;
+  }
+
+  /* Slide 1: tall | 1 Day To Go over Punch | tall */
+  .mxd-collage-frame--pbl-1 .mxd-collage-item--1 { left: 3.53%;  top: 3.5%;  width: 29.2%; height: 92.7%; }
+  .mxd-collage-frame--pbl-1 .mxd-collage-item--2 { left: 34.1%;  top: 3.5%;  width: 32.0%; height: 50.0%; }
+  .mxd-collage-frame--pbl-1 .mxd-collage-item--3 { left: 34.1%;  top: 55.6%; width: 32.0%; height: 40.2%; }
+  .mxd-collage-frame--pbl-1 .mxd-collage-item--4 { left: 67.3%;  top: 3.5%;  width: 29.4%; height: 92.7%; }
+
+  /* Slide 2: tall | Delhi's over 2 Days To Go | tall */
+  .mxd-collage-frame--pbl-2 .mxd-collage-item--1 { left: 3.3%;   top: 4.2%;  width: 29.0%; height: 91.6%; }
+  .mxd-collage-frame--pbl-2 .mxd-collage-item--2 { left: 34.1%;  top: 4.2%;  width: 31.0%; height: 50.0%; }
+  .mxd-collage-frame--pbl-2 .mxd-collage-item--3 { left: 34.1%;  top: 55.9%; width: 31.0%; height: 39.9%; }
+  .mxd-collage-frame--pbl-2 .mxd-collage-item--4 { left: 67.3%;  top: 4.2%;  width: 29.6%; height: 91.6%; }
+}
+/* ================= Continuity Printers ================= */
+
+.mxd-fullscreen-drawer-overlay--collage[data-layout="continuity"] {
+  background-color: #e5e6e8;
+}
+.mxd-fullscreen-drawer-overlay--collage[data-layout="continuity"] .mxd-fullscreen-drawer-meta {
+  background-color: transparent;
+  border-top-color: rgba(0, 0, 0, 0.15);
+}
+.mxd-fullscreen-drawer-overlay--collage[data-layout="continuity"] .mxd-meta-title { color: #1a1a1a; }
+.mxd-fullscreen-drawer-overlay--collage[data-layout="continuity"] .mxd-meta-category { color: rgba(0, 0, 0, 0.55); }
+.mxd-fullscreen-drawer-overlay--collage[data-layout="continuity"] .mxd-meta-description { color: rgba(0, 0, 0, 0.75); }
+.mxd-fullscreen-drawer-overlay--collage[data-layout="continuity"] .close-text { color: #1a1a1a; }
+.mxd-fullscreen-drawer-overlay--collage[data-layout="continuity"] .close-svg { stroke: #1a1a1a; }
+
+/* red frames (mobile first: stacked) */
+.mxd-collage-scroll .mxd-collage-frame--continuity-1,
+.mxd-collage-scroll .mxd-collage-frame--continuity-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 260px;
+  gap: 12px;
+  padding: 12px;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: auto;
+  box-sizing: border-box;
+  background: linear-gradient(150deg, #e70005 0%, #7a0002 40%, #2a0000 100%);
+}
+
+.mxd-collage-scroll .mxd-collage-frame--continuity-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--continuity-2 .mxd-collage-item {
+  min-width: 0;
+  min-height: 0;
+  background: #1a0000;
+}
+
+.mxd-collage-scroll .mxd-collage-frame--continuity-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--continuity-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--continuity-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--continuity-2 .mxd-collage-item video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* missing media: soft placeholder instead of a dark box */
+.mxd-collage-scroll .mxd-collage-frame--continuity-1 .mxd-collage-item--empty,
+.mxd-collage-scroll .mxd-collage-frame--continuity-2 .mxd-collage-item--empty {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* desktop and tablet: 16:9 frames, slots placed by percentage */
+@media only screen and (min-width: 768px) {
+  .mxd-collage-scroll .mxd-collage-frame--continuity-1,
+  .mxd-collage-scroll .mxd-collage-frame--continuity-2 {
+    display: block;
+    position: relative;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+  }
+
+  .mxd-collage-scroll .mxd-collage-frame--continuity-1 .mxd-collage-item,
+  .mxd-collage-scroll .mxd-collage-frame--continuity-2 .mxd-collage-item {
+    position: absolute;
+  }
+
+  /* Slide 1: wide video | two small on the right */
+  .mxd-collage-frame--continuity-1 .mxd-collage-item--1 { left: 1.66%;  top: 3.0%;  width: 73.2%; height: 93.7%; }
+  .mxd-collage-frame--continuity-1 .mxd-collage-item--2 { left: 76.7%;  top: 3.0%;  width: 21.0%; height: 48.9%; }
+  .mxd-collage-frame--continuity-1 .mxd-collage-item--3 { left: 76.7%;  top: 57.0%; width: 21.0%; height: 39.3%; }
+
+  /* Slide 2: three on top, three on the bottom */
+  .mxd-collage-frame--continuity-2 .mxd-collage-item--1 { left: 1.9%;   top: 3.0%;  width: 40.1%; height: 47.0%; }
+  .mxd-collage-frame--continuity-2 .mxd-collage-item--2 { left: 43.7%;  top: 3.0%;  width: 26.2%; height: 47.0%; }
+  .mxd-collage-frame--continuity-2 .mxd-collage-item--3 { left: 71.3%;  top: 3.0%;  width: 26.4%; height: 47.0%; }
+  .mxd-collage-frame--continuity-2 .mxd-collage-item--4 { left: 1.9%;   top: 53.0%; width: 22.9%; height: 43.7%; }
+  .mxd-collage-frame--continuity-2 .mxd-collage-item--5 { left: 26.0%;  top: 53.0%; width: 16.0%; height: 43.7%; }
+  .mxd-collage-frame--continuity-2 .mxd-collage-item--6 { left: 44.3%;  top: 53.0%; width: 53.4%; height: 43.7%; }
+}
+/* ================= Saaro ================= */
+
+.mxd-fullscreen-drawer-overlay--collage[data-layout="saaro"] {
+  background-color: #e5e6e8;
+}
+.mxd-fullscreen-drawer-overlay--collage[data-layout="saaro"] .mxd-fullscreen-drawer-meta {
+  background-color: transparent;
+  border-top-color: rgba(0, 0, 0, 0.15);
+}
+.mxd-fullscreen-drawer-overlay--collage[data-layout="saaro"] .mxd-meta-title { color: #1a1a1a; }
+.mxd-fullscreen-drawer-overlay--collage[data-layout="saaro"] .mxd-meta-category { color: rgba(0, 0, 0, 0.55); }
+.mxd-fullscreen-drawer-overlay--collage[data-layout="saaro"] .mxd-meta-description { color: rgba(0, 0, 0, 0.75); }
+.mxd-fullscreen-drawer-overlay--collage[data-layout="saaro"] .close-text { color: #1a1a1a; }
+.mxd-fullscreen-drawer-overlay--collage[data-layout="saaro"] .close-svg { stroke: #1a1a1a; }
+
+/* pink frames (mobile first: stacked) */
+.mxd-collage-scroll .mxd-collage-frame--saaro-1,
+.mxd-collage-scroll .mxd-collage-frame--saaro-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 260px;
+  gap: 12px;
+  padding: 12px;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: auto;
+  box-sizing: border-box;
+  background: linear-gradient(160deg, #c8739e 0%, #e98abd 45%, #db84b2 100%);
+}
+
+.mxd-collage-scroll .mxd-collage-frame--saaro-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--saaro-2 .mxd-collage-item {
+  min-width: 0;
+  min-height: 0;
+  background: #1a1a1a;
+}
+
+.mxd-collage-scroll .mxd-collage-frame--saaro-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--saaro-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--saaro-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--saaro-2 .mxd-collage-item video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* missing media: soft placeholder instead of a dark box */
+.mxd-collage-scroll .mxd-collage-frame--saaro-1 .mxd-collage-item--empty,
+.mxd-collage-scroll .mxd-collage-frame--saaro-2 .mxd-collage-item--empty {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* desktop and tablet: 16:9 frames, slots placed by percentage */
+@media only screen and (min-width: 768px) {
+  .mxd-collage-scroll .mxd-collage-frame--saaro-1,
+  .mxd-collage-scroll .mxd-collage-frame--saaro-2 {
+    display: block;
+    position: relative;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+  }
+
+  .mxd-collage-scroll .mxd-collage-frame--saaro-1 .mxd-collage-item,
+  .mxd-collage-scroll .mxd-collage-frame--saaro-2 .mxd-collage-item {
+    position: absolute;
+  }
+
+  /* Slide 1: two tall | two stacked */
+  .mxd-collage-frame--saaro-1 .mxd-collage-item--1 { left: 1.66%;  top: 4.06%; width: 29.0%; height: 92.3%; }
+  .mxd-collage-frame--saaro-1 .mxd-collage-item--2 { left: 32.1%;  top: 4.06%; width: 29.0%; height: 92.3%; }
+  .mxd-collage-frame--saaro-1 .mxd-collage-item--3 { left: 62.5%;  top: 4.06%; width: 35.6%; height: 46.1%; }
+  .mxd-collage-frame--saaro-1 .mxd-collage-item--4 { left: 62.5%;  top: 52.8%; width: 35.6%; height: 43.5%; }
+
+  /* Slide 2: stacked | tall | stacked | tall */
+  .mxd-collage-frame--saaro-2 .mxd-collage-item--1 { left: 1.66%;  top: 4.4%;  width: 18.2%; height: 44.1%; }
+  .mxd-collage-frame--saaro-2 .mxd-collage-item--2 { left: 1.66%;  top: 51.5%; width: 18.2%; height: 44.4%; }
+  .mxd-collage-frame--saaro-2 .mxd-collage-item--3 { left: 21.5%;  top: 4.4%;  width: 28.6%; height: 91.5%; }
+  .mxd-collage-frame--saaro-2 .mxd-collage-item--4 { left: 51.8%;  top: 4.4%;  width: 18.2%; height: 43.0%; }
+  .mxd-collage-frame--saaro-2 .mxd-collage-item--5 { left: 51.8%;  top: 50.4%; width: 18.2%; height: 45.6%; }
+  .mxd-collage-frame--saaro-2 .mxd-collage-item--6 { left: 71.6%;  top: 4.4%;  width: 25.5%; height: 91.5%; }
+}
+/* ===== Trisha Enterprises & Palm Group ===== */
+.mxd-collage-scroll .mxd-collage-frame--trisha-1,
+.mxd-collage-scroll .mxd-collage-frame--trisha-2,
+.mxd-collage-scroll .mxd-collage-frame--palm-1,
+.mxd-collage-scroll .mxd-collage-frame--palm-2 {
+  display: grid;
+  gap: 12px;
+}
+
+/* Plain backgrounds (no pattern, no gradient) */
+.mxd-collage-scroll .mxd-collage-frame--trisha-1,
+.mxd-collage-scroll .mxd-collage-frame--trisha-2 {
+  background: #f6edde !important; /* cream */
+  background-image: none !important;
+}
+.mxd-collage-scroll .mxd-collage-frame--palm-1,
+.mxd-collage-scroll .mxd-collage-frame--palm-2 {
+  background: #583324 !important; /* brown */
+  background-image: none !important;
+}
+
+/* Remove the checked pattern if it comes from a pseudo-element */
+.mxd-collage-scroll .mxd-collage-frame--trisha-1::before,
+.mxd-collage-scroll .mxd-collage-frame--trisha-1::after,
+.mxd-collage-scroll .mxd-collage-frame--trisha-2::before,
+.mxd-collage-scroll .mxd-collage-frame--trisha-2::after,
+.mxd-collage-scroll .mxd-collage-frame--palm-1::before,
+.mxd-collage-scroll .mxd-collage-frame--palm-1::after,
+.mxd-collage-scroll .mxd-collage-frame--palm-2::before,
+.mxd-collage-scroll .mxd-collage-frame--palm-2::after {
+  display: none !important;
+  content: none !important;
+  background: none !important;
+}
+
+.mxd-collage-scroll .mxd-collage-frame--trisha-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--trisha-2 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--palm-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--palm-2 .mxd-collage-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0;
+}
+.mxd-collage-scroll .mxd-collage-frame--trisha-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--trisha-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--trisha-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--trisha-2 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--palm-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--palm-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--palm-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--palm-2 .mxd-collage-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Trisha slide 1: big left, two stacked on the right */
+.mxd-collage-scroll .mxd-collage-frame--trisha-1 {
+  grid-template-columns: 2.6fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--trisha-1 .mxd-collage-item:nth-child(1) {
+  grid-row: 1 / span 2;
+}
+
+/* Trisha slide 2: tall | 2 stacked | tall (wider) | 2 stacked */
+.mxd-collage-scroll .mxd-collage-frame--trisha-2 {
+  grid-template-columns: 1fr 1fr 1.2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--trisha-2 .mxd-collage-item:nth-child(1) { grid-column: 1; grid-row: 1 / span 2; }
+.mxd-collage-scroll .mxd-collage-frame--trisha-2 .mxd-collage-item:nth-child(2) { grid-column: 2; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--trisha-2 .mxd-collage-item:nth-child(3) { grid-column: 2; grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--trisha-2 .mxd-collage-item:nth-child(4) { grid-column: 3; grid-row: 1 / span 2; }
+.mxd-collage-scroll .mxd-collage-frame--trisha-2 .mxd-collage-item:nth-child(5) { grid-column: 4; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--trisha-2 .mxd-collage-item:nth-child(6) { grid-column: 4; grid-row: 2; }
+
+/* Palm slide 1: one full slot */
+.mxd-collage-scroll .mxd-collage-frame--palm-1 {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+/* Palm slide 2: 2 on top, 3 on the bottom (last one wide) */
+.mxd-collage-scroll .mxd-collage-frame--palm-2 {
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--palm-2 .mxd-collage-item:nth-child(1) { grid-column: 1 / span 6;  grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--palm-2 .mxd-collage-item:nth-child(2) { grid-column: 7 / span 6;  grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--palm-2 .mxd-collage-item:nth-child(3) { grid-column: 1 / span 3;  grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--palm-2 .mxd-collage-item:nth-child(4) { grid-column: 4 / span 3;  grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--palm-2 .mxd-collage-item:nth-child(5) { grid-column: 7 / span 6;  grid-row: 2; }
+
+/* Empty slots (missing media) */
+.mxd-collage-scroll .mxd-collage-frame--trisha-1 .mxd-collage-item--empty,
+.mxd-collage-scroll .mxd-collage-frame--trisha-2 .mxd-collage-item--empty {
+  background: rgba(0, 0, 0, 0.06);
+}
+.mxd-collage-scroll .mxd-collage-frame--palm-1 .mxd-collage-item--empty,
+.mxd-collage-scroll .mxd-collage-frame--palm-2 .mxd-collage-item--empty {
+  background: rgba(255, 255, 255, 0.12);
+}
+/* ===== One Stop & Terraa Love ===== */
+.mxd-collage-scroll .mxd-collage-frame--onestop-1,
+.mxd-collage-scroll .mxd-collage-frame--onestop-2,
+.mxd-collage-scroll .mxd-collage-frame--terraa-1,
+.mxd-collage-scroll .mxd-collage-frame--terraa-2 {
+  display: grid;
+  gap: 12px;
+}
+
+/* Plain backgrounds (no pattern, no gradient) */
+.mxd-collage-scroll .mxd-collage-frame--onestop-1,
+.mxd-collage-scroll .mxd-collage-frame--onestop-2 {
+  background: #d4916a !important; /* terracotta / peach */
+  background-image: none !important;
+}
+.mxd-collage-scroll .mxd-collage-frame--terraa-1,
+.mxd-collage-scroll .mxd-collage-frame--terraa-2 {
+  background: #d42a9c !important; /* pink */
+  background-image: none !important;
+}
+
+.mxd-collage-scroll .mxd-collage-frame--onestop-1::before,
+.mxd-collage-scroll .mxd-collage-frame--onestop-1::after,
+.mxd-collage-scroll .mxd-collage-frame--onestop-2::before,
+.mxd-collage-scroll .mxd-collage-frame--onestop-2::after,
+.mxd-collage-scroll .mxd-collage-frame--terraa-1::before,
+.mxd-collage-scroll .mxd-collage-frame--terraa-1::after,
+.mxd-collage-scroll .mxd-collage-frame--terraa-2::before,
+.mxd-collage-scroll .mxd-collage-frame--terraa-2::after {
+  display: none !important;
+  content: none !important;
+  background: none !important;
+}
+
+.mxd-collage-scroll .mxd-collage-frame--onestop-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--onestop-2 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--terraa-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--terraa-2 .mxd-collage-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0;
+}
+.mxd-collage-scroll .mxd-collage-frame--onestop-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--onestop-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--onestop-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--onestop-2 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--terraa-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--terraa-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--terraa-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--terraa-2 .mxd-collage-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Slide 1 (both brands): big left, two stacked on the right */
+.mxd-collage-scroll .mxd-collage-frame--onestop-1,
+.mxd-collage-scroll .mxd-collage-frame--terraa-1 {
+  grid-template-columns: 2.6fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--onestop-1 .mxd-collage-item:nth-child(1),
+.mxd-collage-scroll .mxd-collage-frame--terraa-1 .mxd-collage-item:nth-child(1) {
+  grid-row: 1 / span 2;
+}
+
+/* One Stop slide 2: 2 stacked | tall | tall */
+.mxd-collage-scroll .mxd-collage-frame--onestop-2 {
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--onestop-2 .mxd-collage-item:nth-child(1) { grid-column: 1; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--onestop-2 .mxd-collage-item:nth-child(2) { grid-column: 1; grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--onestop-2 .mxd-collage-item:nth-child(3) { grid-column: 2; grid-row: 1 / span 2; }
+.mxd-collage-scroll .mxd-collage-frame--onestop-2 .mxd-collage-item:nth-child(4) { grid-column: 3; grid-row: 1 / span 2; }
+
+/* Terraa slide 2: wide col (2 stacked) | col (2 stacked) | tall */
+.mxd-collage-scroll .mxd-collage-frame--terraa-2 {
+  grid-template-columns: 1.3fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--terraa-2 .mxd-collage-item:nth-child(1) { grid-column: 1; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--terraa-2 .mxd-collage-item:nth-child(2) { grid-column: 2; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--terraa-2 .mxd-collage-item:nth-child(3) { grid-column: 3; grid-row: 1 / span 2; }
+.mxd-collage-scroll .mxd-collage-frame--terraa-2 .mxd-collage-item:nth-child(4) { grid-column: 1; grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--terraa-2 .mxd-collage-item:nth-child(5) { grid-column: 2; grid-row: 2; }
+
+/* Empty slots (missing media) */
+.mxd-collage-scroll .mxd-collage-frame--onestop-1 .mxd-collage-item--empty,
+.mxd-collage-scroll .mxd-collage-frame--onestop-2 .mxd-collage-item--empty,
+.mxd-collage-scroll .mxd-collage-frame--terraa-1 .mxd-collage-item--empty,
+.mxd-collage-scroll .mxd-collage-frame--terraa-2 .mxd-collage-item--empty {
+  background: rgba(255, 255, 255, 0.2);
+}
+/* ===== One Stop & Terra ===== */
+.mxd-collage-scroll .mxd-collage-frame--onestop-1,
+.mxd-collage-scroll .mxd-collage-frame--onestop-2,
+.mxd-collage-scroll .mxd-collage-frame--terra-1,
+.mxd-collage-scroll .mxd-collage-frame--terra-2 {
+  display: grid;
+  gap: 12px;
+}
+
+/* Plain backgrounds (no pattern, no gradient) */
+.mxd-collage-scroll .mxd-collage-frame--onestop-1,
+.mxd-collage-scroll .mxd-collage-frame--onestop-2 {
+  background: #d4916a !important; /* terracotta / peach */
+  background-image: none !important;
+}
+.mxd-collage-scroll .mxd-collage-frame--terra-1,
+.mxd-collage-scroll .mxd-collage-frame--terra-2 {
+  background: #d42a9c !important; /* pink */
+  background-image: none !important;
+}
+
+/* Remove any pattern coming from pseudo-elements */
+.mxd-collage-scroll .mxd-collage-frame--onestop-1::before,
+.mxd-collage-scroll .mxd-collage-frame--onestop-1::after,
+.mxd-collage-scroll .mxd-collage-frame--onestop-2::before,
+.mxd-collage-scroll .mxd-collage-frame--onestop-2::after,
+.mxd-collage-scroll .mxd-collage-frame--terra-1::before,
+.mxd-collage-scroll .mxd-collage-frame--terra-1::after,
+.mxd-collage-scroll .mxd-collage-frame--terra-2::before,
+.mxd-collage-scroll .mxd-collage-frame--terra-2::after {
+  display: none !important;
+  content: none !important;
+  background: none !important;
+}
+
+.mxd-collage-scroll .mxd-collage-frame--onestop-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--onestop-2 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--terra-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--terra-2 .mxd-collage-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0;
+}
+.mxd-collage-scroll .mxd-collage-frame--onestop-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--onestop-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--onestop-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--onestop-2 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--terra-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--terra-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--terra-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--terra-2 .mxd-collage-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Slide 1 (both brands): big left, two stacked on the right */
+.mxd-collage-scroll .mxd-collage-frame--onestop-1,
+.mxd-collage-scroll .mxd-collage-frame--terra-1 {
+  grid-template-columns: 2.6fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--onestop-1 .mxd-collage-item:nth-child(1),
+.mxd-collage-scroll .mxd-collage-frame--terra-1 .mxd-collage-item:nth-child(1) {
+  grid-row: 1 / span 2;
+}
+
+/* One Stop slide 2: 2 stacked | tall | tall */
+.mxd-collage-scroll .mxd-collage-frame--onestop-2 {
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--onestop-2 .mxd-collage-item:nth-child(1) { grid-column: 1; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--onestop-2 .mxd-collage-item:nth-child(2) { grid-column: 1; grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--onestop-2 .mxd-collage-item:nth-child(3) { grid-column: 2; grid-row: 1 / span 2; }
+.mxd-collage-scroll .mxd-collage-frame--onestop-2 .mxd-collage-item:nth-child(4) { grid-column: 3; grid-row: 1 / span 2; }
+
+/* Terra slide 2: wide col (2 stacked) | col (2 stacked) | tall */
+.mxd-collage-scroll .mxd-collage-frame--terra-2 {
+  grid-template-columns: 1.3fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--terra-2 .mxd-collage-item:nth-child(1) { grid-column: 1; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--terra-2 .mxd-collage-item:nth-child(2) { grid-column: 2; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--terra-2 .mxd-collage-item:nth-child(3) { grid-column: 3; grid-row: 1 / span 2; }
+.mxd-collage-scroll .mxd-collage-frame--terra-2 .mxd-collage-item:nth-child(4) { grid-column: 1; grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--terra-2 .mxd-collage-item:nth-child(5) { grid-column: 2; grid-row: 2; }
+
+/* Empty slots (missing media) */
+.mxd-collage-scroll .mxd-collage-frame--onestop-1 .mxd-collage-item--empty,
+.mxd-collage-scroll .mxd-collage-frame--onestop-2 .mxd-collage-item--empty,
+.mxd-collage-scroll .mxd-collage-frame--terra-1 .mxd-collage-item--empty,
+.mxd-collage-scroll .mxd-collage-frame--terra-2 .mxd-collage-item--empty {
+  background: rgba(255, 255, 255, 0.2);
+}
+/* ===== All brands: no background colour + full-screen collage ===== */
+
+/* 1. Drawer: use the whole screen, no side padding or max-width */
+.mxd-fullscreen-drawer-overlay--collage .mxd-fullscreen-drawer-content {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* 2. Scroll wrapper: edge to edge, no colour */
+.mxd-fullscreen-drawer-overlay--collage .mxd-collage-scroll {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: none !important;
+}
+
+/* 3. Every frame (every brand, every slide) fills one full screen, no colour */
+.mxd-collage-scroll .mxd-collage-frame {
+  width: 100% !important;
+  max-width: none !important;
+  height: 100vh !important;
+  min-height: 100vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  background: none !important;
+  border-radius: 0 !important;
+}
+
+/* 4. Remove any per-brand overlay colour; plain dark behind the grid */
+.mxd-fullscreen-drawer-overlay[data-layout] {
+  background: #0b0b0b !important;
+}
+/* ===== Madhuram & Nasreen ===== */
+.mxd-collage-scroll .mxd-collage-frame--madhuram-1,
+.mxd-collage-scroll .mxd-collage-frame--madhuram-2,
+.mxd-collage-scroll .mxd-collage-frame--nasreen-1 {
+  display: grid;
+  gap: 12px;
+}
+.mxd-collage-scroll .mxd-collage-frame--madhuram-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--madhuram-2 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--nasreen-1 .mxd-collage-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0;
+}
+.mxd-collage-scroll .mxd-collage-frame--madhuram-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--madhuram-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--madhuram-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--madhuram-2 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--nasreen-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--nasreen-1 .mxd-collage-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Madhuram slide 1: one full slot */
+.mxd-collage-scroll .mxd-collage-frame--madhuram-1 {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+/* Madhuram slide 2: 3 x 2 equal grid */
+.mxd-collage-scroll .mxd-collage-frame--madhuram-2 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+
+/* Nasreen: top  = sunset (wide) | My Forte | laptop
+            bottom = About Us (wide) | Coaching (narrow) | Mission (wide) */
+.mxd-collage-scroll .mxd-collage-frame--nasreen-1 {
+  grid-template-columns: 317fr 175fr 48fr 264fr;
+  grid-template-rows: 1fr 1fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--nasreen-1 .mxd-collage-item:nth-child(1) { grid-column: 1;     grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--nasreen-1 .mxd-collage-item:nth-child(2) { grid-column: 2 / 4; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--nasreen-1 .mxd-collage-item:nth-child(3) { grid-column: 4;     grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--nasreen-1 .mxd-collage-item:nth-child(4) { grid-column: 1;     grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--nasreen-1 .mxd-collage-item:nth-child(5) { grid-column: 2;     grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--nasreen-1 .mxd-collage-item:nth-child(6) { grid-column: 3 / 5; grid-row: 2; }
+
+/* Empty slots (missing media) */
+.mxd-collage-scroll .mxd-collage-frame--madhuram-2 .mxd-collage-item--empty {
+  background: rgba(255, 255, 255, 0.12);
+}
+/* ===== Srvvasya & Exxpression ===== */
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-1,
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-2,
+.mxd-collage-scroll .mxd-collage-frame--exxpression-1,
+.mxd-collage-scroll .mxd-collage-frame--exxpression-2 {
+  display: grid;
+  gap: 12px;
+}
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-2 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--exxpression-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--exxpression-2 .mxd-collage-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0;
+}
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-2 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--exxpression-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--exxpression-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--exxpression-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--exxpression-2 .mxd-collage-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Srvvasya slide 1: website (wide, top-left) | tall poster | edge poster
+                     bookmark | book (bottom-left) */
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-1 {
+  grid-template-columns: 90fr 100fr 102fr 56fr;
+  grid-template-rows: 110fr 83fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-1 .mxd-collage-item:nth-child(1) { grid-column: 1 / 3; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-1 .mxd-collage-item:nth-child(2) { grid-column: 1;     grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-1 .mxd-collage-item:nth-child(3) { grid-column: 2;     grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-1 .mxd-collage-item:nth-child(4) { grid-column: 3;     grid-row: 1 / 3; }
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-1 .mxd-collage-item:nth-child(5) { grid-column: 4;     grid-row: 1 / 3; }
+
+/* Srvvasya slide 2: edge | tall Vriin C | Energize You over We evolve */
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-2 {
+  grid-template-columns: 48fr 139fr 170fr;
+  grid-template-rows: 1fr 1fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-2 .mxd-collage-item:nth-child(1) { grid-column: 1; grid-row: 1 / 3; }
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-2 .mxd-collage-item:nth-child(2) { grid-column: 2; grid-row: 1 / 3; }
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-2 .mxd-collage-item:nth-child(3) { grid-column: 3; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-2 .mxd-collage-item:nth-child(4) { grid-column: 3; grid-row: 2; }
+
+/* Exxpression slide 1: 3 on top (104 | 145 | 112), 3 below (148 | 132 | 77) */
+.mxd-collage-scroll .mxd-collage-frame--exxpression-1 {
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 105fr 86fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--exxpression-1 .mxd-collage-item:nth-child(1) { grid-column: 1 / 4;   grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--exxpression-1 .mxd-collage-item:nth-child(2) { grid-column: 4 / 8;   grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--exxpression-1 .mxd-collage-item:nth-child(3) { grid-column: 8 / 13;  grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--exxpression-1 .mxd-collage-item:nth-child(4) { grid-column: 1 / 6;   grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--exxpression-1 .mxd-collage-item:nth-child(5) { grid-column: 6 / 10;  grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--exxpression-1 .mxd-collage-item:nth-child(6) { grid-column: 10 / 13; grid-row: 2; }
+
+/* Exxpression slide 2: big laptop video | floor plan over interior */
+.mxd-collage-scroll .mxd-collage-frame--exxpression-2 {
+  grid-template-columns: 265fr 112fr;
+  grid-template-rows: 1fr 1fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--exxpression-2 .mxd-collage-item:nth-child(1) { grid-column: 1; grid-row: 1 / 3; }
+.mxd-collage-scroll .mxd-collage-frame--exxpression-2 .mxd-collage-item:nth-child(2) { grid-column: 2; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--exxpression-2 .mxd-collage-item:nth-child(3) { grid-column: 2; grid-row: 2; }
+
+/* Empty slots (missing media) */
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-1 .mxd-collage-item--empty,
+.mxd-collage-scroll .mxd-collage-frame--srvvasya-2 .mxd-collage-item--empty,
+.mxd-collage-scroll .mxd-collage-frame--exxpression-1 .mxd-collage-item--empty {
+  background: rgba(255, 255, 255, 0.12);
+}
+/* ===== Mildas Diamonds & Pallavi Foundation ===== */
+.mxd-collage-scroll .mxd-collage-frame--mildas-1,
+.mxd-collage-scroll .mxd-collage-frame--mildas-2,
+.mxd-collage-scroll .mxd-collage-frame--pallavi-1,
+.mxd-collage-scroll .mxd-collage-frame--pallavi-2 {
+  display: grid;
+  gap: 12px;
+}
+.mxd-collage-scroll .mxd-collage-frame--mildas-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--mildas-2 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--pallavi-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--pallavi-2 .mxd-collage-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0;
+}
+.mxd-collage-scroll .mxd-collage-frame--mildas-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--mildas-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--mildas-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--mildas-2 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--pallavi-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--pallavi-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--pallavi-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--pallavi-2 .mxd-collage-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Mildas slide 1: big video | two stacked on the right */
+.mxd-collage-scroll .mxd-collage-frame--mildas-1 {
+  grid-template-columns: 303fr 85fr;
+  grid-template-rows: 1fr 1fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--mildas-1 .mxd-collage-item:nth-child(1) { grid-column: 1; grid-row: 1 / 3; }
+.mxd-collage-scroll .mxd-collage-frame--mildas-1 .mxd-collage-item:nth-child(2) { grid-column: 2; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--mildas-1 .mxd-collage-item:nth-child(3) { grid-column: 2; grid-row: 2; }
+
+/* Mildas slide 2: 3 x 2, tall top row, short bottom row */
+.mxd-collage-scroll .mxd-collage-frame--mildas-2 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 138fr 70fr;
+}
+
+/* Pallavi slide 1: logo over collage on the left | big video */
+.mxd-collage-scroll .mxd-collage-frame--pallavi-1 {
+  grid-template-columns: 100fr 272fr;
+  grid-template-rows: 1fr 1fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--pallavi-1 .mxd-collage-item:nth-child(1) { grid-column: 1; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--pallavi-1 .mxd-collage-item:nth-child(2) { grid-column: 1; grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--pallavi-1 .mxd-collage-item:nth-child(3) { grid-column: 2; grid-row: 1 / 3; }
+
+/* Pallavi slide 2: top 3 (hero | news | tiles), bottom 3 (carousel | trees | vision) */
+.mxd-collage-scroll .mxd-collage-frame--pallavi-2 {
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: 138fr 74fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--pallavi-2 .mxd-collage-item:nth-child(1) { grid-column: 1 / 10;  grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--pallavi-2 .mxd-collage-item:nth-child(2) { grid-column: 10 / 20; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--pallavi-2 .mxd-collage-item:nth-child(3) { grid-column: 20 / 25; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--pallavi-2 .mxd-collage-item:nth-child(4) { grid-column: 1 / 11;  grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--pallavi-2 .mxd-collage-item:nth-child(5) { grid-column: 11 / 16; grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--pallavi-2 .mxd-collage-item:nth-child(6) { grid-column: 16 / 25; grid-row: 2; }
+
+/* Empty slots (missing media) */
+.mxd-collage-scroll .mxd-collage-frame--mildas-2 .mxd-collage-item--empty,
+.mxd-collage-scroll .mxd-collage-frame--pallavi-2 .mxd-collage-item--empty {
+  background: rgba(255, 255, 255, 0.12);
+}
+/* ===== Valdaria & Prisha Designs ===== */
+.mxd-collage-scroll .mxd-collage-frame--valdaria-1,
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2,
+.mxd-collage-scroll .mxd-collage-frame--prisha-1,
+.mxd-collage-scroll .mxd-collage-frame--prisha-2 {
+  display: grid;
+  gap: 12px;
+}
+.mxd-collage-scroll .mxd-collage-frame--valdaria-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--prisha-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--prisha-2 .mxd-collage-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0;
+}
+.mxd-collage-scroll .mxd-collage-frame--valdaria-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--valdaria-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--prisha-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--prisha-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--prisha-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--prisha-2 .mxd-collage-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Valdaria slide 1: big video | two stacked on the right */
+.mxd-collage-scroll .mxd-collage-frame--valdaria-1 {
+  grid-template-columns: 310fr 87fr;
+  grid-template-rows: 97fr 127fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--valdaria-1 .mxd-collage-item:nth-child(1) { grid-column: 1; grid-row: 1 / 3; }
+.mxd-collage-scroll .mxd-collage-frame--valdaria-1 .mxd-collage-item:nth-child(2) { grid-column: 2; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--valdaria-1 .mxd-collage-item:nth-child(3) { grid-column: 2; grid-row: 2; }
+
+/* Valdaria slide 2: top  = A | B | C+D (logo) | E
+                     bottom = A | B+C (logo) | D | E */
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 {
+  grid-template-columns: 92fr 100fr 25fr 98fr 90fr;
+  grid-template-rows: 127fr 96fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 .mxd-collage-item:nth-child(1) { grid-column: 1;     grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 .mxd-collage-item:nth-child(2) { grid-column: 2;     grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 .mxd-collage-item:nth-child(3) { grid-column: 3 / 5; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 .mxd-collage-item:nth-child(4) { grid-column: 5;     grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 .mxd-collage-item:nth-child(5) { grid-column: 1;     grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 .mxd-collage-item:nth-child(6) { grid-column: 2 / 4; grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 .mxd-collage-item:nth-child(7) { grid-column: 4;     grid-row: 2; }
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 .mxd-collage-item:nth-child(8) { grid-column: 5;     grid-row: 2; }
+
+/* Prisha slide 1: 2 tall videos | two stacked on the right */
+.mxd-collage-scroll .mxd-collage-frame--prisha-1 {
+  grid-template-columns: 120fr 118fr 132fr;
+  grid-template-rows: 98fr 105fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--prisha-1 .mxd-collage-item:nth-child(1) { grid-column: 1; grid-row: 1 / 3; }
+.mxd-collage-scroll .mxd-collage-frame--prisha-1 .mxd-collage-item:nth-child(2) { grid-column: 2; grid-row: 1 / 3; }
+.mxd-collage-scroll .mxd-collage-frame--prisha-1 .mxd-collage-item:nth-child(3) { grid-column: 3; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--prisha-1 .mxd-collage-item:nth-child(4) { grid-column: 3; grid-row: 2; }
+
+/* Prisha slide 2: 2 stacked | graphic over tall frame | big laptop video */
+.mxd-collage-scroll .mxd-collage-frame--prisha-2 {
+  grid-template-columns: 93fr 80fr 190fr;
+  grid-template-rows: 30fr 69fr 99fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--prisha-2 .mxd-collage-item:nth-child(1) { grid-column: 1; grid-row: 1 / 3; }
+.mxd-collage-scroll .mxd-collage-frame--prisha-2 .mxd-collage-item:nth-child(2) { grid-column: 1; grid-row: 3; }
+.mxd-collage-scroll .mxd-collage-frame--prisha-2 .mxd-collage-item:nth-child(3) { grid-column: 2; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--prisha-2 .mxd-collage-item:nth-child(4) { grid-column: 2; grid-row: 2 / 4; }
+.mxd-collage-scroll .mxd-collage-frame--prisha-2 .mxd-collage-item:nth-child(5) { grid-column: 3; grid-row: 1 / 4; }
+
+/* Empty slots (missing media) */
+.mxd-collage-scroll .mxd-collage-frame--valdaria-2 .mxd-collage-item--empty,
+.mxd-collage-scroll .mxd-collage-frame--prisha-2 .mxd-collage-item--empty {
+  background: rgba(255, 255, 255, 0.12);
+}
+/* ===== Shivdi Cha Raja ===== */
+.mxd-collage-scroll .mxd-collage-frame--shivdi-1,
+.mxd-collage-scroll .mxd-collage-frame--shivdi-2 {
+  display: grid;
+  gap: 12px;
+}
+.mxd-collage-scroll .mxd-collage-frame--shivdi-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--shivdi-2 .mxd-collage-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0;
+}
+.mxd-collage-scroll .mxd-collage-frame--shivdi-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--shivdi-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--shivdi-2 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--shivdi-2 .mxd-collage-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Slide 1: three equal tall videos */
+.mxd-collage-scroll .mxd-collage-frame--shivdi-1 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+
+/* Slide 2: tall | tall (wider) | two stacked */
+.mxd-collage-scroll .mxd-collage-frame--shivdi-2 {
+  grid-template-columns: 122fr 161fr 90fr;
+  grid-template-rows: 117fr 94fr;
+}
+.mxd-collage-scroll .mxd-collage-frame--shivdi-2 .mxd-collage-item:nth-child(1) { grid-column: 1; grid-row: 1 / 3; }
+.mxd-collage-scroll .mxd-collage-frame--shivdi-2 .mxd-collage-item:nth-child(2) { grid-column: 2; grid-row: 1 / 3; }
+.mxd-collage-scroll .mxd-collage-frame--shivdi-2 .mxd-collage-item:nth-child(3) { grid-column: 3; grid-row: 1; }
+.mxd-collage-scroll .mxd-collage-frame--shivdi-2 .mxd-collage-item:nth-child(4) { grid-column: 3; grid-row: 2; }
+
+/* Empty slots (missing media) */
+.mxd-collage-scroll .mxd-collage-frame--shivdi-1 .mxd-collage-item--empty,
+.mxd-collage-scroll .mxd-collage-frame--shivdi-2 .mxd-collage-item--empty {
+  background: rgba(255, 255, 255, 0.12);
+}
+/* ===== The Content Team ===== */
+.mxd-collage-scroll .mxd-collage-frame--contentteam-1,
+.mxd-collage-scroll .mxd-collage-frame--contentteam-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 12px;
+}
+.mxd-collage-scroll .mxd-collage-frame--contentteam-1 .mxd-collage-item,
+.mxd-collage-scroll .mxd-collage-frame--contentteam-2 .mxd-collage-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0;
+}
+.mxd-collage-scroll .mxd-collage-frame--contentteam-1 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--contentteam-1 .mxd-collage-item img,
+.mxd-collage-scroll .mxd-collage-frame--contentteam-2 .mxd-collage-item video,
+.mxd-collage-scroll .mxd-collage-frame--contentteam-2 .mxd-collage-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Empty slot (missing video) */
+.mxd-collage-scroll .mxd-collage-frame--contentteam-2 .mxd-collage-item--empty {
+  background: rgba(255, 255, 255, 0.12);
+}
+/* 3. Every frame fills one screen, with a small margin on all four sides */
+.mxd-collage-scroll .mxd-collage-frame {
+  width: 100% !important;
+  max-width: none !important;
+  height: 100vh !important;
+  min-height: 100vh !important;
+  margin: 0 !important;
+  padding: clamp(16px, 2.5vw, 40px) !important;   /* space on top, bottom, left and right */
+  box-sizing: border-box !important;
+  background: none !important;
+  border-radius: 0 !important;
+}
+/* ===== Wider, more visible scrollbar in the expanded view ===== */
+.mxd-fullscreen-drawer-overlay,
+.mxd-fullscreen-drawer-content {
+  scrollbar-width: auto;                                  /* Firefox: thick */
+  scrollbar-color: rgba(255, 255, 255, 0.65) rgba(255, 255, 255, 0.12); /* thumb, track */
+}
+.mxd-fullscreen-drawer-overlay::-webkit-scrollbar,
+.mxd-fullscreen-drawer-content::-webkit-scrollbar {
+  width: 16px;                                            /* Chrome / Edge: thickness */
+}
+.mxd-fullscreen-drawer-overlay::-webkit-scrollbar-track,
+.mxd-fullscreen-drawer-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.12);                  /* track (the groove) */
+}
+.mxd-fullscreen-drawer-overlay::-webkit-scrollbar-thumb,
+.mxd-fullscreen-drawer-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.65);                  /* the bar you drag */
+  border-radius: 8px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+.mxd-fullscreen-drawer-overlay::-webkit-scrollbar-thumb:hover,
+.mxd-fullscreen-drawer-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.9);
+  background-clip: padding-box;
+}
+
+.mxd-collage-scroll .mxd-collage-frame--prisha-2 .mxd-collage-item--3 img {
+  object-fit: contain;
+}
+
+/* .mxd-fullscreen-drawer-overlay[data-layout="khokha"],
+.mxd-fullscreen-drawer-overlay[data-layout="khokha"] .mxd-fullscreen-drawer-content,
+.mxd-fullscreen-drawer-overlay[data-layout="khokha"] .mxd-collage-scroll,
+.mxd-fullscreen-drawer-overlay[data-layout="khokha"] [class*="mxd-collage-frame"] {
+  background: #b494c4 !important;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.14) 0 28px, rgba(255,255,255,0) 28px 56px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.14) 0 28px, rgba(255,255,255,0) 28px 56px) !important;
+} */
+
+
+/* brand names on the works grid: white on every card */
+.mxd-portfolio-grid-item .mxd-expandable-card-bleed__title,
+.mxd-portfolio-grid-item .mxd-expandable-card-bleed__plus,
+.mxd-portfolio-grid-item .mxd-expandable-card-bleed__category {
+  color: #ffffff !important;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
+}
+
+/* brand name + description below the grid: white on every brand,
+   on a dark strip so it stays readable on the light-background brands */
+.mxd-fullscreen-drawer-overlay .mxd-fullscreen-drawer-meta {
+  background-color: #0d0d0d !important;
+  border-top-color: rgba(255, 255, 255, 0.15) !important;
+}
+.mxd-fullscreen-drawer-overlay .mxd-fullscreen-drawer-meta,
+.mxd-fullscreen-drawer-overlay .mxd-meta-title,
+.mxd-fullscreen-drawer-overlay .mxd-meta-category,
+.mxd-fullscreen-drawer-overlay .mxd-meta-description {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
